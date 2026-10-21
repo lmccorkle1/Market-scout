@@ -13,6 +13,12 @@ from pathlib import Path
 MIN_RESULTS = 350
 TICKER = re.compile(r"^[A-Z0-9-]{1,12}$")
 REQUIRED_ROW_FIELDS = {"ticker", "sector", "industry", "price", "drawdown_pct", "ma50", "price_score", "price_date"}
+COMPONENT_LIMITS = {
+    "fundamentals_30": 30,
+    "valuation_25": 25,
+    "selloff_20": 20,
+    "financial_strength_15": 15,
+}
 
 
 def fail(message: str) -> None:
@@ -30,7 +36,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 1:
+    if not isinstance(data, dict) or data.get("schema_version") != 2:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -58,6 +64,7 @@ def validate(path: Path) -> dict[str, object]:
         fail("generated scan is already more than 24 hours old")
 
     seen: set[str] = set()
+    rows_by_ticker: dict[str, dict[str, object]] = {}
     for index, row in enumerate(stocks):
         if not isinstance(row, dict) or not REQUIRED_ROW_FIELDS.issubset(row):
             fail(f"row {index} is missing required fields")
@@ -67,6 +74,7 @@ def validate(path: Path) -> dict[str, object]:
         if ticker in seen or ticker in unique_failed:
             fail(f"ticker {ticker} is duplicated or also marked failed")
         seen.add(ticker)
+        rows_by_ticker[ticker] = row
         for field in ("sector", "industry"):
             if not isinstance(row[field], str) or not row[field].strip() or len(row[field]) > 100:
                 fail(f"{ticker}.{field} must be a non-empty classification")
@@ -84,6 +92,63 @@ def validate(path: Path) -> dict[str, object]:
             fail(f"{ticker}.price_date is invalid")
         if price_date > now.date():
             fail(f"{ticker}.price_date is in the future")
+
+        research = row.get("research")
+        if research is not None:
+            if not isinstance(research, dict):
+                fail(f"{ticker}.research must be an object")
+            components = research.get("component_scores")
+            metrics = research.get("metrics")
+            if not isinstance(components, dict) or not isinstance(metrics, dict):
+                fail(f"{ticker}.research is missing score details")
+            component_total = 0.0
+            for name, maximum in COMPONENT_LIMITS.items():
+                value = components.get(name)
+                if isinstance(value, bool) or not isinstance(value, (int, float)) or not 0 <= value <= maximum:
+                    fail(f"{ticker}.{name} is invalid")
+                component_total += value
+            if components.get("catalysts_10") is not None:
+                fail(f"{ticker} must not receive unverified catalyst points")
+            score = research.get("quant_score_90")
+            if isinstance(score, bool) or not isinstance(score, (int, float)) or not 0 <= score <= 90:
+                fail(f"{ticker}.quant_score_90 is invalid")
+            if abs(score - component_total) > 0.21:
+                fail(f"{ticker}.quant_score_90 does not match its components")
+            available = research.get("data_fields_available")
+            required = research.get("data_fields_required")
+            if not isinstance(available, int) or not isinstance(required, int) or not 0 <= available <= 10 or not 1 <= required <= 10:
+                fail(f"{ticker} has invalid data coverage")
+            if research.get("eligible") is not (available >= required):
+                fail(f"{ticker}.eligible conflicts with data coverage")
+
+    method = data.get("research_method")
+    top_five = data.get("top_five")
+    if not isinstance(method, dict) or not isinstance(top_five, list):
+        fail("research_method and top_five are required")
+    if method.get("maximum_automated_score") != 90 or method.get("catalyst_points_reserved") != 10:
+        fail("research scoring limits are invalid")
+    if len(top_five) > 5:
+        fail("top_five contains more than five rows")
+    top_tickers: list[str] = []
+    previous_score = float("inf")
+    for item in top_five:
+        if not isinstance(item, dict) or item.get("ticker") not in rows_by_ticker:
+            fail("top_five contains an unknown row")
+        ticker = str(item["ticker"])
+        if item != rows_by_ticker[ticker]:
+            fail(f"top_five row {ticker} does not match stocks")
+        research = item.get("research")
+        if not isinstance(research, dict) or research.get("eligible") is not True:
+            fail(f"top_five row {ticker} is not eligible")
+        score = float(research["quant_score_90"])
+        if score > previous_score:
+            fail("top_five is not sorted by score")
+        previous_score = score
+        top_tickers.append(ticker)
+    if len(top_tickers) != len(set(top_tickers)):
+        fail("top_five contains duplicates")
+    if method.get("eligible_count", 0) >= 5 and len(top_five) != 5:
+        fail("five eligible candidates exist but top_five is incomplete")
 
     return data
 
