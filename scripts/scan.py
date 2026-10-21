@@ -32,7 +32,7 @@ MIN_RESULTS = 350
 CHUNK_SIZE = 75
 
 
-def get_universe() -> tuple[list[str], str]:
+def get_universe() -> tuple[list[str], dict[str, tuple[str, str]], str]:
     """Return actual S&P 500 constituents plus a small disclosed growth list."""
     request = Request(
         WIKIPEDIA_URL,
@@ -41,13 +41,21 @@ def get_universe() -> tuple[list[str], str]:
     with urlopen(request, timeout=30) as response:
         html = response.read().decode("utf-8")
     tables = pd.read_html(StringIO(html))
-    symbols = {
-        str(symbol).strip().replace(".", "-")
-        for symbol in tables[0]["Symbol"].dropna()
-    }
+    classifications: dict[str, tuple[str, str]] = {}
+    for _, row in tables[0].iterrows():
+        symbol = str(row["Symbol"]).strip().replace(".", "-")
+        sector = row.get("GICS Sector")
+        industry = row.get("GICS Sub-Industry")
+        classifications[symbol] = (
+            "Unknown" if pd.isna(sector) else str(sector).strip(),
+            "Unknown" if pd.isna(industry) else str(industry).strip(),
+        )
+    symbols = set(classifications)
     if len(symbols) < 450:
         raise RuntimeError(f"Constituent list unexpectedly contained only {len(symbols)} symbols")
-    return sorted(symbols | EXTRA_SYMBOLS), "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols"
+    for symbol in EXTRA_SYMBOLS:
+        classifications.setdefault(symbol, ("Unknown", "Unknown"))
+    return sorted(symbols | EXTRA_SYMBOLS), classifications, "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols"
 
 
 def finite(value: object) -> float | None:
@@ -89,7 +97,7 @@ def extract_close(frame: pd.DataFrame, symbol: str, multiple: bool) -> pd.Series
 
 
 def scan() -> dict[str, object]:
-    symbols, universe_source = get_universe()
+    symbols, classifications, universe_source = get_universe()
     rows: list[dict[str, object]] = []
     failures: list[str] = []
 
@@ -118,6 +126,8 @@ def scan() -> dict[str, object]:
             price_date = pd.Timestamp(close.index[-1]).date().isoformat()
             rows.append({
                 "ticker": symbol,
+                "sector": classifications[symbol][0],
+                "industry": classifications[symbol][1],
                 "price": round(price, 2),
                 "drawdown_pct": round(drawdown, 1),
                 "ma50": round(ma50, 2),
