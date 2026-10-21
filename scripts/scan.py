@@ -14,7 +14,9 @@ import sys
 import tempfile
 import time
 from datetime import datetime, timezone
+from io import StringIO
 from pathlib import Path
+from urllib.request import Request, urlopen
 
 import pandas as pd
 import yfinance as yf
@@ -32,7 +34,13 @@ CHUNK_SIZE = 75
 
 def get_universe() -> tuple[list[str], str]:
     """Return actual S&P 500 constituents plus a small disclosed growth list."""
-    tables = pd.read_html(WIKIPEDIA_URL)
+    request = Request(
+        WIKIPEDIA_URL,
+        headers={"User-Agent": "MarketScout/1.0 (public GitHub Actions market research tool)"},
+    )
+    with urlopen(request, timeout=30) as response:
+        html = response.read().decode("utf-8")
+    tables = pd.read_html(StringIO(html))
     symbols = {
         str(symbol).strip().replace(".", "-")
         for symbol in tables[0]["Symbol"].dropna()
