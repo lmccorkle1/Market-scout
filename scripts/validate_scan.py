@@ -12,7 +12,7 @@ from pathlib import Path
 
 MIN_RESULTS = 350
 TICKER = re.compile(r"^[A-Z0-9-]{1,12}$")
-REQUIRED_ROW_FIELDS = {"ticker", "price", "drawdown_pct", "ma50", "price_score", "price_date"}
+REQUIRED_ROW_FIELDS = {"ticker", "sector", "industry", "price", "drawdown_pct", "ma50", "price_score", "price_date"}
 
 
 def fail(message: str) -> None:
@@ -67,6 +67,9 @@ def validate(path: Path) -> dict[str, object]:
         if ticker in seen or ticker in unique_failed:
             fail(f"ticker {ticker} is duplicated or also marked failed")
         seen.add(ticker)
+        for field in ("sector", "industry"):
+            if not isinstance(row[field], str) or not row[field].strip() or len(row[field]) > 100:
+                fail(f"{ticker}.{field} must be a non-empty classification")
         for field in ("price", "drawdown_pct", "ma50", "price_score"):
             value = row[field]
             if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
