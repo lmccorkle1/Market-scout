@@ -35,6 +35,9 @@ jobs:
       - name: Build verified scan
         run: python scripts/scan.py
 
+      - name: Validate generated scan
+        run: python scripts/validate_scan.py data/scanner.json
+
       - name: Publish changed scan data
         run: |
           if [ -z "$(git status --porcelain -- data/scanner.json)" ]; then
