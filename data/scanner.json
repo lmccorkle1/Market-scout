@@ -1,0 +1,4127 @@
+{
+  "schema_version": 1,
+  "status": "partial",
+  "generated_at": "2026-10-21T15:49:44.032162Z",
+  "universe_source": "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols",
+  "universe_count": 515,
+  "screened_count": 514,
+  "failed_count": 1,
+  "failed_symbols": [
+    "VYLR"
+  ],
+  "score_explanation": "Price-only score based on distance below the 1-year adjusted high and 50-day average; it is not an investment rating.",
+  "stocks": [
+    {
+      "ticker": "ALB",
+      "price": 93.53,
+      "drawdown_pct": -56.4,
+      "ma50": 117.04,
+      "price_score": 100.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "APP",
+      "price": 270.4,
+      "drawdown_pct": -63.1,
+      "ma50": 301.83,
+      "price_score": 100.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CHTR",
+      "price": 106.46,
+      "drawdown_pct": -57.8,
+      "ma50": 130.21,
+      "price_score": 100.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SKYD",
+      "price": 7.22,
+      "drawdown_pct": -56.1,
+      "ma50": 9.82,
+      "price_score": 100.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FICO",
+      "price": 806.08,
+      "drawdown_pct": -56.3,
+      "ma50": 922.78,
+      "price_score": 97.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FISV",
+      "price": 48.42,
+      "drawdown_pct": -61.7,
+      "ma50": 49.17,
+      "price_score": 94.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SOFI",
+      "price": 14.95,
+      "drawdown_pct": -53.6,
+      "ma50": 16.88,
+      "price_score": 91.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BSX",
+      "price": 44.12,
+      "drawdown_pct": -58.0,
+      "ma50": 45.76,
+      "price_score": 90.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AXON",
+      "price": 397.2,
+      "drawdown_pct": -47.7,
+      "ma50": 490.09,
+      "price_score": 90.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FLEX",
+      "price": 87.65,
+      "drawdown_pct": -45.9,
+      "ma50": 110.97,
+      "price_score": 89.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LULU",
+      "price": 97.39,
+      "drawdown_pct": -54.9,
+      "ma50": 105.0,
+      "price_score": 89.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ORCL",
+      "price": 130.52,
+      "drawdown_pct": -53.3,
+      "ma50": 143.63,
+      "price_score": 89.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WDC",
+      "price": 374.86,
+      "drawdown_pct": -49.8,
+      "ma50": 437.75,
+      "price_score": 89.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ARM",
+      "price": 224.24,
+      "drawdown_pct": -49.0,
+      "ma50": 264.96,
+      "price_score": 88.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PODD",
+      "price": 141.23,
+      "drawdown_pct": -59.2,
+      "ma50": 140.37,
+      "price_score": 88.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DUOL",
+      "price": 139.25,
+      "drawdown_pct": -56.2,
+      "ma50": 145.42,
+      "price_score": 88.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CSGP",
+      "price": 33.08,
+      "drawdown_pct": -57.7,
+      "ma50": 30.41,
+      "price_score": 86.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MGM",
+      "price": 28.83,
+      "drawdown_pct": -43.1,
+      "ma50": 36.91,
+      "price_score": 86.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "COHR",
+      "price": 236.79,
+      "drawdown_pct": -44.5,
+      "ma50": 293.2,
+      "price_score": 86.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MOS",
+      "price": 17.65,
+      "drawdown_pct": -42.7,
+      "ma50": 22.53,
+      "price_score": 85.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PNR",
+      "price": 52.99,
+      "drawdown_pct": -51.6,
+      "ma50": 57.36,
+      "price_score": 85.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NFLX",
+      "price": 65.29,
+      "drawdown_pct": -47.4,
+      "ma50": 74.66,
+      "price_score": 83.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GLW",
+      "price": 135.22,
+      "drawdown_pct": -47.0,
+      "ma50": 152.71,
+      "price_score": 82.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AKAM",
+      "price": 90.51,
+      "drawdown_pct": -43.8,
+      "ma50": 107.2,
+      "price_score": 81.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NBIS",
+      "price": 173.15,
+      "drawdown_pct": -39.6,
+      "ma50": 221.79,
+      "price_score": 81.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VRT",
+      "price": 212.41,
+      "drawdown_pct": -43.5,
+      "ma50": 251.39,
+      "price_score": 80.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KLAC",
+      "price": 164.71,
+      "drawdown_pct": -45.3,
+      "ma50": 184.92,
+      "price_score": 78.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FSLR",
+      "price": 174.43,
+      "drawdown_pct": -45.2,
+      "ma50": 195.42,
+      "price_score": 78.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AMAT",
+      "price": 412.45,
+      "drawdown_pct": -42.9,
+      "ma50": 475.02,
+      "price_score": 77.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LVS",
+      "price": 37.48,
+      "drawdown_pct": -45.1,
+      "ma50": 41.26,
+      "price_score": 76.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "APTV",
+      "price": 44.56,
+      "drawdown_pct": -49.7,
+      "ma50": 45.34,
+      "price_score": 76.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "COIN",
+      "price": 178.4,
+      "drawdown_pct": -50.6,
+      "ma50": 178.97,
+      "price_score": 76.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ARE",
+      "price": 42.39,
+      "drawdown_pct": -42.3,
+      "ma50": 48.57,
+      "price_score": 76.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NRG",
+      "price": 99.6,
+      "drawdown_pct": -45.5,
+      "ma50": 108.04,
+      "price_score": 76.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "INTU",
+      "price": 335.27,
+      "drawdown_pct": -50.2,
+      "ma50": 319.81,
+      "price_score": 75.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FDXF",
+      "price": 108.79,
+      "drawdown_pct": -42.3,
+      "ma50": 123.21,
+      "price_score": 75.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SNDK",
+      "price": 1384.17,
+      "drawdown_pct": -40.7,
+      "ma50": 1601.04,
+      "price_score": 74.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WYNN",
+      "price": 76.67,
+      "drawdown_pct": -42.0,
+      "ma50": 86.4,
+      "price_score": 74.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ROL",
+      "price": 33.53,
+      "drawdown_pct": -48.3,
+      "ma50": 33.78,
+      "price_score": 73.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "STX",
+      "price": 699.67,
+      "drawdown_pct": -36.0,
+      "ma50": 833.27,
+      "price_score": 70.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FIS",
+      "price": 36.28,
+      "drawdown_pct": -44.6,
+      "ma50": 37.42,
+      "price_score": 69.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LRCX",
+      "price": 267.64,
+      "drawdown_pct": -38.2,
+      "ma50": 306.4,
+      "price_score": 69.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CIEN",
+      "price": 357.67,
+      "drawdown_pct": -43.0,
+      "ma50": 375.03,
+      "price_score": 69.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ZTS",
+      "price": 79.26,
+      "drawdown_pct": -45.2,
+      "ma50": 74.31,
+      "price_score": 67.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NKE",
+      "price": 37.48,
+      "drawdown_pct": -44.4,
+      "ma50": 37.18,
+      "price_score": 66.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CMG",
+      "price": 28.38,
+      "drawdown_pct": -33.0,
+      "ma50": 33.71,
+      "price_score": 65.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KKR",
+      "price": 89.57,
+      "drawdown_pct": -36.9,
+      "ma50": 99.49,
+      "price_score": 65.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CVNA",
+      "price": 60.5,
+      "drawdown_pct": -36.8,
+      "ma50": 67.23,
+      "price_score": 65.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ON",
+      "price": 76.71,
+      "drawdown_pct": -42.7,
+      "ma50": 75.56,
+      "price_score": 64.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LEN",
+      "price": 78.25,
+      "drawdown_pct": -39.9,
+      "ma50": 80.88,
+      "price_score": 63.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CPRT",
+      "price": 28.26,
+      "drawdown_pct": -38.3,
+      "ma50": 29.91,
+      "price_score": 62.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TSCO",
+      "price": 32.88,
+      "drawdown_pct": -40.3,
+      "ma50": 33.58,
+      "price_score": 62.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FIX",
+      "price": 1399.89,
+      "drawdown_pct": -32.2,
+      "ma50": 1628.65,
+      "price_score": 62.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HII",
+      "price": 273.2,
+      "drawdown_pct": -39.2,
+      "ma50": 281.71,
+      "price_score": 61.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "INTC",
+      "price": 92.81,
+      "drawdown_pct": -34.2,
+      "ma50": 102.76,
+      "price_score": 60.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HIMS",
+      "price": 29.49,
+      "drawdown_pct": -40.2,
+      "ma50": 29.18,
+      "price_score": 60.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HONA",
+      "price": 161.18,
+      "drawdown_pct": -40.3,
+      "ma50": 160.14,
+      "price_score": 60.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BX",
+      "price": 109.85,
+      "drawdown_pct": -30.7,
+      "ma50": 126.22,
+      "price_score": 59.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SMCI",
+      "price": 35.94,
+      "drawdown_pct": -34.4,
+      "ma50": 38.79,
+      "price_score": 59.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TMUS",
+      "price": 153.0,
+      "drawdown_pct": -31.8,
+      "ma50": 171.24,
+      "price_score": 58.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MKC",
+      "price": 46.05,
+      "drawdown_pct": -33.9,
+      "ma50": 49.63,
+      "price_score": 58.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RDDT",
+      "price": 158.74,
+      "drawdown_pct": -38.7,
+      "ma50": 154.26,
+      "price_score": 58.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HWM",
+      "price": 207.94,
+      "drawdown_pct": -28.9,
+      "ma50": 241.56,
+      "price_score": 57.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LII",
+      "price": 364.8,
+      "drawdown_pct": -36.1,
+      "ma50": 375.2,
+      "price_score": 56.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "F",
+      "price": 11.91,
+      "drawdown_pct": -30.9,
+      "ma50": 13.2,
+      "price_score": 56.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NCLH",
+      "price": 15.68,
+      "drawdown_pct": -37.3,
+      "ma50": 15.67,
+      "price_score": 56.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TPL",
+      "price": 347.36,
+      "drawdown_pct": -35.4,
+      "ma50": 357.02,
+      "price_score": 55.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CAT",
+      "price": 735.06,
+      "drawdown_pct": -30.8,
+      "ma50": 806.02,
+      "price_score": 55.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ARES",
+      "price": 117.71,
+      "drawdown_pct": -31.2,
+      "ma50": 127.88,
+      "price_score": 54.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CRH",
+      "price": 85.55,
+      "drawdown_pct": -34.2,
+      "ma50": 88.34,
+      "price_score": 54.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CLX",
+      "price": 84.95,
+      "drawdown_pct": -31.6,
+      "ma50": 91.21,
+      "price_score": 54.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LDOS",
+      "price": 128.23,
+      "drawdown_pct": -35.0,
+      "ma50": 129.6,
+      "price_score": 53.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "UBER",
+      "price": 68.21,
+      "drawdown_pct": -31.6,
+      "ma50": 72.61,
+      "price_score": 53.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WY",
+      "price": 19.02,
+      "drawdown_pct": -27.9,
+      "ma50": 21.46,
+      "price_score": 53.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DASH",
+      "price": 186.76,
+      "drawdown_pct": -29.8,
+      "ma50": 203.6,
+      "price_score": 53.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BKNG",
+      "price": 158.3,
+      "drawdown_pct": -27.4,
+      "ma50": 179.19,
+      "price_score": 52.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CMCSA",
+      "price": 21.81,
+      "drawdown_pct": -30.1,
+      "ma50": 23.62,
+      "price_score": 52.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GIS",
+      "price": 32.72,
+      "drawdown_pct": -29.6,
+      "ma50": 35.51,
+      "price_score": 52.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PCG",
+      "price": 13.24,
+      "drawdown_pct": -30.0,
+      "ma50": 14.26,
+      "price_score": 52.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CEG",
+      "price": 267.8,
+      "drawdown_pct": -32.9,
+      "ma50": 275.08,
+      "price_score": 52.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "COO",
+      "price": 58.65,
+      "drawdown_pct": -30.4,
+      "ma50": 62.52,
+      "price_score": 51.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HOOD",
+      "price": 102.24,
+      "drawdown_pct": -30.5,
+      "ma50": 108.92,
+      "price_score": 51.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LHX",
+      "price": 248.93,
+      "drawdown_pct": -33.4,
+      "ma50": 252.04,
+      "price_score": 51.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BE",
+      "price": 238.56,
+      "drawdown_pct": -31.0,
+      "ma50": 249.55,
+      "price_score": 50.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CHRW",
+      "price": 142.06,
+      "drawdown_pct": -31.9,
+      "ma50": 146.6,
+      "price_score": 50.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ECHO",
+      "price": 93.68,
+      "drawdown_pct": -33.9,
+      "ma50": 90.78,
+      "price_score": 50.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EME",
+      "price": 687.51,
+      "drawdown_pct": -27.1,
+      "ma50": 764.36,
+      "price_score": 50.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AVGO",
+      "price": 337.94,
+      "drawdown_pct": -29.6,
+      "ma50": 360.18,
+      "price_score": 50.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "Q",
+      "price": 120.62,
+      "drawdown_pct": -31.3,
+      "ma50": 125.03,
+      "price_score": 50.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IP",
+      "price": 33.59,
+      "drawdown_pct": -29.2,
+      "ma50": 35.81,
+      "price_score": 50.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "JBL",
+      "price": 280.95,
+      "drawdown_pct": -27.1,
+      "ma50": 309.46,
+      "price_score": 49.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TER",
+      "price": 349.58,
+      "drawdown_pct": -27.7,
+      "ma50": 378.4,
+      "price_score": 49.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "APO",
+      "price": 112.24,
+      "drawdown_pct": -25.6,
+      "ma50": 125.22,
+      "price_score": 48.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GNRC",
+      "price": 201.9,
+      "drawdown_pct": -31.7,
+      "ma50": 201.99,
+      "price_score": 47.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LOW",
+      "price": 196.26,
+      "drawdown_pct": -31.0,
+      "ma50": 198.32,
+      "price_score": 47.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EIX",
+      "price": 56.71,
+      "drawdown_pct": -28.3,
+      "ma50": 58.93,
+      "price_score": 46.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "XYL",
+      "price": 106.3,
+      "drawdown_pct": -29.5,
+      "ma50": 107.58,
+      "price_score": 45.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LITE",
+      "price": 854.3,
+      "drawdown_pct": -24.6,
+      "ma50": 931.39,
+      "price_score": 45.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TPR",
+      "price": 117.46,
+      "drawdown_pct": -28.4,
+      "ma50": 120.43,
+      "price_score": 45.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "T",
+      "price": 21.82,
+      "drawdown_pct": -22.4,
+      "ma50": 24.62,
+      "price_score": 44.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "JBHT",
+      "price": 227.26,
+      "drawdown_pct": -23.7,
+      "ma50": 249.14,
+      "price_score": 44.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "UAL",
+      "price": 102.43,
+      "drawdown_pct": -24.7,
+      "ma50": 110.2,
+      "price_score": 44.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MU",
+      "price": 914.75,
+      "drawdown_pct": -24.6,
+      "ma50": 985.15,
+      "price_score": 44.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BAC",
+      "price": 50.96,
+      "drawdown_pct": -21.0,
+      "ma50": 58.17,
+      "price_score": 43.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DECK",
+      "price": 85.57,
+      "drawdown_pct": -29.2,
+      "ma50": 83.95,
+      "price_score": 43.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DPZ",
+      "price": 310.85,
+      "drawdown_pct": -27.9,
+      "ma50": 317.46,
+      "price_score": 43.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GEN",
+      "price": 24.24,
+      "drawdown_pct": -22.8,
+      "ma50": 26.84,
+      "price_score": 43.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NVR",
+      "price": 5937.08,
+      "drawdown_pct": -26.7,
+      "ma50": 6173.13,
+      "price_score": 43.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NOC",
+      "price": 539.52,
+      "drawdown_pct": -29.1,
+      "ma50": 522.69,
+      "price_score": 43.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HSY",
+      "price": 168.68,
+      "drawdown_pct": -27.5,
+      "ma50": 172.22,
+      "price_score": 43.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ADBE",
+      "price": 256.52,
+      "drawdown_pct": -28.7,
+      "ma50": 255.71,
+      "price_score": 43.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BG",
+      "price": 101.52,
+      "drawdown_pct": -22.3,
+      "ma50": 112.44,
+      "price_score": 43.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DVA",
+      "price": 176.32,
+      "drawdown_pct": -26.8,
+      "ma50": 180.34,
+      "price_score": 42.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "QCOM",
+      "price": 178.42,
+      "drawdown_pct": -28.3,
+      "ma50": 175.42,
+      "price_score": 42.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MLM",
+      "price": 506.69,
+      "drawdown_pct": -28.1,
+      "ma50": 504.54,
+      "price_score": 42.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MCD",
+      "price": 245.38,
+      "drawdown_pct": -26.6,
+      "ma50": 250.18,
+      "price_score": 41.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IDXX",
+      "price": 553.04,
+      "drawdown_pct": -27.9,
+      "ma50": 533.2,
+      "price_score": 41.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ABT",
+      "price": 97.81,
+      "drawdown_pct": -23.2,
+      "ma50": 104.85,
+      "price_score": 41.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PWR",
+      "price": 602.88,
+      "drawdown_pct": -23.2,
+      "ma50": 646.61,
+      "price_score": 41.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TYL",
+      "price": 375.11,
+      "drawdown_pct": -27.7,
+      "ma50": 344.68,
+      "price_score": 41.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BA",
+      "price": 191.74,
+      "drawdown_pct": -24.0,
+      "ma50": 202.83,
+      "price_score": 41.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ISRG",
+      "price": 429.38,
+      "drawdown_pct": -27.6,
+      "ma50": 394.21,
+      "price_score": 41.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CARR",
+      "price": 56.09,
+      "drawdown_pct": -25.9,
+      "ma50": 57.22,
+      "price_score": 40.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DOW",
+      "price": 30.02,
+      "drawdown_pct": -26.7,
+      "ma50": 29.49,
+      "price_score": 40.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IBIT",
+      "price": 47.81,
+      "drawdown_pct": -26.8,
+      "ma50": 44.74,
+      "price_score": 40.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NXPI",
+      "price": 242.04,
+      "drawdown_pct": -26.7,
+      "ma50": 229.7,
+      "price_score": 40.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SCHW",
+      "price": 91.82,
+      "drawdown_pct": -19.2,
+      "ma50": 103.41,
+      "price_score": 40.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LUV",
+      "price": 40.28,
+      "drawdown_pct": -25.5,
+      "ma50": 40.72,
+      "price_score": 39.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TEM",
+      "price": 68.13,
+      "drawdown_pct": -25.6,
+      "ma50": 68.54,
+      "price_score": 39.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GS",
+      "price": 900.06,
+      "drawdown_pct": -21.5,
+      "ma50": 964.47,
+      "price_score": 38.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TXT",
+      "price": 76.86,
+      "drawdown_pct": -23.7,
+      "ma50": 79.52,
+      "price_score": 38.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CMI",
+      "price": 544.59,
+      "drawdown_pct": -24.9,
+      "ma50": 551.16,
+      "price_score": 38.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GE",
+      "price": 302.25,
+      "drawdown_pct": -20.6,
+      "ma50": 326.23,
+      "price_score": 38.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MS",
+      "price": 183.6,
+      "drawdown_pct": -19.2,
+      "ma50": 202.25,
+      "price_score": 38.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AOS",
+      "price": 59.36,
+      "drawdown_pct": -25.4,
+      "ma50": 58.97,
+      "price_score": 38.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IBM",
+      "price": 244.38,
+      "drawdown_pct": -25.2,
+      "ma50": 232.25,
+      "price_score": 37.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AON",
+      "price": 295.27,
+      "drawdown_pct": -22.4,
+      "ma50": 307.76,
+      "price_score": 37.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TRMB",
+      "price": 62.63,
+      "drawdown_pct": -25.0,
+      "ma50": 58.92,
+      "price_score": 37.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CASY",
+      "price": 691.0,
+      "drawdown_pct": -24.5,
+      "ma50": 694.3,
+      "price_score": 37.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PCAR",
+      "price": 110.05,
+      "drawdown_pct": -20.2,
+      "ma50": 118.35,
+      "price_score": 37.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TTWO",
+      "price": 204.96,
+      "drawdown_pct": -21.3,
+      "ma50": 216.43,
+      "price_score": 37.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "UHS",
+      "price": 182.97,
+      "drawdown_pct": -24.7,
+      "ma50": 176.02,
+      "price_score": 37.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MCHP",
+      "price": 76.97,
+      "drawdown_pct": -24.6,
+      "ma50": 75.28,
+      "price_score": 36.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MPWR",
+      "price": 1283.6,
+      "drawdown_pct": -23.8,
+      "ma50": 1298.23,
+      "price_score": 36.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EFX",
+      "price": 175.17,
+      "drawdown_pct": -24.2,
+      "ma50": 166.74,
+      "price_score": 36.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ALGN",
+      "price": 151.26,
+      "drawdown_pct": -23.4,
+      "ma50": 152.88,
+      "price_score": 36.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CBRE",
+      "price": 134.55,
+      "drawdown_pct": -21.6,
+      "ma50": 139.89,
+      "price_score": 36.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ERIE",
+      "price": 245.07,
+      "drawdown_pct": -24.0,
+      "ma50": 241.15,
+      "price_score": 36.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EXE",
+      "price": 92.07,
+      "drawdown_pct": -23.8,
+      "ma50": 92.32,
+      "price_score": 35.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SYK",
+      "price": 294.32,
+      "drawdown_pct": -23.4,
+      "ma50": 296.57,
+      "price_score": 35.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BXP",
+      "price": 58.63,
+      "drawdown_pct": -18.7,
+      "ma50": 63.49,
+      "price_score": 35.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ODFL",
+      "price": 189.3,
+      "drawdown_pct": -23.8,
+      "ma50": 187.64,
+      "price_score": 35.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VICI",
+      "price": 23.2,
+      "drawdown_pct": -21.0,
+      "ma50": 24.22,
+      "price_score": 35.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HPE",
+      "price": 57.65,
+      "drawdown_pct": -21.5,
+      "ma50": 59.45,
+      "price_score": 35.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HRL",
+      "price": 20.33,
+      "drawdown_pct": -21.2,
+      "ma50": 21.0,
+      "price_score": 34.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SW",
+      "price": 41.51,
+      "drawdown_pct": -18.3,
+      "ma50": 44.88,
+      "price_score": 34.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GEV",
+      "price": 927.72,
+      "drawdown_pct": -21.0,
+      "ma50": 958.51,
+      "price_score": 34.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TKO",
+      "price": 177.43,
+      "drawdown_pct": -20.2,
+      "ma50": 185.45,
+      "price_score": 34.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MRVL",
+      "price": 244.25,
+      "drawdown_pct": -22.8,
+      "ma50": 242.64,
+      "price_score": 34.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GM",
+      "price": 75.61,
+      "drawdown_pct": -16.1,
+      "ma50": 83.7,
+      "price_score": 33.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BKR",
+      "price": 56.12,
+      "drawdown_pct": -18.9,
+      "ma50": 59.34,
+      "price_score": 33.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HAL",
+      "price": 33.52,
+      "drawdown_pct": -21.3,
+      "ma50": 34.08,
+      "price_score": 33.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DOC",
+      "price": 18.53,
+      "drawdown_pct": -17.5,
+      "ma50": 19.98,
+      "price_score": 33.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LYB",
+      "price": 62.69,
+      "drawdown_pct": -22.3,
+      "ma50": 62.33,
+      "price_score": 33.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "OTIS",
+      "price": 71.94,
+      "drawdown_pct": -22.2,
+      "ma50": 69.24,
+      "price_score": 33.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PHM",
+      "price": 114.62,
+      "drawdown_pct": -19.1,
+      "ma50": 120.19,
+      "price_score": 33.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CF",
+      "price": 114.85,
+      "drawdown_pct": -17.5,
+      "ma50": 123.3,
+      "price_score": 33.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VST",
+      "price": 156.13,
+      "drawdown_pct": -22.1,
+      "ma50": 145.31,
+      "price_score": 33.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TDG",
+      "price": 1137.79,
+      "drawdown_pct": -21.5,
+      "ma50": 1142.38,
+      "price_score": 32.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ROP",
+      "price": 398.68,
+      "drawdown_pct": -21.8,
+      "ma50": 385.38,
+      "price_score": 32.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GEHC",
+      "price": 68.94,
+      "drawdown_pct": -21.7,
+      "ma50": 68.42,
+      "price_score": 32.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AZO",
+      "price": 3139.9,
+      "drawdown_pct": -21.6,
+      "ma50": 2943.18,
+      "price_score": 32.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BR",
+      "price": 179.52,
+      "drawdown_pct": -21.2,
+      "ma50": 170.17,
+      "price_score": 31.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DELL",
+      "price": 484.89,
+      "drawdown_pct": -17.5,
+      "ma50": 513.56,
+      "price_score": 31.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TSLA",
+      "price": 385.92,
+      "drawdown_pct": -21.2,
+      "ma50": 362.17,
+      "price_score": 31.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ADSK",
+      "price": 247.31,
+      "drawdown_pct": -21.1,
+      "ma50": 232.85,
+      "price_score": 31.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CDNS",
+      "price": 329.8,
+      "drawdown_pct": -20.8,
+      "ma50": 319.32,
+      "price_score": 31.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NEE",
+      "price": 78.25,
+      "drawdown_pct": -18.9,
+      "ma50": 80.6,
+      "price_score": 31.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ANET",
+      "price": 182.87,
+      "drawdown_pct": -15.6,
+      "ma50": 197.8,
+      "price_score": 31.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MELI",
+      "price": 1874.74,
+      "drawdown_pct": -20.6,
+      "ma50": 1860.16,
+      "price_score": 30.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VZ",
+      "price": 43.1,
+      "drawdown_pct": -14.9,
+      "ma50": 47.03,
+      "price_score": 30.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BRO",
+      "price": 70.31,
+      "drawdown_pct": -20.4,
+      "ma50": 67.12,
+      "price_score": 30.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IR",
+      "price": 78.67,
+      "drawdown_pct": -20.3,
+      "ma50": 77.13,
+      "price_score": 30.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PANW",
+      "price": 350.76,
+      "drawdown_pct": -16.5,
+      "ma50": 371.37,
+      "price_score": 30.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "JKHY",
+      "price": 153.88,
+      "drawdown_pct": -19.2,
+      "ma50": 156.04,
+      "price_score": 30.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EQT",
+      "price": 54.01,
+      "drawdown_pct": -20.0,
+      "ma50": 52.97,
+      "price_score": 30.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GDDY",
+      "price": 108.14,
+      "drawdown_pct": -20.0,
+      "ma50": 99.38,
+      "price_score": 30.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PYPL",
+      "price": 57.77,
+      "drawdown_pct": -20.0,
+      "ma50": 55.92,
+      "price_score": 30.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SBAC",
+      "price": 177.82,
+      "drawdown_pct": -19.5,
+      "ma50": 179.17,
+      "price_score": 30.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "STZ",
+      "price": 131.77,
+      "drawdown_pct": -19.8,
+      "ma50": 125.39,
+      "price_score": 29.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VMC",
+      "price": 263.7,
+      "drawdown_pct": -19.7,
+      "ma50": 256.8,
+      "price_score": 29.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ETN",
+      "price": 391.08,
+      "drawdown_pct": -15.0,
+      "ma50": 419.95,
+      "price_score": 29.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GOOG",
+      "price": 329.38,
+      "drawdown_pct": -17.4,
+      "ma50": 340.44,
+      "price_score": 29.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NOW",
+      "price": 153.07,
+      "drawdown_pct": -19.1,
+      "ma50": 136.21,
+      "price_score": 28.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AMP",
+      "price": 490.14,
+      "drawdown_pct": -14.1,
+      "ma50": 529.26,
+      "price_score": 28.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "C",
+      "price": 123.46,
+      "drawdown_pct": -14.8,
+      "ma50": 131.9,
+      "price_score": 28.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GOOGL",
+      "price": 333.44,
+      "drawdown_pct": -17.1,
+      "ma50": 343.75,
+      "price_score": 28.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FRT",
+      "price": 105.97,
+      "drawdown_pct": -15.7,
+      "ma50": 111.29,
+      "price_score": 28.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CTSH",
+      "price": 69.22,
+      "drawdown_pct": -18.7,
+      "ma50": 60.94,
+      "price_score": 28.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DXCM",
+      "price": 80.2,
+      "drawdown_pct": -13.1,
+      "ma50": 87.35,
+      "price_score": 27.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CSCO",
+      "price": 107.48,
+      "drawdown_pct": -16.7,
+      "ma50": 110.44,
+      "price_score": 27.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PEP",
+      "price": 134.89,
+      "drawdown_pct": -18.5,
+      "ma50": 133.71,
+      "price_score": 27.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HBAN",
+      "price": 15.65,
+      "drawdown_pct": -16.4,
+      "ma50": 16.14,
+      "price_score": 27.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CCL",
+      "price": 27.32,
+      "drawdown_pct": -18.3,
+      "ma50": 24.81,
+      "price_score": 27.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DAL",
+      "price": 78.32,
+      "drawdown_pct": -15.9,
+      "ma50": 81.27,
+      "price_score": 27.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HUBB",
+      "price": 458.85,
+      "drawdown_pct": -17.2,
+      "ma50": 466.35,
+      "price_score": 27.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MAA",
+      "price": 117.13,
+      "drawdown_pct": -15.6,
+      "ma50": 121.76,
+      "price_score": 27.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HD",
+      "price": 313.79,
+      "drawdown_pct": -18.0,
+      "ma50": 309.95,
+      "price_score": 27.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RJF",
+      "price": 156.1,
+      "drawdown_pct": -13.5,
+      "ma50": 167.07,
+      "price_score": 26.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "O",
+      "price": 55.65,
+      "drawdown_pct": -15.0,
+      "ma50": 58.05,
+      "price_score": 26.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SYF",
+      "price": 73.51,
+      "drawdown_pct": -15.9,
+      "ma50": 75.65,
+      "price_score": 26.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TSN",
+      "price": 55.57,
+      "drawdown_pct": -17.7,
+      "ma50": 53.75,
+      "price_score": 26.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GPC",
+      "price": 124.52,
+      "drawdown_pct": -14.2,
+      "ma50": 131.25,
+      "price_score": 26.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LMT",
+      "price": 550.41,
+      "drawdown_pct": -17.6,
+      "ma50": 539.33,
+      "price_score": 26.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "STT",
+      "price": 168.77,
+      "drawdown_pct": -12.7,
+      "ma50": 182.13,
+      "price_score": 26.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "COF",
+      "price": 210.35,
+      "drawdown_pct": -17.5,
+      "ma50": 207.13,
+      "price_score": 26.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VRSK",
+      "price": 194.08,
+      "drawdown_pct": -17.5,
+      "ma50": 179.7,
+      "price_score": 26.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WDAY",
+      "price": 203.15,
+      "drawdown_pct": -17.3,
+      "ma50": 192.6,
+      "price_score": 26.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RTX",
+      "price": 191.71,
+      "drawdown_pct": -15.0,
+      "ma50": 198.23,
+      "price_score": 25.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HON",
+      "price": 213.82,
+      "drawdown_pct": -17.1,
+      "ma50": 212.85,
+      "price_score": 25.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PLD",
+      "price": 128.08,
+      "drawdown_pct": -14.0,
+      "ma50": 134.4,
+      "price_score": 25.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NTRS",
+      "price": 166.32,
+      "drawdown_pct": -12.7,
+      "ma50": 177.92,
+      "price_score": 25.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TROW",
+      "price": 102.43,
+      "drawdown_pct": -14.8,
+      "ma50": 106.0,
+      "price_score": 25.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DHI",
+      "price": 139.65,
+      "drawdown_pct": -16.3,
+      "ma50": 141.09,
+      "price_score": 25.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IBKR",
+      "price": 85.0,
+      "drawdown_pct": -13.4,
+      "ma50": 89.82,
+      "price_score": 25.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FCX",
+      "price": 68.66,
+      "drawdown_pct": -13.9,
+      "ma50": 71.87,
+      "price_score": 25.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SLB",
+      "price": 50.94,
+      "drawdown_pct": -14.8,
+      "ma50": 52.43,
+      "price_score": 25.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "STE",
+      "price": 222.11,
+      "drawdown_pct": -16.6,
+      "ma50": 220.2,
+      "price_score": 24.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NEM",
+      "price": 116.49,
+      "drawdown_pct": -13.6,
+      "ma50": 121.75,
+      "price_score": 24.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DLR",
+      "price": 174.79,
+      "drawdown_pct": -13.1,
+      "ma50": 183.51,
+      "price_score": 24.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CFG",
+      "price": 64.71,
+      "drawdown_pct": -13.4,
+      "ma50": 67.54,
+      "price_score": 24.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "P",
+      "price": 131.61,
+      "drawdown_pct": -16.2,
+      "ma50": 117.44,
+      "price_score": 24.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PEG",
+      "price": 71.2,
+      "drawdown_pct": -16.0,
+      "ma50": 71.34,
+      "price_score": 24.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DTE",
+      "price": 129.43,
+      "drawdown_pct": -15.4,
+      "ma50": 130.53,
+      "price_score": 24.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IVZ",
+      "price": 29.28,
+      "drawdown_pct": -12.1,
+      "ma50": 31.04,
+      "price_score": 23.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VTR",
+      "price": 85.64,
+      "drawdown_pct": -14.3,
+      "ma50": 87.65,
+      "price_score": 23.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "INCY",
+      "price": 114.45,
+      "drawdown_pct": -11.9,
+      "ma50": 121.46,
+      "price_score": 23.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MTB",
+      "price": 219.89,
+      "drawdown_pct": -12.9,
+      "ma50": 229.72,
+      "price_score": 23.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NET",
+      "price": 311.03,
+      "drawdown_pct": -13.8,
+      "ma50": 319.57,
+      "price_score": 23.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PPG",
+      "price": 109.02,
+      "drawdown_pct": -15.6,
+      "ma50": 108.57,
+      "price_score": 23.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RCL",
+      "price": 288.98,
+      "drawdown_pct": -15.6,
+      "ma50": 272.16,
+      "price_score": 23.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "UDR",
+      "price": 34.67,
+      "drawdown_pct": -14.6,
+      "ma50": 35.11,
+      "price_score": 23.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BAX",
+      "price": 24.36,
+      "drawdown_pct": -14.0,
+      "ma50": 24.82,
+      "price_score": 22.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SRE",
+      "price": 83.23,
+      "drawdown_pct": -15.3,
+      "ma50": 82.0,
+      "price_score": 22.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AMD",
+      "price": 550.69,
+      "drawdown_pct": -15.2,
+      "ma50": 541.06,
+      "price_score": 22.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CCI",
+      "price": 79.61,
+      "drawdown_pct": -15.2,
+      "ma50": 73.7,
+      "price_score": 22.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CPT",
+      "price": 99.86,
+      "drawdown_pct": -14.1,
+      "ma50": 101.37,
+      "price_score": 22.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WFC",
+      "price": 82.37,
+      "drawdown_pct": -13.1,
+      "ma50": 84.88,
+      "price_score": 22.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CRWD",
+      "price": 236.85,
+      "drawdown_pct": -15.1,
+      "ma50": 233.79,
+      "price_score": 22.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EXPE",
+      "price": 289.44,
+      "drawdown_pct": -14.5,
+      "ma50": 291.81,
+      "price_score": 22.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PNC",
+      "price": 222.93,
+      "drawdown_pct": -12.5,
+      "ma50": 231.65,
+      "price_score": 22.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KHC",
+      "price": 23.53,
+      "drawdown_pct": -13.4,
+      "ma50": 24.02,
+      "price_score": 22.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AXP",
+      "price": 324.7,
+      "drawdown_pct": -14.7,
+      "ma50": 319.39,
+      "price_score": 22.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DOV",
+      "price": 197.69,
+      "drawdown_pct": -14.6,
+      "ma50": 193.91,
+      "price_score": 22.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HCA",
+      "price": 462.76,
+      "drawdown_pct": -14.7,
+      "ma50": 429.01,
+      "price_score": 22.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RF",
+      "price": 28.0,
+      "drawdown_pct": -12.7,
+      "ma50": 28.82,
+      "price_score": 21.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KR",
+      "price": 63.85,
+      "drawdown_pct": -14.5,
+      "ma50": 59.22,
+      "price_score": 21.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IRM",
+      "price": 114.18,
+      "drawdown_pct": -13.5,
+      "ma50": 115.88,
+      "price_score": 21.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FERG",
+      "price": 227.41,
+      "drawdown_pct": -14.4,
+      "ma50": 226.56,
+      "price_score": 21.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SNPS",
+      "price": 457.42,
+      "drawdown_pct": -14.4,
+      "ma50": 430.43,
+      "price_score": 21.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BNY",
+      "price": 146.39,
+      "drawdown_pct": -11.2,
+      "ma50": 153.63,
+      "price_score": 21.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "INVH",
+      "price": 26.66,
+      "drawdown_pct": -11.9,
+      "ma50": 27.67,
+      "price_score": 21.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IT",
+      "price": 221.12,
+      "drawdown_pct": -14.3,
+      "ma50": 190.35,
+      "price_score": 21.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ULTA",
+      "price": 605.37,
+      "drawdown_pct": -14.4,
+      "ma50": 548.64,
+      "price_score": 21.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CVS",
+      "price": 94.29,
+      "drawdown_pct": -14.2,
+      "ma50": 91.66,
+      "price_score": 21.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "UPS",
+      "price": 99.39,
+      "drawdown_pct": -14.2,
+      "ma50": 98.96,
+      "price_score": 21.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ES",
+      "price": 65.54,
+      "drawdown_pct": -12.0,
+      "ma50": 67.61,
+      "price_score": 21.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EQIX",
+      "price": 988.4,
+      "drawdown_pct": -11.0,
+      "ma50": 1034.72,
+      "price_score": 21.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ACN",
+      "price": 241.33,
+      "drawdown_pct": -14.0,
+      "ma50": 191.57,
+      "price_score": 20.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BEN",
+      "price": 31.48,
+      "drawdown_pct": -11.1,
+      "ma50": 32.88,
+      "price_score": 20.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GD",
+      "price": 345.99,
+      "drawdown_pct": -12.2,
+      "ma50": 354.72,
+      "price_score": 20.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "J",
+      "price": 141.44,
+      "drawdown_pct": -13.1,
+      "ma50": 143.05,
+      "price_score": 20.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "D",
+      "price": 62.43,
+      "drawdown_pct": -12.0,
+      "ma50": 63.96,
+      "price_score": 20.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DE",
+      "price": 630.76,
+      "drawdown_pct": -10.9,
+      "ma50": 656.3,
+      "price_score": 20.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TFC",
+      "price": 47.71,
+      "drawdown_pct": -11.9,
+      "ma50": 48.85,
+      "price_score": 20.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DG",
+      "price": 133.44,
+      "drawdown_pct": -13.3,
+      "ma50": 124.59,
+      "price_score": 20.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FDX",
+      "price": 299.18,
+      "drawdown_pct": -11.5,
+      "ma50": 307.34,
+      "price_score": 19.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SNA",
+      "price": 368.13,
+      "drawdown_pct": -11.7,
+      "ma50": 377.36,
+      "price_score": 19.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SPGI",
+      "price": 445.2,
+      "drawdown_pct": -13.3,
+      "ma50": 416.56,
+      "price_score": 19.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CMS",
+      "price": 68.29,
+      "drawdown_pct": -13.2,
+      "ma50": 66.94,
+      "price_score": 19.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GPN",
+      "price": 84.23,
+      "drawdown_pct": -10.9,
+      "ma50": 87.06,
+      "price_score": 19.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TXN",
+      "price": 287.5,
+      "drawdown_pct": -13.0,
+      "ma50": 272.18,
+      "price_score": 19.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KIM",
+      "price": 22.83,
+      "drawdown_pct": -12.4,
+      "ma50": 23.03,
+      "price_score": 19.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SNOW",
+      "price": 325.84,
+      "drawdown_pct": -11.7,
+      "ma50": 332.33,
+      "price_score": 19.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "STLD",
+      "price": 244.92,
+      "drawdown_pct": -13.0,
+      "ma50": 237.8,
+      "price_score": 19.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TEL",
+      "price": 214.33,
+      "drawdown_pct": -13.0,
+      "ma50": 210.11,
+      "price_score": 19.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CBOE",
+      "price": 318.2,
+      "drawdown_pct": -12.8,
+      "ma50": 289.23,
+      "price_score": 19.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TSM",
+      "price": 428.15,
+      "drawdown_pct": -11.9,
+      "ma50": 434.08,
+      "price_score": 19.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SPG",
+      "price": 205.7,
+      "drawdown_pct": -12.2,
+      "ma50": 207.43,
+      "price_score": 19.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DD",
+      "price": 133.35,
+      "drawdown_pct": -12.7,
+      "ma50": 132.64,
+      "price_score": 19.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EXC",
+      "price": 43.09,
+      "drawdown_pct": -12.7,
+      "ma50": 42.76,
+      "price_score": 19.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PH",
+      "price": 952.84,
+      "drawdown_pct": -11.1,
+      "ma50": 975.07,
+      "price_score": 18.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "REG",
+      "price": 72.45,
+      "drawdown_pct": -11.5,
+      "ma50": 73.71,
+      "price_score": 18.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ADM",
+      "price": 79.25,
+      "drawdown_pct": -10.0,
+      "ma50": 82.2,
+      "price_score": 18.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ORLY",
+      "price": 89.03,
+      "drawdown_pct": -12.5,
+      "ma50": 87.34,
+      "price_score": 18.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ROK",
+      "price": 432.41,
+      "drawdown_pct": -12.4,
+      "ma50": 431.44,
+      "price_score": 18.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TJX",
+      "price": 147.03,
+      "drawdown_pct": -12.4,
+      "ma50": 136.68,
+      "price_score": 18.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FOXA",
+      "price": 66.2,
+      "drawdown_pct": -12.2,
+      "ma50": 65.32,
+      "price_score": 18.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ALLE",
+      "price": 156.18,
+      "drawdown_pct": -12.1,
+      "ma50": 155.66,
+      "price_score": 18.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NI",
+      "price": 42.88,
+      "drawdown_pct": -12.0,
+      "ma50": 40.95,
+      "price_score": 18.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ATO",
+      "price": 167.42,
+      "drawdown_pct": -11.9,
+      "ma50": 163.8,
+      "price_score": 17.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EL",
+      "price": 104.25,
+      "drawdown_pct": -11.9,
+      "ma50": 97.55,
+      "price_score": 17.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FOX",
+      "price": 59.07,
+      "drawdown_pct": -11.9,
+      "ma50": 58.33,
+      "price_score": 17.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BMY",
+      "price": 60.81,
+      "drawdown_pct": -9.8,
+      "ma50": 62.79,
+      "price_score": 17.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KEYS",
+      "price": 342.69,
+      "drawdown_pct": -11.7,
+      "ma50": 343.71,
+      "price_score": 17.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WMT",
+      "price": 118.01,
+      "drawdown_pct": -11.9,
+      "ma50": 109.21,
+      "price_score": 17.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VMRK",
+      "price": 61.81,
+      "drawdown_pct": -10.8,
+      "ma50": 62.7,
+      "price_score": 17.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PPL",
+      "price": 34.6,
+      "drawdown_pct": -11.7,
+      "ma50": 34.03,
+      "price_score": 17.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HPQ",
+      "price": 31.36,
+      "drawdown_pct": -11.6,
+      "ma50": 31.23,
+      "price_score": 17.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LNT",
+      "price": 68.45,
+      "drawdown_pct": -11.6,
+      "ma50": 66.96,
+      "price_score": 17.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KEY",
+      "price": 21.06,
+      "drawdown_pct": -11.4,
+      "ma50": 21.09,
+      "price_score": 17.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PAYX",
+      "price": 113.24,
+      "drawdown_pct": -11.1,
+      "ma50": 114.02,
+      "price_score": 17.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AES",
+      "price": 14.94,
+      "drawdown_pct": -11.4,
+      "ma50": 14.84,
+      "price_score": 17.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "APH",
+      "price": 79.95,
+      "drawdown_pct": -9.8,
+      "ma50": 81.92,
+      "price_score": 17.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PFG",
+      "price": 108.02,
+      "drawdown_pct": -8.9,
+      "ma50": 112.13,
+      "price_score": 16.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FTNT",
+      "price": 173.33,
+      "drawdown_pct": -11.0,
+      "ma50": 170.0,
+      "price_score": 16.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "JNJ",
+      "price": 254.9,
+      "drawdown_pct": -8.5,
+      "ma50": 264.74,
+      "price_score": 16.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DLTR",
+      "price": 125.87,
+      "drawdown_pct": -10.9,
+      "ma50": 122.0,
+      "price_score": 16.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SWKS",
+      "price": 81.68,
+      "drawdown_pct": -10.7,
+      "ma50": 78.1,
+      "price_score": 16.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TGT",
+      "price": 154.29,
+      "drawdown_pct": -9.2,
+      "ma50": 157.63,
+      "price_score": 15.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TWLO",
+      "price": 269.33,
+      "drawdown_pct": -10.6,
+      "ma50": 254.72,
+      "price_score": 15.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FITB",
+      "price": 52.78,
+      "drawdown_pct": -10.4,
+      "ma50": 52.9,
+      "price_score": 15.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "JPM",
+      "price": 333.75,
+      "drawdown_pct": -8.2,
+      "ma50": 345.26,
+      "price_score": 15.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FE",
+      "price": 45.74,
+      "drawdown_pct": -10.1,
+      "ma50": 45.53,
+      "price_score": 15.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RMD",
+      "price": 245.9,
+      "drawdown_pct": -10.2,
+      "ma50": 228.39,
+      "price_score": 15.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CNP",
+      "price": 40.31,
+      "drawdown_pct": -10.0,
+      "ma50": 38.95,
+      "price_score": 15.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MCO",
+      "price": 482.52,
+      "drawdown_pct": -10.0,
+      "ma50": 477.66,
+      "price_score": 15.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NTAP",
+      "price": 215.72,
+      "drawdown_pct": -9.8,
+      "ma50": 202.61,
+      "price_score": 14.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SBUX",
+      "price": 98.68,
+      "drawdown_pct": -9.0,
+      "ma50": 99.76,
+      "price_score": 14.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "YUM",
+      "price": 150.56,
+      "drawdown_pct": -9.7,
+      "ma50": 145.33,
+      "price_score": 14.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "USB",
+      "price": 59.26,
+      "drawdown_pct": -8.6,
+      "ma50": 60.11,
+      "price_score": 14.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CINF",
+      "price": 172.96,
+      "drawdown_pct": -9.4,
+      "ma50": 167.59,
+      "price_score": 14.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CSX",
+      "price": 48.32,
+      "drawdown_pct": -9.0,
+      "ma50": 48.63,
+      "price_score": 14.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "URI",
+      "price": 1055.06,
+      "drawdown_pct": -9.4,
+      "ma50": 1045.95,
+      "price_score": 14.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AEE",
+      "price": 106.5,
+      "drawdown_pct": -9.4,
+      "ma50": 104.15,
+      "price_score": 14.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MAS",
+      "price": 74.72,
+      "drawdown_pct": -9.3,
+      "ma50": 70.74,
+      "price_score": 14.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PRU",
+      "price": 114.46,
+      "drawdown_pct": -7.5,
+      "ma50": 117.75,
+      "price_score": 14.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SHW",
+      "price": 335.93,
+      "drawdown_pct": -9.2,
+      "ma50": 332.19,
+      "price_score": 13.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ETR",
+      "price": 106.07,
+      "drawdown_pct": -9.1,
+      "ma50": 104.26,
+      "price_score": 13.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WTW",
+      "price": 317.98,
+      "drawdown_pct": -9.0,
+      "ma50": 315.63,
+      "price_score": 13.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "COR",
+      "price": 339.2,
+      "drawdown_pct": -8.9,
+      "ma50": 321.09,
+      "price_score": 13.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "COST",
+      "price": 995.39,
+      "drawdown_pct": -8.9,
+      "ma50": 936.6,
+      "price_score": 13.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PSA",
+      "price": 298.43,
+      "drawdown_pct": -8.8,
+      "ma50": 299.0,
+      "price_score": 13.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HSIC",
+      "price": 84.64,
+      "drawdown_pct": -6.9,
+      "ma50": 87.14,
+      "price_score": 13.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GL",
+      "price": 170.0,
+      "drawdown_pct": -8.4,
+      "ma50": 170.53,
+      "price_score": 13.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MDT",
+      "price": 93.17,
+      "drawdown_pct": -8.6,
+      "ma50": 90.69,
+      "price_score": 13.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ALL",
+      "price": 250.37,
+      "drawdown_pct": -8.6,
+      "ma50": 245.61,
+      "price_score": 12.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FTV",
+      "price": 58.53,
+      "drawdown_pct": -8.6,
+      "ma50": 57.47,
+      "price_score": 12.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ADI",
+      "price": 406.35,
+      "drawdown_pct": -8.5,
+      "ma50": 383.76,
+      "price_score": 12.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "META",
+      "price": 711.03,
+      "drawdown_pct": -8.6,
+      "ma50": 661.48,
+      "price_score": 12.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SOLV",
+      "price": 86.19,
+      "drawdown_pct": -6.8,
+      "ma50": 88.54,
+      "price_score": 12.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EW",
+      "price": 87.56,
+      "drawdown_pct": -8.0,
+      "ma50": 88.17,
+      "price_score": 12.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NVDA",
+      "price": 220.58,
+      "drawdown_pct": -7.8,
+      "ma50": 222.88,
+      "price_score": 12.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LIN",
+      "price": 499.45,
+      "drawdown_pct": -8.3,
+      "ma50": 478.89,
+      "price_score": 12.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SWK",
+      "price": 94.49,
+      "drawdown_pct": -8.4,
+      "ma50": 93.09,
+      "price_score": 12.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SYY",
+      "price": 81.88,
+      "drawdown_pct": -8.3,
+      "ma50": 80.19,
+      "price_score": 12.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ICE",
+      "price": 159.1,
+      "drawdown_pct": -8.2,
+      "ma50": 156.5,
+      "price_score": 12.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AVY",
+      "price": 178.46,
+      "drawdown_pct": -8.1,
+      "ma50": 173.5,
+      "price_score": 12.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ABNB",
+      "price": 175.24,
+      "drawdown_pct": -8.0,
+      "ma50": 172.39,
+      "price_score": 12.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ESS",
+      "price": 272.93,
+      "drawdown_pct": -7.6,
+      "ma50": 274.5,
+      "price_score": 12.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CRM",
+      "price": 243.42,
+      "drawdown_pct": -7.9,
+      "ma50": 232.73,
+      "price_score": 11.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ZBH",
+      "price": 94.83,
+      "drawdown_pct": -7.8,
+      "ma50": 94.99,
+      "price_score": 11.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AJG",
+      "price": 257.96,
+      "drawdown_pct": -7.8,
+      "ma50": 246.19,
+      "price_score": 11.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DUK",
+      "price": 121.13,
+      "drawdown_pct": -7.6,
+      "ma50": 118.86,
+      "price_score": 11.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "OMC",
+      "price": 81.3,
+      "drawdown_pct": -7.7,
+      "ma50": 80.29,
+      "price_score": 11.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VRTX",
+      "price": 518.06,
+      "drawdown_pct": -7.2,
+      "ma50": 522.24,
+      "price_score": 11.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WEC",
+      "price": 108.79,
+      "drawdown_pct": -7.7,
+      "ma50": 105.44,
+      "price_score": 11.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AMZN",
+      "price": 262.39,
+      "drawdown_pct": -7.6,
+      "ma50": 256.33,
+      "price_score": 11.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RL",
+      "price": 380.69,
+      "drawdown_pct": -7.6,
+      "ma50": 359.71,
+      "price_score": 11.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EXR",
+      "price": 139.87,
+      "drawdown_pct": -7.4,
+      "ma50": 138.02,
+      "price_score": 11.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AEP",
+      "price": 127.64,
+      "drawdown_pct": -7.3,
+      "ma50": 122.81,
+      "price_score": 10.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NSC",
+      "price": 327.64,
+      "drawdown_pct": -7.2,
+      "ma50": 326.65,
+      "price_score": 10.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TDY",
+      "price": 641.51,
+      "drawdown_pct": -7.2,
+      "ma50": 620.77,
+      "price_score": 10.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LYV",
+      "price": 175.04,
+      "drawdown_pct": -7.1,
+      "ma50": 174.63,
+      "price_score": 10.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AMCR",
+      "price": 44.99,
+      "drawdown_pct": -7.1,
+      "ma50": 43.81,
+      "price_score": 10.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SO",
+      "price": 90.6,
+      "drawdown_pct": -7.1,
+      "ma50": 87.66,
+      "price_score": 10.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BF-B",
+      "price": 27.98,
+      "drawdown_pct": -7.0,
+      "ma50": 26.96,
+      "price_score": 10.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WAB",
+      "price": 285.71,
+      "drawdown_pct": -6.5,
+      "ma50": 287.87,
+      "price_score": 10.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WMB",
+      "price": 72.79,
+      "drawdown_pct": -7.0,
+      "ma50": 72.04,
+      "price_score": 10.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "XYZ",
+      "price": 78.95,
+      "drawdown_pct": -7.0,
+      "ma50": 78.64,
+      "price_score": 10.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KMB",
+      "price": 106.9,
+      "drawdown_pct": -6.9,
+      "ma50": 102.32,
+      "price_score": 10.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TT",
+      "price": 467.64,
+      "drawdown_pct": -6.9,
+      "ma50": 453.72,
+      "price_score": 10.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GRMN",
+      "price": 290.72,
+      "drawdown_pct": -6.8,
+      "ma50": 284.67,
+      "price_score": 10.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ROST",
+      "price": 237.45,
+      "drawdown_pct": -6.8,
+      "ma50": 232.18,
+      "price_score": 10.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MMM",
+      "price": 170.81,
+      "drawdown_pct": -6.7,
+      "ma50": 169.28,
+      "price_score": 10.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PKG",
+      "price": 238.65,
+      "drawdown_pct": -6.7,
+      "ma50": 236.86,
+      "price_score": 10.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MNST",
+      "price": 46.72,
+      "drawdown_pct": -6.5,
+      "ma50": 44.81,
+      "price_score": 9.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ITW",
+      "price": 276.32,
+      "drawdown_pct": -6.5,
+      "ma50": 271.58,
+      "price_score": 9.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "L",
+      "price": 111.64,
+      "drawdown_pct": -6.4,
+      "ma50": 108.7,
+      "price_score": 9.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "XEL",
+      "price": 76.73,
+      "drawdown_pct": -6.4,
+      "ma50": 74.48,
+      "price_score": 9.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AFL",
+      "price": 120.65,
+      "drawdown_pct": -6.4,
+      "ma50": 116.32,
+      "price_score": 9.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "UNP",
+      "price": 289.69,
+      "drawdown_pct": -6.3,
+      "ma50": 287.11,
+      "price_score": 9.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CME",
+      "price": 296.12,
+      "drawdown_pct": -6.2,
+      "ma50": 275.24,
+      "price_score": 9.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WELL",
+      "price": 235.48,
+      "drawdown_pct": -6.2,
+      "ma50": 233.62,
+      "price_score": 9.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HIG",
+      "price": 136.12,
+      "drawdown_pct": -6.1,
+      "ma50": 133.25,
+      "price_score": 9.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VLO",
+      "price": 432.4,
+      "drawdown_pct": -6.0,
+      "ma50": 388.87,
+      "price_score": 8.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "REGN",
+      "price": 802.23,
+      "drawdown_pct": -5.8,
+      "ma50": 790.83,
+      "price_score": 8.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AMT",
+      "price": 179.18,
+      "drawdown_pct": -5.8,
+      "ma50": 172.93,
+      "price_score": 8.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DDOG",
+      "price": 276.2,
+      "drawdown_pct": -5.8,
+      "ma50": 248.13,
+      "price_score": 8.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ECL",
+      "price": 288.13,
+      "drawdown_pct": -5.8,
+      "ma50": 279.55,
+      "price_score": 8.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MSCI",
+      "price": 605.13,
+      "drawdown_pct": -5.7,
+      "ma50": 560.04,
+      "price_score": 8.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WM",
+      "price": 229.83,
+      "drawdown_pct": -5.6,
+      "ma50": 215.99,
+      "price_score": 8.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "JCI",
+      "price": 150.13,
+      "drawdown_pct": -5.4,
+      "ma50": 147.05,
+      "price_score": 8.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PGR",
+      "price": 221.89,
+      "drawdown_pct": -5.3,
+      "ma50": 215.13,
+      "price_score": 8.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PTC",
+      "price": 193.85,
+      "drawdown_pct": -5.4,
+      "ma50": 156.68,
+      "price_score": 8.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AIZ",
+      "price": 284.82,
+      "drawdown_pct": -5.3,
+      "ma50": 277.51,
+      "price_score": 7.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NWS",
+      "price": 33.38,
+      "drawdown_pct": -5.2,
+      "ma50": 33.03,
+      "price_score": 7.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ACGL",
+      "price": 101.12,
+      "drawdown_pct": -5.0,
+      "ma50": 97.33,
+      "price_score": 7.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LH",
+      "price": 321.97,
+      "drawdown_pct": -4.9,
+      "ma50": 320.28,
+      "price_score": 7.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MSI",
+      "price": 465.84,
+      "drawdown_pct": -4.9,
+      "ma50": 463.34,
+      "price_score": 7.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EVRG",
+      "price": 83.12,
+      "drawdown_pct": -4.9,
+      "ma50": 81.02,
+      "price_score": 7.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FANG",
+      "price": 201.44,
+      "drawdown_pct": -4.8,
+      "ma50": 197.35,
+      "price_score": 7.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DRI",
+      "price": 215.18,
+      "drawdown_pct": -4.7,
+      "ma50": 210.1,
+      "price_score": 7.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BALL",
+      "price": 64.07,
+      "drawdown_pct": -4.5,
+      "ma50": 60.69,
+      "price_score": 6.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "OKE",
+      "price": 93.08,
+      "drawdown_pct": -4.5,
+      "ma50": 92.7,
+      "price_score": 6.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PNW",
+      "price": 103.47,
+      "drawdown_pct": -4.5,
+      "ma50": 97.49,
+      "price_score": 6.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MRK",
+      "price": 148.57,
+      "drawdown_pct": -4.5,
+      "ma50": 145.74,
+      "price_score": 6.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PLTR",
+      "price": 199.79,
+      "drawdown_pct": -4.4,
+      "ma50": 183.86,
+      "price_score": 6.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "OXY",
+      "price": 62.83,
+      "drawdown_pct": -4.3,
+      "ma50": 59.51,
+      "price_score": 6.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PG",
+      "price": 157.81,
+      "drawdown_pct": -4.2,
+      "ma50": 147.62,
+      "price_score": 6.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AIG",
+      "price": 81.46,
+      "drawdown_pct": -4.1,
+      "ma50": 76.1,
+      "price_score": 6.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PM",
+      "price": 197.09,
+      "drawdown_pct": -4.1,
+      "ma50": 190.84,
+      "price_score": 6.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FFIV",
+      "price": 460.21,
+      "drawdown_pct": -4.1,
+      "ma50": 426.62,
+      "price_score": 6.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GWW",
+      "price": 1342.31,
+      "drawdown_pct": -4.1,
+      "ma50": 1294.76,
+      "price_score": 6.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NUE",
+      "price": 262.88,
+      "drawdown_pct": -4.1,
+      "ma50": 252.83,
+      "price_score": 6.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "UNH",
+      "price": 416.2,
+      "drawdown_pct": -4.0,
+      "ma50": 386.72,
+      "price_score": 6.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CL",
+      "price": 93.58,
+      "drawdown_pct": -3.9,
+      "ma50": 88.73,
+      "price_score": 5.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CPAY",
+      "price": 409.02,
+      "drawdown_pct": -3.8,
+      "ma50": 404.73,
+      "price_score": 5.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NDAQ",
+      "price": 96.17,
+      "drawdown_pct": -3.8,
+      "ma50": 94.48,
+      "price_score": 5.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ILMN",
+      "price": 283.07,
+      "drawdown_pct": -3.6,
+      "ma50": 238.74,
+      "price_score": 5.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AWK",
+      "price": 135.95,
+      "drawdown_pct": -3.5,
+      "ma50": 134.76,
+      "price_score": 5.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DGX",
+      "price": 238.06,
+      "drawdown_pct": -3.4,
+      "ma50": 236.69,
+      "price_score": 5.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DIS",
+      "price": 111.01,
+      "drawdown_pct": -3.5,
+      "ma50": 106.53,
+      "price_score": 5.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SJM",
+      "price": 127.74,
+      "drawdown_pct": -3.5,
+      "ma50": 123.04,
+      "price_score": 5.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BLK",
+      "price": 1137.85,
+      "drawdown_pct": -3.3,
+      "ma50": 1103.78,
+      "price_score": 5.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MPC",
+      "price": 468.91,
+      "drawdown_pct": -3.3,
+      "ma50": 404.98,
+      "price_score": 5.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "APD",
+      "price": 301.85,
+      "drawdown_pct": -3.3,
+      "ma50": 292.15,
+      "price_score": 4.9,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AME",
+      "price": 249.86,
+      "drawdown_pct": -3.2,
+      "ma50": 244.24,
+      "price_score": 4.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DHR",
+      "price": 232.89,
+      "drawdown_pct": -3.2,
+      "ma50": 214.84,
+      "price_score": 4.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MRSH",
+      "price": 190.34,
+      "drawdown_pct": -3.1,
+      "ma50": 180.47,
+      "price_score": 4.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MDLZ",
+      "price": 62.56,
+      "drawdown_pct": -2.9,
+      "ma50": 61.4,
+      "price_score": 4.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WRB",
+      "price": 73.87,
+      "drawdown_pct": -2.9,
+      "ma50": 69.93,
+      "price_score": 4.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "GILD",
+      "price": 153.11,
+      "drawdown_pct": -2.7,
+      "ma50": 147.67,
+      "price_score": 4.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VLTO",
+      "price": 101.45,
+      "drawdown_pct": -2.7,
+      "ma50": 97.13,
+      "price_score": 4.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PSX",
+      "price": 290.16,
+      "drawdown_pct": -2.4,
+      "ma50": 260.21,
+      "price_score": 3.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "DVN",
+      "price": 50.2,
+      "drawdown_pct": -2.3,
+      "ma50": 48.17,
+      "price_score": 3.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IEX",
+      "price": 234.48,
+      "drawdown_pct": -2.2,
+      "ma50": 230.17,
+      "price_score": 3.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MSFT",
+      "price": 532.32,
+      "drawdown_pct": -2.0,
+      "ma50": 507.18,
+      "price_score": 3.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ABBV",
+      "price": 283.3,
+      "drawdown_pct": -2.0,
+      "ma50": 263.23,
+      "price_score": 3.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AMGN",
+      "price": 435.38,
+      "drawdown_pct": -2.0,
+      "ma50": 415.81,
+      "price_score": 3.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HUM",
+      "price": 425.74,
+      "drawdown_pct": -1.8,
+      "ma50": 396.41,
+      "price_score": 2.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NWSA",
+      "price": 30.56,
+      "drawdown_pct": -1.7,
+      "ma50": 29.64,
+      "price_score": 2.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CB",
+      "price": 356.3,
+      "drawdown_pct": -1.7,
+      "ma50": 340.67,
+      "price_score": 2.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MCK",
+      "price": 1012.9,
+      "drawdown_pct": -1.7,
+      "ma50": 904.21,
+      "price_score": 2.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TRGP",
+      "price": 297.26,
+      "drawdown_pct": -1.7,
+      "ma50": 287.43,
+      "price_score": 2.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KVUE",
+      "price": 19.08,
+      "drawdown_pct": -1.5,
+      "ma50": 18.22,
+      "price_score": 2.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MO",
+      "price": 73.96,
+      "drawdown_pct": -1.5,
+      "ma50": 68.61,
+      "price_score": 2.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "LLY",
+      "price": 1265.97,
+      "drawdown_pct": -1.4,
+      "ma50": 1183.42,
+      "price_score": 2.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KO",
+      "price": 92.79,
+      "drawdown_pct": -1.2,
+      "ma50": 88.58,
+      "price_score": 1.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "PFE",
+      "price": 29.74,
+      "drawdown_pct": -1.2,
+      "ma50": 28.15,
+      "price_score": 1.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ED",
+      "price": 112.25,
+      "drawdown_pct": -1.2,
+      "ma50": 106.64,
+      "price_score": 1.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RSG",
+      "price": 230.4,
+      "drawdown_pct": -1.1,
+      "ma50": 218.8,
+      "price_score": 1.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "NDSN",
+      "price": 330.76,
+      "drawdown_pct": -1.1,
+      "ma50": 321.6,
+      "price_score": 1.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CHD",
+      "price": 104.92,
+      "drawdown_pct": -1.0,
+      "ma50": 98.39,
+      "price_score": 1.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CNC",
+      "price": 70.12,
+      "drawdown_pct": -1.0,
+      "ma50": 65.64,
+      "price_score": 1.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BIIB",
+      "price": 241.16,
+      "drawdown_pct": -0.8,
+      "ma50": 221.68,
+      "price_score": 1.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HST",
+      "price": 25.1,
+      "drawdown_pct": -0.8,
+      "ma50": 22.51,
+      "price_score": 1.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BBY",
+      "price": 94.11,
+      "drawdown_pct": -0.7,
+      "ma50": 88.18,
+      "price_score": 1.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EG",
+      "price": 393.52,
+      "drawdown_pct": -0.8,
+      "ma50": 373.16,
+      "price_score": 1.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IFF",
+      "price": 90.53,
+      "drawdown_pct": -0.7,
+      "ma50": 85.27,
+      "price_score": 1.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "SHOP",
+      "price": 177.89,
+      "drawdown_pct": -0.7,
+      "ma50": 150.61,
+      "price_score": 1.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "XOM",
+      "price": 177.62,
+      "drawdown_pct": -0.8,
+      "ma50": 164.85,
+      "price_score": 1.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KMI",
+      "price": 34.01,
+      "drawdown_pct": -0.6,
+      "ma50": 31.82,
+      "price_score": 0.8,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "KDP",
+      "price": 34.47,
+      "drawdown_pct": -0.4,
+      "ma50": 31.7,
+      "price_score": 0.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VRSN",
+      "price": 307.73,
+      "drawdown_pct": -0.4,
+      "ma50": 292.22,
+      "price_score": 0.7,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CI",
+      "price": 305.35,
+      "drawdown_pct": -0.4,
+      "ma50": 279.87,
+      "price_score": 0.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "COP",
+      "price": 145.94,
+      "drawdown_pct": -0.4,
+      "ma50": 133.13,
+      "price_score": 0.6,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EMR",
+      "price": 163.23,
+      "drawdown_pct": -0.4,
+      "ma50": 156.45,
+      "price_score": 0.5,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WSM",
+      "price": 253.38,
+      "drawdown_pct": -0.2,
+      "ma50": 234.06,
+      "price_score": 0.4,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CAH",
+      "price": 256.98,
+      "drawdown_pct": -0.2,
+      "ma50": 235.09,
+      "price_score": 0.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EXPD",
+      "price": 198.3,
+      "drawdown_pct": -0.2,
+      "ma50": 190.21,
+      "price_score": 0.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VTRS",
+      "price": 18.62,
+      "drawdown_pct": -0.2,
+      "ma50": 17.09,
+      "price_score": 0.3,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ELV",
+      "price": 439.55,
+      "drawdown_pct": -0.1,
+      "ma50": 405.7,
+      "price_score": 0.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "IQV",
+      "price": 274.58,
+      "drawdown_pct": -0.2,
+      "ma50": 261.69,
+      "price_score": 0.2,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BDX",
+      "price": 193.72,
+      "drawdown_pct": -0.0,
+      "ma50": 184.27,
+      "price_score": 0.1,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "A",
+      "price": 177.03,
+      "drawdown_pct": 0.0,
+      "ma50": 160.23,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "AAPL",
+      "price": 344.6,
+      "drawdown_pct": 0.0,
+      "ma50": 327.71,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ADP",
+      "price": 295.39,
+      "drawdown_pct": 0.0,
+      "ma50": 273.31,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "APA",
+      "price": 50.31,
+      "drawdown_pct": 0.0,
+      "ma50": 44.23,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "BRK-B",
+      "price": 542.78,
+      "drawdown_pct": 0.0,
+      "ma50": 509.45,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CDW",
+      "price": 156.34,
+      "drawdown_pct": 0.0,
+      "ma50": 143.39,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CRL",
+      "price": 336.05,
+      "drawdown_pct": 0.0,
+      "ma50": 291.38,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CTAS",
+      "price": 219.5,
+      "drawdown_pct": 0.0,
+      "ma50": 201.78,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "CVX",
+      "price": 226.27,
+      "drawdown_pct": 0.0,
+      "ma50": 208.92,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EBAY",
+      "price": 123.0,
+      "drawdown_pct": 0.0,
+      "ma50": 108.35,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "EOG",
+      "price": 157.98,
+      "drawdown_pct": -0.0,
+      "ma50": 145.94,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FAST",
+      "price": 52.42,
+      "drawdown_pct": 0.0,
+      "ma50": 50.37,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "FDS",
+      "price": 316.84,
+      "drawdown_pct": 0.0,
+      "ma50": 287.08,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HAS",
+      "price": 111.07,
+      "drawdown_pct": 0.0,
+      "ma50": 92.97,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "HLT",
+      "price": 363.29,
+      "drawdown_pct": 0.0,
+      "ma50": 321.43,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MA",
+      "price": 623.44,
+      "drawdown_pct": 0.0,
+      "ma50": 578.36,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MAR",
+      "price": 405.3,
+      "drawdown_pct": 0.0,
+      "ma50": 354.71,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MET",
+      "price": 102.21,
+      "drawdown_pct": 0.0,
+      "ma50": 97.1,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MRNA",
+      "price": 246.8,
+      "drawdown_pct": 0.0,
+      "ma50": 165.66,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "MTD",
+      "price": 1662.67,
+      "drawdown_pct": 0.0,
+      "ma50": 1456.19,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "RVTY",
+      "price": 157.58,
+      "drawdown_pct": 0.0,
+      "ma50": 138.49,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TECH",
+      "price": 72.6,
+      "drawdown_pct": -0.0,
+      "ma50": 72.39,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TMO",
+      "price": 699.55,
+      "drawdown_pct": 0.0,
+      "ma50": 641.83,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "TRV",
+      "price": 397.51,
+      "drawdown_pct": 0.0,
+      "ma50": 369.65,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "V",
+      "price": 409.08,
+      "drawdown_pct": 0.0,
+      "ma50": 375.14,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "VEEV",
+      "price": 320.01,
+      "drawdown_pct": 0.0,
+      "ma50": 273.89,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WAT",
+      "price": 455.52,
+      "drawdown_pct": 0.0,
+      "ma50": 422.5,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "WST",
+      "price": 393.5,
+      "drawdown_pct": 0.0,
+      "ma50": 360.31,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    },
+    {
+      "ticker": "ZBRA",
+      "price": 389.19,
+      "drawdown_pct": 0.0,
+      "ma50": 366.04,
+      "price_score": 0.0,
+      "price_date": "2026-10-21"
+    }
+  ]
+}
