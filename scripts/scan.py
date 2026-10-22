@@ -17,6 +17,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from io import StringIO
 from pathlib import Path
+from statistics import median
 from urllib.request import Request, urlopen
 
 import pandas as pd
@@ -160,6 +161,49 @@ def percent_change(current: float | None, prior: float | None) -> float | None:
     if current is None or prior is None or prior <= 0:
         return None
     return (current / prior - 1) * 100
+
+
+def trailing_return(close: pd.Series, trading_days: int) -> float | None:
+    """Return the close-to-close percentage move over an exact trading-day lookback."""
+    if len(close) <= trading_days:
+        return None
+    return percent_change(finite(close.iloc[-1]), finite(close.iloc[-1 - trading_days]))
+
+
+def price_signals(close: pd.Series) -> dict[str, object]:
+    """Describe stabilization without awarding ranking points."""
+    price = finite(close.iloc[-1])
+    ma20 = finite(close.tail(20).mean())
+    low20 = finite(close.tail(20).min())
+    return_5d = trailing_return(close, 5)
+    return_20d = trailing_return(close, 20)
+    return_63d = trailing_return(close, 63)
+    versus_ma20 = None if price is None or ma20 in (None, 0) else (price / ma20 - 1) * 100
+    above_low20 = None if price is None or low20 in (None, 0) else (price / low20 - 1) * 100
+    positives = sum((
+        return_5d is not None and return_5d >= 0,
+        versus_ma20 is not None and versus_ma20 >= 0,
+        above_low20 is not None and above_low20 >= 3,
+    ))
+    if positives == 3:
+        status = "stabilizing"
+    elif positives >= 2:
+        status = "improving"
+    elif return_5d is not None and return_5d <= -3 and versus_ma20 is not None and versus_ma20 < 0:
+        status = "still_falling"
+    else:
+        status = "mixed"
+    return {
+        "status": status,
+        "return_5d_pct": None if return_5d is None else round(return_5d, 2),
+        "return_20d_pct": None if return_20d is None else round(return_20d, 2),
+        "versus_ma20_pct": None if versus_ma20 is None else round(versus_ma20, 2),
+        "above_20d_low_pct": None if above_low20 is None else round(above_low20, 2),
+        "return_63d_pct": None if return_63d is None else round(return_63d, 2),
+        "sector_return_63d_pct": None,
+        "sector_relative_63d_pp": None,
+        "sector_sample_size": 0,
+    }
 
 
 def quarterly_trends(ticker: yf.Ticker) -> dict[str, object]:
@@ -419,6 +463,7 @@ def scan() -> dict[str, object]:
                 "average_dollar_volume_20d": None if average_dollar_volume is None else round(average_dollar_volume, 2),
                 "price_score": round(score, 1),
                 "price_date": price_date,
+                "price_signals": price_signals(close),
             })
 
     if len(rows) < MIN_RESULTS:
@@ -426,6 +471,21 @@ def scan() -> dict[str, object]:
             f"Only {len(rows)} of {len(symbols)} symbols had verified data; "
             f"minimum is {MIN_RESULTS}. Preserving the previous published scan."
         )
+
+    sector_returns: dict[str, list[float]] = {}
+    for row in rows:
+        sector_return = row["price_signals"]["return_63d_pct"]
+        if sector_return is not None:
+            sector_returns.setdefault(str(row["sector"]), []).append(float(sector_return))
+    for row in rows:
+        signals = row["price_signals"]
+        peers = sector_returns.get(str(row["sector"]), [])
+        own_return = signals["return_63d_pct"]
+        if peers and own_return is not None:
+            sector_median = median(peers)
+            signals["sector_return_63d_pct"] = round(sector_median, 2)
+            signals["sector_relative_63d_pp"] = round(float(own_return) - sector_median, 2)
+            signals["sector_sample_size"] = len(peers)
 
     rows.sort(key=lambda row: (-float(row["price_score"]), str(row["ticker"])))
     enrichment_failures: list[str] = []
@@ -447,7 +507,7 @@ def scan() -> dict[str, object]:
         row["research"]["sec_xbrl_confirmation"] = sec_confirmation(row)
         time.sleep(0.15)
     return {
-        "schema_version": 6,
+        "schema_version": 7,
         "status": "ok" if not failures else "partial",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "universe_source": universe_source,

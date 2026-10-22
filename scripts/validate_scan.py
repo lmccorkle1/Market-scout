@@ -49,7 +49,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 6:
+    if not isinstance(data, dict) or data.get("schema_version") != 7:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -110,6 +110,31 @@ def validate(path: Path) -> dict[str, object]:
             fail(f"{ticker}.average_dollar_volume_20d must be positive or null")
         if row["drawdown_pct"] > 0.1 or not 0 <= row["price_score"] <= 100:
             fail(f"{ticker} has an out-of-range score or drawdown")
+        signals = row.get("price_signals")
+        if not isinstance(signals, dict) or signals.get("status") not in {"stabilizing", "improving", "mixed", "still_falling"}:
+            fail(f"{ticker}.price_signals is missing or invalid")
+        for field in (
+            "return_5d_pct", "return_20d_pct", "versus_ma20_pct", "above_20d_low_pct",
+            "return_63d_pct", "sector_return_63d_pct", "sector_relative_63d_pp",
+        ):
+            value = signals.get(field)
+            if value is not None and (
+                isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value)
+            ):
+                fail(f"{ticker}.price_signals.{field} must be finite or null")
+        sample_size = signals.get("sector_sample_size")
+        if not isinstance(sample_size, int) or isinstance(sample_size, bool) or sample_size < 0:
+            fail(f"{ticker}.price_signals.sector_sample_size is invalid")
+        if sample_size and (
+            signals.get("sector_return_63d_pct") is None or signals.get("sector_relative_63d_pp") is None
+        ):
+            fail(f"{ticker}.price_signals sector comparison is incomplete")
+        relative = signals.get("sector_relative_63d_pp")
+        if relative is not None:
+            if signals.get("return_63d_pct") is None or signals.get("sector_return_63d_pct") is None:
+                fail(f"{ticker}.price_signals sector-relative inputs are missing")
+            if abs(signals["return_63d_pct"] - signals["sector_return_63d_pct"] - relative) > 0.02:
+                fail(f"{ticker}.price_signals sector-relative calculation is inconsistent")
         try:
             price_date = date.fromisoformat(row["price_date"])
         except (TypeError, ValueError):
