@@ -24,6 +24,8 @@ import yfinance as yf
 
 OUTPUT = Path(__file__).resolve().parents[1] / "data" / "scanner.json"
 WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+SEC_COMPANYFACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
+SEC_USER_AGENT = "MarketScout/1.0 lmccorkle1@users.noreply.github.com"
 EXTRA_SYMBOLS = {
     "ARM", "COIN", "CRWD", "DDOG", "DUOL", "HIMS", "HOOD", "IBIT",
     "MELI", "NBIS", "NET", "PLTR", "RDDT", "SHOP", "SNOW", "SOFI",
@@ -227,6 +229,76 @@ def quarterly_trends(ticker: yf.Ticker) -> dict[str, object]:
     }
 
 
+def sec_duration_fact(companyfacts: dict[str, object], tags: tuple[str, ...], end: str) -> float | None:
+    facts = companyfacts.get("facts", {}).get("us-gaap", {})
+    for tag in tags:
+        values = facts.get(tag, {}).get("units", {}).get("USD", [])
+        candidates = []
+        for item in values:
+            if item.get("end") != end or item.get("form") not in ("10-Q", "10-K") or not item.get("start"):
+                continue
+            try:
+                days = (datetime.fromisoformat(end) - datetime.fromisoformat(item["start"])).days
+            except (TypeError, ValueError):
+                continue
+            if 70 <= days <= 110 and finite(item.get("val")) is not None:
+                candidates.append(item)
+        if candidates:
+            candidates.sort(key=lambda item: (item.get("filed", ""), item.get("accn", "")), reverse=True)
+            return finite(candidates[0].get("val"))
+    return None
+
+
+def sec_confirmation(row: dict[str, object]) -> dict[str, object]:
+    cik = row.get("cik")
+    trends = row.get("research", {}).get("quarterly_trends", {})
+    metrics = trends.get("metrics", {})
+    if not isinstance(cik, int) or not metrics.get("latest_period") or not metrics.get("year_ago_period"):
+        return {"status": "unavailable", "reason": "CIK or comparable quarterly periods unavailable", "metrics": {}}
+    request = Request(
+        SEC_COMPANYFACTS_URL.format(cik=cik),
+        headers={"User-Agent": SEC_USER_AGENT, "Accept": "application/json"},
+    )
+    try:
+        with urlopen(request, timeout=30) as response:
+            companyfacts = json.load(response)
+    except Exception as error:
+        return {"status": "unavailable", "reason": f"SEC request failed: {type(error).__name__}", "metrics": {}}
+    revenue_tags = ("RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues", "SalesRevenueNet")
+    operating_tags = ("OperatingIncomeLoss",)
+    latest = metrics["latest_period"]
+    prior = metrics["year_ago_period"]
+    revenue = sec_duration_fact(companyfacts, revenue_tags, latest)
+    revenue_prior = sec_duration_fact(companyfacts, revenue_tags, prior)
+    operating = sec_duration_fact(companyfacts, operating_tags, latest)
+    operating_prior = sec_duration_fact(companyfacts, operating_tags, prior)
+    revenue_yoy = percent_change(revenue, revenue_prior)
+    margin = None if revenue in (None, 0) or operating is None else operating / revenue * 100
+    margin_prior = None if revenue_prior in (None, 0) or operating_prior is None else operating_prior / revenue_prior * 100
+    margin_change = None if margin is None or margin_prior is None else margin - margin_prior
+    comparisons: dict[str, bool] = {}
+    if revenue_yoy is not None and metrics.get("revenue_yoy_pct") is not None:
+        comparisons["revenue_yoy"] = abs(revenue_yoy - metrics["revenue_yoy_pct"]) <= 2
+    if margin_change is not None and metrics.get("operating_margin_change_pp") is not None:
+        comparisons["operating_margin_change"] = abs(margin_change - metrics["operating_margin_change_pp"]) <= 2
+    if not comparisons:
+        status, reason = "unavailable", "Comparable standardized SEC quarterly facts were not available"
+    elif all(comparisons.values()):
+        status, reason = ("confirmed" if len(comparisons) == 2 else "partial"), "Available SEC comparisons were within 2 percentage points"
+    else:
+        status, reason = "mismatch", "At least one SEC comparison differed by more than 2 percentage points"
+    return {
+        "status": status,
+        "reason": reason,
+        "metrics": {
+            "revenue_yoy_pct": None if revenue_yoy is None else round(revenue_yoy, 2),
+            "operating_margin_change_pp": None if margin_change is None else round(margin_change, 2),
+        },
+        "comparisons": comparisons,
+        "source": SEC_COMPANYFACTS_URL.format(cik=cik),
+    }
+
+
 def score_company(info: dict[str, object], price_score: float) -> dict[str, object]:
     """Return an auditable 90-point score; catalysts deliberately remain manual."""
     market_cap = finite(info.get("marketCap"))
@@ -371,8 +443,11 @@ def scan() -> dict[str, object]:
     ranked = [row for row in candidates if row.get("research", {}).get("eligible")]
     ranked.sort(key=lambda row: (-float(row["research"]["quant_score_90"]), str(row["ticker"])))
     top_five = ranked[:5]
+    for row in top_five:
+        row["research"]["sec_xbrl_confirmation"] = sec_confirmation(row)
+        time.sleep(0.15)
     return {
-        "schema_version": 5,
+        "schema_version": 6,
         "status": "ok" if not failures else "partial",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "universe_source": universe_source,

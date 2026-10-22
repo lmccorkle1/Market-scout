@@ -49,7 +49,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 5:
+    if not isinstance(data, dict) or data.get("schema_version") != 6:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -219,6 +219,40 @@ def validate(path: Path) -> dict[str, object]:
         research = item.get("research")
         if not isinstance(research, dict) or research.get("eligible") is not True:
             fail(f"top_five row {ticker} is not eligible")
+        confirmation = research.get("sec_xbrl_confirmation")
+        if not isinstance(confirmation, dict) or confirmation.get("status") not in {"confirmed", "partial", "mismatch", "unavailable"}:
+            fail(f"top_five row {ticker} has invalid SEC confirmation")
+        sec_metrics = confirmation.get("metrics")
+        if not isinstance(sec_metrics, dict):
+            fail(f"top_five row {ticker} has invalid SEC metrics")
+        for field in ("revenue_yoy_pct", "operating_margin_change_pp"):
+            value = sec_metrics.get(field)
+            if value is not None and (
+                isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value)
+            ):
+                fail(f"top_five row {ticker} has invalid SEC {field}")
+        comparisons = confirmation.get("comparisons", {})
+        if not isinstance(comparisons, dict) or any(
+            key not in {"revenue_yoy", "operating_margin_change"} or not isinstance(value, bool)
+            for key, value in comparisons.items()
+        ):
+            fail(f"top_five row {ticker} has invalid SEC comparisons")
+        if confirmation.get("status") == "confirmed" and (len(comparisons) != 2 or not all(comparisons.values())):
+            fail(f"top_five row {ticker} claims unsupported SEC confirmation")
+        if confirmation.get("status") == "mismatch" and (not comparisons or all(comparisons.values())):
+            fail(f"top_five row {ticker} has unsupported SEC mismatch")
+        if confirmation.get("status") == "partial" and (len(comparisons) != 1 or not all(comparisons.values())):
+            fail(f"top_five row {ticker} has unsupported partial SEC confirmation")
+        if confirmation.get("status") == "unavailable" and comparisons:
+            fail(f"top_five row {ticker} has comparisons despite unavailable SEC status")
+        source = confirmation.get("source")
+        if source is not None and (
+            not isinstance(source, str)
+            or not source.startswith("https://data.sec.gov/api/xbrl/companyfacts/CIK")
+            or not source.endswith(".json")
+            or len(source) > 100
+        ):
+            fail(f"top_five row {ticker} has invalid SEC source")
         score = float(research["quant_score_90"])
         if score > previous_score:
             fail("top_five is not sorted by score")
