@@ -35,7 +35,7 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 - [x] Add valuation and quality fields from a clearly attributed free data source.
 - [x] Add revenue growth, earnings growth, debt, free cash flow, and profitability checks.
 - [x] Add sector and industry filters.
-- [ ] Add liquidity and minimum-market-cap filters.
+- [x] Add liquidity and minimum-market-cap filters for the enriched candidate pool.
 - [x] Separate price opportunity, business quality, valuation, and financial strength into distinct scores.
 - [x] Explain every score component and its limitations.
 - [x] Rank five research candidates only when enough verified fields are available.
@@ -47,7 +47,7 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 
 - [x] Add a browser-saved watchlist without requiring an account.
 - [x] Add notes and a research checklist for each watched ticker.
-- [ ] Add configurable screen thresholds.
+- [x] Add browser-saved configurable screen thresholds and a quality-selloff preset.
 - [ ] Add CSV export for the current filtered results.
 - [ ] Consider optional alerts only after data reliability is well tested.
 

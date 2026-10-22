@@ -12,7 +12,7 @@ from pathlib import Path
 
 MIN_RESULTS = 350
 TICKER = re.compile(r"^[A-Z0-9-]{1,12}$")
-REQUIRED_ROW_FIELDS = {"ticker", "sector", "industry", "cik", "price", "drawdown_pct", "ma50", "price_score", "price_date"}
+REQUIRED_ROW_FIELDS = {"ticker", "sector", "industry", "cik", "price", "drawdown_pct", "ma50", "average_dollar_volume_20d", "price_score", "price_date"}
 COMPONENT_LIMITS = {
     "fundamentals_30": 30,
     "valuation_25": 25,
@@ -36,7 +36,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 3:
+    if not isinstance(data, dict) or data.get("schema_version") != 4:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -87,6 +87,14 @@ def validate(path: Path) -> dict[str, object]:
                 fail(f"{ticker}.{field} must be a finite number")
         if row["price"] <= 0 or row["ma50"] <= 0:
             fail(f"{ticker} has a non-positive price")
+        dollar_volume = row["average_dollar_volume_20d"]
+        if dollar_volume is not None and (
+            isinstance(dollar_volume, bool)
+            or not isinstance(dollar_volume, (int, float))
+            or not math.isfinite(dollar_volume)
+            or dollar_volume <= 0
+        ):
+            fail(f"{ticker}.average_dollar_volume_20d must be positive or null")
         if row["drawdown_pct"] > 0.1 or not 0 <= row["price_score"] <= 100:
             fail(f"{ticker} has an out-of-range score or drawdown")
         try:
@@ -123,6 +131,14 @@ def validate(path: Path) -> dict[str, object]:
                 fail(f"{ticker} has invalid data coverage")
             if research.get("eligible") is not (available >= required):
                 fail(f"{ticker}.eligible conflicts with data coverage")
+            market_cap = metrics.get("market_cap")
+            if market_cap is not None and (
+                isinstance(market_cap, bool)
+                or not isinstance(market_cap, (int, float))
+                or not math.isfinite(market_cap)
+                or market_cap <= 0
+            ):
+                fail(f"{ticker}.market_cap must be positive or null")
             website = research.get("company_website")
             if website is not None and (
                 not isinstance(website, str)

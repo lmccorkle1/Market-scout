@@ -102,6 +102,14 @@ def extract_close(frame: pd.DataFrame, symbol: str, multiple: bool) -> pd.Series
     return pd.to_numeric(series, errors="coerce").dropna()
 
 
+def extract_volume(frame: pd.DataFrame, symbol: str, multiple: bool) -> pd.Series:
+    try:
+        series = frame[("Volume", symbol)] if multiple else frame["Volume"]
+    except (KeyError, TypeError):
+        return pd.Series(dtype=float)
+    return pd.to_numeric(series, errors="coerce").dropna()
+
+
 def bounded_score(value: float | None, low: float, high: float, points: float) -> float | None:
     """Linearly score a metric, returning None rather than guessing missing values."""
     if value is None:
@@ -155,6 +163,7 @@ def score_company(info: dict[str, object], price_score: float) -> dict[str, obje
         "debt_to_equity": finite(info.get("debtToEquity")),
         "current_ratio": finite(info.get("currentRatio")),
         "free_cash_flow": free_cash_flow,
+        "market_cap": market_cap,
     }
     parts = {
         "revenue_growth": bounded_score(metrics["revenue_growth_pct"], -5, 20, 10),
@@ -219,6 +228,7 @@ def scan() -> dict[str, object]:
             continue
         for symbol in chunk:
             close = extract_close(frame, symbol, len(chunk) > 1)
+            volume = extract_volume(frame, symbol, len(chunk) > 1)
             if len(close) < 50:
                 failures.append(symbol)
                 continue
@@ -233,6 +243,8 @@ def scan() -> dict[str, object]:
             # Transparent price-only heuristic, capped to avoid extreme outliers.
             score = min(100.0, max(0.0, -drawdown * 1.5 + max(0.0, -below_ma50)))
             price_date = pd.Timestamp(close.index[-1]).date().isoformat()
+            aligned_volume = volume.reindex(close.index)
+            average_dollar_volume = finite((close * aligned_volume).dropna().tail(20).mean())
             rows.append({
                 "ticker": symbol,
                 "sector": classifications[symbol][0],
@@ -241,6 +253,7 @@ def scan() -> dict[str, object]:
                 "price": round(price, 2),
                 "drawdown_pct": round(drawdown, 1),
                 "ma50": round(ma50, 2),
+                "average_dollar_volume_20d": None if average_dollar_volume is None else round(average_dollar_volume, 2),
                 "price_score": round(score, 1),
                 "price_date": price_date,
             })
@@ -268,7 +281,7 @@ def scan() -> dict[str, object]:
     ranked.sort(key=lambda row: (-float(row["research"]["quant_score_90"]), str(row["ticker"])))
     top_five = ranked[:5]
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "status": "ok" if not failures else "partial",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "universe_source": universe_source,
