@@ -66,7 +66,8 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 - [x] Add a fail-safe SEC Company Facts cross-check for Top Five revenue growth and operating-margin trends.
 - [ ] Expand point-in-time SEC XBRL confirmation across the full enriched candidate pool and additional quarterly fields.
 - [x] Add price stabilization and sector-relative-strength signals without silently changing rankings.
-- [ ] Replace broad valuation thresholds with sector-relative and company-history comparisons.
+- [x] Add sector-relative valuation comparisons with minimum peer coverage.
+- [ ] Add company-history valuation comparisons from trustworthy point-in-time fundamentals.
 - [ ] Add filing freshness, dilution, leverage, and accounting-risk gates.
 - [ ] Add verified catalyst evidence from filings and company disclosures.
 

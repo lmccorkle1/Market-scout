@@ -396,6 +396,65 @@ def score_company(info: dict[str, object], price_score: float) -> dict[str, obje
     }
 
 
+def add_sector_valuation_context(candidates: list[dict[str, object]]) -> None:
+    """Compare current valuation fields within the enriched selloff pool."""
+    definitions = {"trailing_pe": True, "ev_to_ebitda": True, "fcf_yield_pct": False}
+    pools: dict[tuple[str, str], list[float]] = {}
+    for row in candidates:
+        research = row.get("research")
+        sector = str(row.get("sector", "Unknown"))
+        if not isinstance(research, dict) or sector == "Unknown":
+            continue
+        metrics = research.get("metrics", {})
+        for field, positive_only in definitions.items():
+            value = finite(metrics.get(field))
+            if value is not None and (not positive_only or value > 0):
+                pools.setdefault((sector, field), []).append(value)
+
+    for row in candidates:
+        research = row.get("research")
+        sector = str(row.get("sector", "Unknown"))
+        if not isinstance(research, dict):
+            continue
+        comparisons: dict[str, object] = {}
+        percentiles: list[float] = []
+        metrics = research.get("metrics", {})
+        if sector != "Unknown":
+            for field, positive_only in definitions.items():
+                value = finite(metrics.get(field))
+                peers = pools.get((sector, field), [])
+                if value is None or (positive_only and value <= 0) or len(peers) < 3:
+                    continue
+                if field == "fcf_yield_pct":
+                    favorable = sum(peer < value for peer in peers) + 0.5 * sum(peer == value for peer in peers)
+                else:
+                    favorable = sum(peer > value for peer in peers) + 0.5 * sum(peer == value for peer in peers)
+                percentile = favorable / len(peers) * 100
+                comparisons[field] = {
+                    "value": round(value, 2),
+                    "sector_median": round(median(peers), 2),
+                    "cheapness_percentile": round(percentile, 1),
+                    "peer_count": len(peers),
+                }
+                percentiles.append(percentile)
+        if len(percentiles) < 2:
+            status, overall = "unavailable", None
+            reason = "Fewer than two valuation fields had at least three enriched sector peers"
+        else:
+            overall = round(sum(percentiles) / len(percentiles), 1)
+            status = "cheaper" if overall >= 67 else "more_expensive" if overall <= 33 else "near_median"
+            reason = "Current valuation compared with the enriched selloff candidates in the same sector"
+        research["sector_valuation"] = {
+            "status": status,
+            "reason": reason,
+            "cheapness_percentile": overall,
+            "metrics_available": len(percentiles),
+            "comparisons": comparisons,
+            "history_status": "unavailable",
+            "history_reason": "No trustworthy point-in-time historical valuation source is configured",
+        }
+
+
 def enrich_one(row: dict[str, object]) -> tuple[str, dict[str, object] | None, str | None]:
     symbol = str(row["ticker"])
     for attempt in range(2):
@@ -500,6 +559,8 @@ def scan() -> dict[str, object]:
             else:
                 by_symbol[symbol]["research"] = result
 
+    add_sector_valuation_context(candidates)
+
     ranked = [row for row in candidates if row.get("research", {}).get("eligible")]
     ranked.sort(key=lambda row: (-float(row["research"]["quant_score_90"]), str(row["ticker"])))
     top_five = ranked[:5]
@@ -507,7 +568,7 @@ def scan() -> dict[str, object]:
         row["research"]["sec_xbrl_confirmation"] = sec_confirmation(row)
         time.sleep(0.15)
     return {
-        "schema_version": 7,
+        "schema_version": 8,
         "status": "ok" if not failures else "partial",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "universe_source": universe_source,

@@ -49,7 +49,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 7:
+    if not isinstance(data, dict) or data.get("schema_version") != 8:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -224,6 +224,46 @@ def validate(path: Path) -> dict[str, object]:
                 trend_metrics.get("latest_period") is None or trend_metrics.get("year_ago_period") is None
             ):
                 fail(f"{ticker}.quarterly_trends available status lacks comparison periods")
+            valuation = research.get("sector_valuation")
+            if not isinstance(valuation, dict) or valuation.get("status") not in {
+                "cheaper", "near_median", "more_expensive", "unavailable"
+            }:
+                fail(f"{ticker}.sector_valuation is missing or invalid")
+            comparisons = valuation.get("comparisons")
+            metrics_available = valuation.get("metrics_available")
+            if not isinstance(comparisons, dict) or not isinstance(metrics_available, int):
+                fail(f"{ticker}.sector_valuation fields are invalid")
+            if set(comparisons) - {"trailing_pe", "ev_to_ebitda", "fcf_yield_pct"}:
+                fail(f"{ticker}.sector_valuation has an unknown metric")
+            if metrics_available != len(comparisons):
+                fail(f"{ticker}.sector_valuation metric count is inconsistent")
+            percentiles = []
+            for field, comparison in comparisons.items():
+                if not isinstance(comparison, dict):
+                    fail(f"{ticker}.sector_valuation.{field} is invalid")
+                for number_field in ("value", "sector_median", "cheapness_percentile"):
+                    number = comparison.get(number_field)
+                    if isinstance(number, bool) or not isinstance(number, (int, float)) or not math.isfinite(number):
+                        fail(f"{ticker}.sector_valuation.{field}.{number_field} is invalid")
+                if not 0 <= comparison["cheapness_percentile"] <= 100:
+                    fail(f"{ticker}.sector_valuation.{field} percentile is out of range")
+                if not isinstance(comparison.get("peer_count"), int) or comparison["peer_count"] < 3:
+                    fail(f"{ticker}.sector_valuation.{field} has too few peers")
+                percentiles.append(comparison["cheapness_percentile"])
+            overall = valuation.get("cheapness_percentile")
+            if valuation["status"] == "unavailable":
+                if overall is not None or metrics_available >= 2:
+                    fail(f"{ticker}.sector_valuation unavailable status is inconsistent")
+            elif (
+                metrics_available < 2
+                or isinstance(overall, bool)
+                or not isinstance(overall, (int, float))
+                or not math.isfinite(overall)
+                or abs(overall - sum(percentiles) / len(percentiles)) > 0.11
+            ):
+                fail(f"{ticker}.sector_valuation overall percentile is inconsistent")
+            if valuation.get("history_status") != "unavailable" or not isinstance(valuation.get("history_reason"), str):
+                fail(f"{ticker}.sector_valuation history status is invalid")
 
     method = data.get("research_method")
     top_five = data.get("top_five")
