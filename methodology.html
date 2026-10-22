@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Scout — Methodology</title><style>
+:root{color-scheme:dark}body{font:16px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d1420;color:#f2f6fb;margin:0}main{max-width:900px;margin:auto;padding:24px 16px 70px}a{color:#8ac9ff}h1{margin-bottom:6px}h2{margin-top:30px}p,li{color:#b7c9da;line-height:1.6}.nav{display:flex;gap:14px;flex-wrap:wrap}.panel{background:#182433;border:1px solid #34495f;padding:17px;border-radius:14px;margin:16px 0}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{padding:11px 9px;border-bottom:1px solid #34495f;text-align:left;vertical-align:top}th{color:#d9e7f4}.warn{border-left:3px solid #ffd187;background:#302c29;padding:12px;border-radius:5px}code{color:#c8e5ff}
+</style></head><body><main>
+<nav class="nav"><a href="./scanner.html">← Daily scanner</a><a href="./">Market Scout home</a><a rel="noopener" target="_blank" href="https://github.com/lmccorkle1/Market-scout/actions/workflows/daily-scan.yml">Workflow status</a></nav>
+<h1>Market Scout methodology</h1>
+<p>Market Scout is a research screen for roughly 3–24 month opportunities in companies experiencing significant price declines. It is not a recommendation, valuation model, or substitute for reviewing filings and current company information.</p>
+
+<section class="panel"><h2>How the shortlist is built</h2><ol>
+<li>The scanner downloads one year of adjusted daily closing prices for the S&amp;P 500 and the disclosed additional growth list.</li>
+<li>Every company receives a price-opportunity score based on its distance below the one-year high and 50-day average.</li>
+<li>The 40 strongest price-screen candidates are enriched with available company fundamentals.</li>
+<li>A company needs at least seven of the ten scoring inputs to qualify. Missing values receive no points and are displayed as unavailable.</li>
+<li>The five highest eligible quantitative scores become research candidates. Ties are ordered by ticker.</li>
+</ol></section>
+
+<h2>Automated score: 90 points</h2>
+<div class="scroll"><table><thead><tr><th>Component</th><th>Maximum</th><th>Inputs and scoring range</th></tr></thead><tbody>
+<tr><td>Business fundamentals</td><td>30</td><td>Revenue growth: −5% to 20% (10); earnings growth: −10% to 25% (10); profit margin: 0% to 20% (5); return on equity: 0% to 25% (5).</td></tr>
+<tr><td>Valuation</td><td>25</td><td>Trailing P/E: best at 12 or below, declining to zero at 40 (10); free-cash-flow yield: 0% to 8% (10); EV/EBITDA: best at 8 or below, declining to zero at 25 (5).</td></tr>
+<tr><td>Selloff opportunity</td><td>20</td><td>The 100-point price score is divided by five and capped at 20. A larger decline can increase this component but does not establish that the decline is temporary.</td></tr>
+<tr><td>Financial strength</td><td>15</td><td>Debt/equity: best at 40 or below, declining to zero at 200 (6); current ratio: 0.7 to 2.0 (4); positive free cash flow (5).</td></tr>
+</tbody></table></div>
+
+<section class="panel"><h2>Manual catalyst reserve: 10 points</h2><p>Market Scout does not automatically award the remaining 10 catalyst points. Recovery catalysts depend on current filings, earnings, management guidance, competitive conditions, and news. The research workspace lets the user record a catalyst and thesis without presenting those judgments as verified scanner output.</p></section>
+
+<h2>Sources and timing</h2><ul>
+<li>Constituents, GICS classifications, and SEC CIK identifiers: Wikipedia's S&amp;P 500 constituent table.</li>
+<li>Prices, company fundamentals, company websites, and earnings dates: Yahoo Finance data accessed through the open-source <code>yfinance</code> library. Fields may be delayed, revised, missing, or subject to Yahoo's terms.</li>
+<li>Filing links: the U.S. Securities and Exchange Commission's public EDGAR company pages, using the published CIK when available.</li>
+<li>Scheduled scans: weekdays after the regular U.S. market close. GitHub Actions schedules may start late.</li>
+</ul>
+
+<p class="warn"><strong>Important limitations:</strong> Scores use broad thresholds and are not adjusted for every industry's accounting conventions. Negative earnings can make valuation fields unavailable. Earnings dates can change. Historical performance, a low valuation multiple, or a large selloff does not guarantee recovery. Always verify the displayed information against current SEC filings and company disclosures.</p>
+</main></body></html>

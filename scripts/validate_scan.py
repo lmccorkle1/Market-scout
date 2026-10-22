@@ -12,7 +12,7 @@ from pathlib import Path
 
 MIN_RESULTS = 350
 TICKER = re.compile(r"^[A-Z0-9-]{1,12}$")
-REQUIRED_ROW_FIELDS = {"ticker", "sector", "industry", "price", "drawdown_pct", "ma50", "price_score", "price_date"}
+REQUIRED_ROW_FIELDS = {"ticker", "sector", "industry", "cik", "price", "drawdown_pct", "ma50", "price_score", "price_date"}
 COMPONENT_LIMITS = {
     "fundamentals_30": 30,
     "valuation_25": 25,
@@ -36,7 +36,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 2:
+    if not isinstance(data, dict) or data.get("schema_version") != 3:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -78,6 +78,9 @@ def validate(path: Path) -> dict[str, object]:
         for field in ("sector", "industry"):
             if not isinstance(row[field], str) or not row[field].strip() or len(row[field]) > 100:
                 fail(f"{ticker}.{field} must be a non-empty classification")
+        cik = row["cik"]
+        if cik is not None and (isinstance(cik, bool) or not isinstance(cik, int) or not 1 <= cik <= 9_999_999_999):
+            fail(f"{ticker}.cik must be a positive SEC identifier or null")
         for field in ("price", "drawdown_pct", "ma50", "price_score"):
             value = row[field]
             if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
@@ -120,6 +123,21 @@ def validate(path: Path) -> dict[str, object]:
                 fail(f"{ticker} has invalid data coverage")
             if research.get("eligible") is not (available >= required):
                 fail(f"{ticker}.eligible conflicts with data coverage")
+            website = research.get("company_website")
+            if website is not None and (
+                not isinstance(website, str)
+                or not website.startswith(("https://", "http://"))
+                or len(website) > 500
+            ):
+                fail(f"{ticker}.company_website is invalid")
+            earnings_date = research.get("next_earnings_date")
+            if earnings_date is not None:
+                try:
+                    parsed_earnings = date.fromisoformat(earnings_date)
+                except (TypeError, ValueError):
+                    fail(f"{ticker}.next_earnings_date is invalid")
+                if parsed_earnings < now.date() or parsed_earnings > now.date() + timedelta(days=550):
+                    fail(f"{ticker}.next_earnings_date is outside the accepted range")
 
     method = data.get("research_method")
     top_five = data.get("top_five")

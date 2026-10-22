@@ -28,7 +28,7 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 - [x] Add automated checks for the JSON schema, duplicate tickers, invalid numbers, and future-dated prices.
 - [x] Add a short README with setup, maintenance, and troubleshooting instructions.
 - [ ] Update GitHub Actions dependencies when deprecation warnings appear.
-- [ ] Add a visible link to the latest workflow run for troubleshooting.
+- [x] Add a visible link to the workflow runs for troubleshooting.
 
 ## Phase 3 — Better research context
 
@@ -40,6 +40,8 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 - [x] Explain every score component and its limitations.
 - [x] Rank five research candidates only when enough verified fields are available.
 - [x] Reserve catalyst scoring for manual research rather than fabricating conclusions.
+- [x] Add direct SEC company, 10-K, and 10-Q research links when a CIK is available.
+- [x] Show sourced earnings dates and company websites when available.
 
 ## Phase 4 — Personal workflow
 
@@ -54,7 +56,7 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 - [x] Improve the scanner's responsive mobile layout.
 - [x] Add loading, empty, stale, partial, and error states with clear language.
 - [x] Add sortable columns and richer filters without slowing the page.
-- [ ] Add a methodology page describing sources, update timing, and known limitations.
+- [x] Add a methodology page describing sources, update timing, scoring thresholds, and known limitations.
 
 ## Current operating schedule
 

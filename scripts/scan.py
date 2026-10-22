@@ -36,7 +36,7 @@ MIN_FUNDAMENTAL_FIELDS = 7
 INFO_WORKERS = 5
 
 
-def get_universe() -> tuple[list[str], dict[str, tuple[str, str]], str]:
+def get_universe() -> tuple[list[str], dict[str, tuple[str, str, int | None]], str]:
     """Return actual S&P 500 constituents plus a small disclosed growth list."""
     request = Request(
         WIKIPEDIA_URL,
@@ -45,20 +45,22 @@ def get_universe() -> tuple[list[str], dict[str, tuple[str, str]], str]:
     with urlopen(request, timeout=30) as response:
         html = response.read().decode("utf-8")
     tables = pd.read_html(StringIO(html))
-    classifications: dict[str, tuple[str, str]] = {}
+    classifications: dict[str, tuple[str, str, int | None]] = {}
     for _, row in tables[0].iterrows():
         symbol = str(row["Symbol"]).strip().replace(".", "-")
         sector = row.get("GICS Sector")
         industry = row.get("GICS Sub-Industry")
+        cik_value = finite(row.get("CIK"))
         classifications[symbol] = (
             "Unknown" if pd.isna(sector) else str(sector).strip(),
             "Unknown" if pd.isna(industry) else str(industry).strip(),
+            None if cik_value is None else int(cik_value),
         )
     symbols = set(classifications)
     if len(symbols) < 450:
         raise RuntimeError(f"Constituent list unexpectedly contained only {len(symbols)} symbols")
     for symbol in EXTRA_SYMBOLS:
-        classifications.setdefault(symbol, ("Unknown", "Unknown"))
+        classifications.setdefault(symbol, ("Unknown", "Unknown", None))
     return sorted(symbols | EXTRA_SYMBOLS), classifications, "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols"
 
 
@@ -115,6 +117,29 @@ def inverse_score(value: float | None, good: float, bad: float, points: float) -
     return bounded_score(bad - value, 0, bad - good, points)
 
 
+def safe_website(value: object) -> str | None:
+    if not isinstance(value, str):
+        return None
+    value = value.strip()
+    return value if value.startswith(("https://", "http://")) and len(value) <= 500 else None
+
+
+def upcoming_earnings_date(info: dict[str, object]) -> str | None:
+    """Return a sourced future earnings date, or None when Yahoo does not provide one."""
+    now = datetime.now(timezone.utc)
+    for key in ("earningsTimestampStart", "earningsTimestamp", "earningsTimestampEnd"):
+        timestamp = finite(info.get(key))
+        if timestamp is None:
+            continue
+        try:
+            value = datetime.fromtimestamp(timestamp, timezone.utc)
+        except (OSError, OverflowError, ValueError):
+            continue
+        if value.date() >= now.date():
+            return value.date().isoformat()
+    return None
+
+
 def score_company(info: dict[str, object], price_score: float) -> dict[str, object]:
     """Return an auditable 90-point score; catalysts deliberately remain manual."""
     market_cap = finite(info.get("marketCap"))
@@ -162,6 +187,8 @@ def score_company(info: dict[str, object], price_score: float) -> dict[str, obje
         "data_fields_required": MIN_FUNDAMENTAL_FIELDS,
         "eligible": available >= MIN_FUNDAMENTAL_FIELDS,
         "catalyst_status": "Manual research required; no automated catalyst points awarded.",
+        "company_website": safe_website(info.get("website")),
+        "next_earnings_date": upcoming_earnings_date(info),
     }
 
 
@@ -210,6 +237,7 @@ def scan() -> dict[str, object]:
                 "ticker": symbol,
                 "sector": classifications[symbol][0],
                 "industry": classifications[symbol][1],
+                "cik": classifications[symbol][2],
                 "price": round(price, 2),
                 "drawdown_pct": round(drawdown, 1),
                 "ma50": round(ma50, 2),
@@ -240,7 +268,7 @@ def scan() -> dict[str, object]:
     ranked.sort(key=lambda row: (-float(row["research"]["quant_score_90"]), str(row["ticker"])))
     top_five = ranked[:5]
     return {
-        "schema_version": 2,
+        "schema_version": 3,
         "status": "ok" if not failures else "partial",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "universe_source": universe_source,
@@ -257,6 +285,7 @@ def scan() -> dict[str, object]:
             "catalyst_points_reserved": 10,
             "minimum_fundamental_fields": MIN_FUNDAMENTAL_FIELDS,
             "fundamental_source": "Yahoo Finance data accessed through yfinance; fields may be delayed or unavailable.",
+            "filing_source": "SEC EDGAR company filings, linked by CIK when available.",
         },
         "top_five": top_five,
         "stocks": rows,
