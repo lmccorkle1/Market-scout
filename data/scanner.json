@@ -1,7 +1,7 @@
 {
   "schema_version": 9,
   "status": "partial",
-  "generated_at": "2026-10-22T20:27:01.733127Z",
+  "generated_at": "2026-10-22T20:39:34.863747Z",
   "universe_source": "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols",
   "universe_count": 515,
   "screened_count": 514,
@@ -2075,7 +2075,7 @@
       "price": 123.99,
       "drawdown_pct": -51.4,
       "ma50": 151.84,
-      "average_dollar_volume_20d": 1150371235.51,
+      "average_dollar_volume_20d": 1150947962.59,
       "price_score": 95.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2223,7 +2223,7 @@
       "price": 125.54,
       "drawdown_pct": -55.1,
       "ma50": 143.06,
-      "average_dollar_volume_20d": 3978753249.88,
+      "average_dollar_volume_20d": 3984226040.68,
       "price_score": 94.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5739,7 +5739,7 @@
       "price": 1279.37,
       "drawdown_pct": -38.1,
       "ma50": 1619.51,
-      "average_dollar_volume_20d": 620265998.78,
+      "average_dollar_volume_20d": 620663051.26,
       "price_score": 78.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6588,7 +6588,7 @@
       "price": 193.29,
       "drawdown_pct": -34.0,
       "ma50": 239.8,
-      "average_dollar_volume_20d": 665119631.85,
+      "average_dollar_volume_20d": 665629530.85,
       "price_score": 70.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6611,7 +6611,7 @@
       "price": 58.72,
       "drawdown_pct": -38.6,
       "ma50": 66.93,
-      "average_dollar_volume_20d": 512354693.82,
+      "average_dollar_volume_20d": 513653894.4,
       "price_score": 70.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6749,7 +6749,7 @@
       "price": 150.26,
       "drawdown_pct": -42.0,
       "ma50": 154.09,
-      "average_dollar_volume_20d": 608068531.38,
+      "average_dollar_volume_20d": 608553765.98,
       "price_score": 65.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6772,7 +6772,7 @@
       "price": 28.14,
       "drawdown_pct": -32.7,
       "ma50": 33.62,
-      "average_dollar_volume_20d": 692995159.6,
+      "average_dollar_volume_20d": 694363474.11,
       "price_score": 65.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6795,7 +6795,7 @@
       "price": 82.0,
       "drawdown_pct": -43.4,
       "ma50": 74.48,
-      "average_dollar_volume_20d": 309193881.8,
+      "average_dollar_volume_20d": 309656148.6,
       "price_score": 65.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7048,7 +7048,7 @@
       "price": 267.41,
       "drawdown_pct": -30.6,
       "ma50": 307.49,
-      "average_dollar_volume_20d": 465501750.93,
+      "average_dollar_volume_20d": 465817722.59,
       "price_score": 59.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7278,7 +7278,7 @@
       "price": 11.94,
       "drawdown_pct": -30.8,
       "ma50": 13.16,
-      "average_dollar_volume_20d": 480937433.84,
+      "average_dollar_volume_20d": 481465363.91,
       "price_score": 55.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7439,7 +7439,7 @@
       "price": 86.43,
       "drawdown_pct": -33.5,
       "ma50": 88.13,
-      "average_dollar_volume_20d": 470594438.58,
+      "average_dollar_volume_20d": 471098822.45,
       "price_score": 52.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7508,7 +7508,7 @@
       "price": 113.92,
       "drawdown_pct": -30.6,
       "ma50": 119.6,
-      "average_dollar_volume_20d": 288083006.33,
+      "average_dollar_volume_20d": 288336028.34,
       "price_score": 50.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7784,7 +7784,7 @@
       "price": 452.95,
       "drawdown_pct": -22.9,
       "ma50": 512.96,
-      "average_dollar_volume_20d": 3525788629.11,
+      "average_dollar_volume_20d": 3527022555.53,
       "price_score": 46.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7876,7 +7876,7 @@
       "price": 123.7,
       "drawdown_pct": -27.7,
       "ma50": 127.53,
-      "average_dollar_volume_20d": 261205798.02,
+      "average_dollar_volume_20d": 261452993.91,
       "price_score": 44.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8060,7 +8060,7 @@
       "price": 55.47,
       "drawdown_pct": -24.5,
       "ma50": 59.39,
-      "average_dollar_volume_20d": 1295391290.1,
+      "average_dollar_volume_20d": 1296073693.15,
       "price_score": 43.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8290,7 +8290,7 @@
       "price": 131.24,
       "drawdown_pct": -23.5,
       "ma50": 139.57,
-      "average_dollar_volume_20d": 307923088.93,
+      "average_dollar_volume_20d": 317500479.25,
       "price_score": 41.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8382,7 +8382,7 @@
       "price": 74.11,
       "drawdown_pct": -24.9,
       "ma50": 76.93,
-      "average_dollar_volume_20d": 347942125.47,
+      "average_dollar_volume_20d": 348314250.31,
       "price_score": 41.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8612,7 +8612,7 @@
       "price": 311.52,
       "drawdown_pct": -19.7,
       "ma50": 342.83,
-      "average_dollar_volume_20d": 434610535.7,
+      "average_dollar_volume_20d": 435629860.26,
       "price_score": 38.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8635,7 +8635,7 @@
       "price": 64.59,
       "drawdown_pct": -19.0,
       "ma50": 71.78,
-      "average_dollar_volume_20d": 778676155.99,
+      "average_dollar_volume_20d": 779207676.76,
       "price_score": 38.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8888,7 +8888,7 @@
       "price": 22.74,
       "drawdown_pct": -19.1,
       "ma50": 24.6,
-      "average_dollar_volume_20d": 1108702279.49,
+      "average_dollar_volume_20d": 1110169858.81,
       "price_score": 36.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9187,7 +9187,7 @@
       "price": 121.2,
       "drawdown_pct": -22.8,
       "ma50": 117.62,
-      "average_dollar_volume_20d": 591573021.87,
+      "average_dollar_volume_20d": 592122875.96,
       "price_score": 34.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9578,7 +9578,7 @@
       "price": 102.51,
       "drawdown_pct": -19.6,
       "ma50": 104.75,
-      "average_dollar_volume_20d": 1009661164.87,
+      "average_dollar_volume_20d": 1011217810.0,
       "price_score": 31.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9670,7 +9670,7 @@
       "price": 122.51,
       "drawdown_pct": -15.5,
       "ma50": 131.61,
-      "average_dollar_volume_20d": 1186231462.4,
+      "average_dollar_volume_20d": 1191401059.83,
       "price_score": 30.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9831,7 +9831,7 @@
       "price": 306.8,
       "drawdown_pct": -19.3,
       "ma50": 306.83,
-      "average_dollar_volume_20d": 474931240.79,
+      "average_dollar_volume_20d": 477380839.28,
       "price_score": 29.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9877,7 +9877,7 @@
       "price": 303.61,
       "drawdown_pct": -15.9,
       "ma50": 319.34,
-      "average_dollar_volume_20d": 978531771.9,
+      "average_dollar_volume_20d": 979189694.74,
       "price_score": 28.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9946,7 +9946,7 @@
       "price": 54.67,
       "drawdown_pct": -19.0,
       "ma50": 52.98,
-      "average_dollar_volume_20d": 362877794.77,
+      "average_dollar_volume_20d": 363166608.17,
       "price_score": 28.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10061,7 +10061,7 @@
       "price": 126.66,
       "drawdown_pct": -14.9,
       "ma50": 134.13,
-      "average_dollar_volume_20d": 556803267.76,
+      "average_dollar_volume_20d": 557011769.12,
       "price_score": 28.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10222,7 +10222,7 @@
       "price": 167.84,
       "drawdown_pct": -13.1,
       "ma50": 181.7,
-      "average_dollar_volume_20d": 398764285.16,
+      "average_dollar_volume_20d": 399241932.61,
       "price_score": 27.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10498,7 +10498,7 @@
       "price": 496.83,
       "drawdown_pct": -12.9,
       "ma50": 527.9,
-      "average_dollar_volume_20d": 266160315.69,
+      "average_dollar_volume_20d": 266425175.76,
       "price_score": 25.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10567,7 +10567,7 @@
       "price": 286.13,
       "drawdown_pct": -16.4,
       "ma50": 271.75,
-      "average_dollar_volume_20d": 646903903.73,
+      "average_dollar_volume_20d": 647175054.83,
       "price_score": 24.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10659,7 +10659,7 @@
       "price": 119.48,
       "drawdown_pct": -15.6,
       "ma50": 119.97,
-      "average_dollar_volume_20d": 231680359.46,
+      "average_dollar_volume_20d": 231944858.32,
       "price_score": 23.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10705,7 +10705,7 @@
       "price": 208.42,
       "drawdown_pct": -15.4,
       "ma50": 210.01,
-      "average_dollar_volume_20d": 385051127.59,
+      "average_dollar_volume_20d": 385455514.49,
       "price_score": 23.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10843,7 +10843,7 @@
       "price": 145.32,
       "drawdown_pct": -11.8,
       "ma50": 153.27,
-      "average_dollar_volume_20d": 578489298.18,
+      "average_dollar_volume_20d": 578989642.23,
       "price_score": 23.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11142,7 +11142,7 @@
       "price": 325.17,
       "drawdown_pct": -14.6,
       "ma50": 319.01,
-      "average_dollar_volume_20d": 985489070.6,
+      "average_dollar_volume_20d": 988454946.3,
       "price_score": 21.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11326,7 +11326,7 @@
       "price": 83.01,
       "drawdown_pct": -12.5,
       "ma50": 84.76,
-      "average_dollar_volume_20d": 1344010212.22,
+      "average_dollar_volume_20d": 1344954787.18,
       "price_score": 20.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11510,7 +11510,7 @@
       "price": 86.99,
       "drawdown_pct": -12.9,
       "ma50": 87.61,
-      "average_dollar_volume_20d": 299056333.22,
+      "average_dollar_volume_20d": 299219448.17,
       "price_score": 20.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11740,7 +11740,7 @@
       "price": 113.09,
       "drawdown_pct": -12.4,
       "ma50": 108.56,
-      "average_dollar_volume_20d": 186232277.8,
+      "average_dollar_volume_20d": 186831801.8,
       "price_score": 18.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11763,7 +11763,7 @@
       "price": 101.52,
       "drawdown_pct": -12.4,
       "ma50": 98.95,
-      "average_dollar_volume_20d": 430429333.5,
+      "average_dollar_volume_20d": 430693194.13,
       "price_score": 18.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11855,7 +11855,7 @@
       "price": 276.47,
       "drawdown_pct": -9.5,
       "ma50": 287.56,
-      "average_dollar_volume_20d": 280012890.53,
+      "average_dollar_volume_20d": 280483055.41,
       "price_score": 18.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12292,7 +12292,7 @@
       "price": 70.3,
       "drawdown_pct": -10.7,
       "ma50": 66.94,
-      "average_dollar_volume_20d": 287242712.34,
+      "average_dollar_volume_20d": 288323610.04,
       "price_score": 16.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12338,7 +12338,7 @@
       "price": 43.69,
       "drawdown_pct": -10.4,
       "ma50": 40.99,
-      "average_dollar_volume_20d": 224769958.75,
+      "average_dollar_volume_20d": 225228699.36,
       "price_score": 15.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12522,7 +12522,7 @@
       "price": 139.11,
       "drawdown_pct": -9.6,
       "ma50": 124.97,
-      "average_dollar_volume_20d": 265366400.46,
+      "average_dollar_volume_20d": 265586069.07,
       "price_score": 14.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12982,7 +12982,7 @@
       "price": 173.91,
       "drawdown_pct": -8.5,
       "ma50": 163.9,
-      "average_dollar_volume_20d": 170750417.59,
+      "average_dollar_volume_20d": 171074881.49,
       "price_score": 12.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13005,7 +13005,7 @@
       "price": 491.05,
       "drawdown_pct": -8.4,
       "ma50": 477.91,
-      "average_dollar_volume_20d": 442184322.11,
+      "average_dollar_volume_20d": 442781537.11,
       "price_score": 12.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13373,7 +13373,7 @@
       "price": 154.45,
       "drawdown_pct": -7.3,
       "ma50": 145.44,
-      "average_dollar_volume_20d": 330332252.36,
+      "average_dollar_volume_20d": 331304723.59,
       "price_score": 11.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13511,7 +13511,7 @@
       "price": 158.11,
       "drawdown_pct": -6.9,
       "ma50": 157.68,
-      "average_dollar_volume_20d": 609924034.18,
+      "average_dollar_volume_20d": 610769535.31,
       "price_score": 10.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13557,7 +13557,7 @@
       "price": 79.02,
       "drawdown_pct": -6.9,
       "ma50": 78.64,
-      "average_dollar_volume_20d": 339362661.21,
+      "average_dollar_volume_20d": 339923276.48,
       "price_score": 10.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14040,7 +14040,7 @@
       "price": 237.4,
       "drawdown_pct": -5.5,
       "ma50": 233.73,
-      "average_dollar_volume_20d": 559299488.16,
+      "average_dollar_volume_20d": 560390376.74,
       "price_score": 8.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14132,7 +14132,7 @@
       "price": 295.4,
       "drawdown_pct": -5.3,
       "ma50": 284.41,
-      "average_dollar_volume_20d": 224851104.67,
+      "average_dollar_volume_20d": 225116565.88,
       "price_score": 8.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14178,7 +14178,7 @@
       "price": 147.24,
       "drawdown_pct": -5.3,
       "ma50": 146.07,
-      "average_dollar_volume_20d": 1400946888.47,
+      "average_dollar_volume_20d": 1405445122.17,
       "price_score": 8.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14546,7 +14546,7 @@
       "price": 229.75,
       "drawdown_pct": -4.5,
       "ma50": 215.35,
-      "average_dollar_volume_20d": 1097519016.78,
+      "average_dollar_volume_20d": 1098681425.42,
       "price_score": 6.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14569,7 +14569,7 @@
       "price": 292.3,
       "drawdown_pct": -4.4,
       "ma50": 279.84,
-      "average_dollar_volume_20d": 389782545.89,
+      "average_dollar_volume_20d": 390077359.66,
       "price_score": 6.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14822,7 +14822,7 @@
       "price": 175.56,
       "drawdown_pct": -4.1,
       "ma50": 169.21,
-      "average_dollar_volume_20d": 568451420.3,
+      "average_dollar_volume_20d": 569171233.84,
       "price_score": 6.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15236,7 +15236,7 @@
       "price": 270.98,
       "drawdown_pct": -2.9,
       "ma50": 246.52,
-      "average_dollar_volume_20d": 344971732.47,
+      "average_dollar_volume_20d": 346329870.73,
       "price_score": 4.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15259,7 +15259,7 @@
       "price": 420.97,
       "drawdown_pct": -2.9,
       "ma50": 397.05,
-      "average_dollar_volume_20d": 708291020.9,
+      "average_dollar_volume_20d": 713661735.12,
       "price_score": 4.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15374,7 +15374,7 @@
       "price": 248.92,
       "drawdown_pct": -2.7,
       "ma50": 236.76,
-      "average_dollar_volume_20d": 148201018.04,
+      "average_dollar_volume_20d": 148375697.64,
       "price_score": 4.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15420,7 +15420,7 @@
       "price": 477.81,
       "drawdown_pct": -2.5,
       "ma50": 463.56,
-      "average_dollar_volume_20d": 359376871.68,
+      "average_dollar_volume_20d": 359976905.48,
       "price_score": 3.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15489,7 +15489,7 @@
       "price": 173.89,
       "drawdown_pct": -2.2,
       "ma50": 160.76,
-      "average_dollar_volume_20d": 380940284.39,
+      "average_dollar_volume_20d": 381281221.81,
       "price_score": 3.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15512,7 +15512,7 @@
       "price": 160.29,
       "drawdown_pct": -2.2,
       "ma50": 156.38,
-      "average_dollar_volume_20d": 456435050.08,
+      "average_dollar_volume_20d": 456752873.08,
       "price_score": 3.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15788,7 +15788,7 @@
       "price": 113.13,
       "drawdown_pct": -1.6,
       "ma50": 106.74,
-      "average_dollar_volume_20d": 908953672.05,
+      "average_dollar_volume_20d": 910684775.96,
       "price_score": 2.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15880,7 +15880,7 @@
       "price": 285.19,
       "drawdown_pct": -1.3,
       "ma50": 264.02,
-      "average_dollar_volume_20d": 1415941626.48,
+      "average_dollar_volume_20d": 1417584335.16,
       "price_score": 2.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15903,7 +15903,7 @@
       "price": 243.28,
       "drawdown_pct": -1.3,
       "ma50": 236.83,
-      "average_dollar_volume_20d": 252895440.84,
+      "average_dollar_volume_20d": 253313602.66,
       "price_score": 2.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15972,7 +15972,7 @@
       "price": 358.07,
       "drawdown_pct": -1.2,
       "ma50": 322.13,
-      "average_dollar_volume_20d": 544404035.15,
+      "average_dollar_volume_20d": 544860341.66,
       "price_score": 1.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16156,7 +16156,7 @@
       "price": 455.59,
       "drawdown_pct": -0.4,
       "ma50": 423.33,
-      "average_dollar_volume_20d": 386063628.75,
+      "average_dollar_volume_20d": 386301150.59,
       "price_score": 0.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16179,7 +16179,7 @@
       "price": 178.23,
       "drawdown_pct": -0.4,
       "ma50": 165.25,
-      "average_dollar_volume_20d": 1928108900.99,
+      "average_dollar_volume_20d": 1932107686.99,
       "price_score": 0.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16225,7 +16225,7 @@
       "price": 226.68,
       "drawdown_pct": -0.0,
       "ma50": 209.57,
-      "average_dollar_volume_20d": 1569695362.29,
+      "average_dollar_volume_20d": 1573442552.58,
       "price_score": 0.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16432,7 +16432,7 @@
       "price": 546.97,
       "drawdown_pct": 0.0,
       "ma50": 510.11,
-      "average_dollar_volume_20d": 2247953214.38,
+      "average_dollar_volume_20d": 2268318848.13,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16570,7 +16570,7 @@
       "price": 71.24,
       "drawdown_pct": 0.0,
       "ma50": 65.73,
-      "average_dollar_volume_20d": 270658881.03,
+      "average_dollar_volume_20d": 271063830.55,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16800,7 +16800,7 @@
       "price": 278.32,
       "drawdown_pct": 0.0,
       "ma50": 262.47,
-      "average_dollar_volume_20d": 348814373.1,
+      "average_dollar_volume_20d": 349723658.48,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17007,7 +17007,7 @@
       "price": 199.27,
       "drawdown_pct": 0.0,
       "ma50": 180.7,
-      "average_dollar_volume_20d": 480312858.34,
+      "average_dollar_volume_20d": 480867446.69,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17099,7 +17099,7 @@
       "price": 30.42,
       "drawdown_pct": 0.0,
       "ma50": 28.23,
-      "average_dollar_volume_20d": 849119334.87,
+      "average_dollar_volume_20d": 849769308.37,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17122,7 +17122,7 @@
       "price": 165.59,
       "drawdown_pct": 0.0,
       "ma50": 148.03,
-      "average_dollar_volume_20d": 1503886948.44,
+      "average_dollar_volume_20d": 1509229916.66,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17283,7 +17283,7 @@
       "price": 322.55,
       "drawdown_pct": 0.0,
       "ma50": 275.52,
-      "average_dollar_volume_20d": 440505016.31,
+      "average_dollar_volume_20d": 441674663.2,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17329,7 +17329,7 @@
       "price": 260.8,
       "drawdown_pct": 0.0,
       "ma50": 234.38,
-      "average_dollar_volume_20d": 268099657.03,
+      "average_dollar_volume_20d": 268320398.14,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
