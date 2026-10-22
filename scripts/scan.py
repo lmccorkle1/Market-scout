@@ -8,6 +8,7 @@ download is unusable or suspiciously incomplete. It never emits sample prices.
 from __future__ import annotations
 
 import json
+import hashlib
 import math
 import os
 import sys
@@ -24,6 +25,9 @@ import pandas as pd
 import yfinance as yf
 
 OUTPUT = Path(__file__).resolve().parents[1] / "data" / "scanner.json"
+HISTORY_DIR = OUTPUT.parent / "history"
+HISTORY_INDEX = HISTORY_DIR / "index.json"
+SCORE_VERSION = "quant-90-v1"
 WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 SEC_COMPANYFACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 SEC_USER_AGENT = "MarketScout/1.0 lmccorkle1@users.noreply.github.com"
@@ -686,16 +690,64 @@ def scan() -> dict[str, object]:
     }
 
 
+def atomic_json_write(path: Path, payload: dict[str, object]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile("w", dir=path.parent, delete=False, encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=2, allow_nan=False)
+        handle.write("\n")
+        temporary = Path(handle.name)
+    os.replace(temporary, path)
+
+
+def save_daily_snapshot(payload: dict[str, object]) -> tuple[Path, bool]:
+    """Save the first verified Top Five for each market date; never overwrite it."""
+    top_five = payload.get("top_five", [])
+    if not isinstance(top_five, list) or not top_five:
+        raise RuntimeError("Cannot create a history snapshot without verified Top Five rows")
+    price_dates = {row.get("price_date") for row in top_five if isinstance(row, dict)}
+    if len(price_dates) != 1 or None in price_dates:
+        raise RuntimeError("Top Five rows do not share one verified market date")
+    selection_date = str(next(iter(price_dates)))
+    snapshot_path = HISTORY_DIR / f"{selection_date}.json"
+    if snapshot_path.exists():
+        return snapshot_path, False
+    snapshot = {
+        "snapshot_schema_version": 1,
+        "score_version": SCORE_VERSION,
+        "selection_date": selection_date,
+        "generated_at": payload["generated_at"],
+        "score_explanation": payload["score_explanation"],
+        "research_method": payload["research_method"],
+        "top_five": top_five,
+    }
+    atomic_json_write(snapshot_path, snapshot)
+    digest = hashlib.sha256(snapshot_path.read_bytes()).hexdigest()
+    if HISTORY_INDEX.exists():
+        index = json.loads(HISTORY_INDEX.read_text(encoding="utf-8"))
+    else:
+        index = {"history_schema_version": 1, "snapshots": []}
+    entries = index.get("snapshots")
+    if not isinstance(entries, list) or any(entry.get("date") == selection_date for entry in entries if isinstance(entry, dict)):
+        raise RuntimeError("History index is malformed or already contains the new market date")
+    entries.append({
+        "date": selection_date,
+        "generated_at": payload["generated_at"],
+        "path": f"{selection_date}.json",
+        "sha256": digest,
+        "top_tickers": [row["ticker"] for row in top_five],
+    })
+    entries.sort(key=lambda entry: entry["date"])
+    atomic_json_write(HISTORY_INDEX, index)
+    return snapshot_path, True
+
+
 def main() -> int:
     try:
         payload = scan()
-        OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-        with tempfile.NamedTemporaryFile("w", dir=OUTPUT.parent, delete=False, encoding="utf-8") as handle:
-            json.dump(payload, handle, indent=2, allow_nan=False)
-            handle.write("\n")
-            temporary = Path(handle.name)
-        os.replace(temporary, OUTPUT)
+        atomic_json_write(OUTPUT, payload)
+        snapshot_path, created = save_daily_snapshot(payload)
         print(f"Published {payload['screened_count']} verified symbols to {OUTPUT}")
+        print(f"{'Created' if created else 'Preserved'} immutable snapshot {snapshot_path}")
         return 0
     except Exception as error:
         print(f"ERROR: {error}", file=sys.stderr)

@@ -1,0 +1,776 @@
+{
+  "snapshot_schema_version": 1,
+  "score_version": "quant-90-v1",
+  "selection_date": "2026-10-22",
+  "generated_at": "2026-10-22T20:25:18.194572Z",
+  "score_explanation": "Price score screens the full universe. The research shortlist scores verified fundamentals (30), valuation (25), selloff (20), and financial strength (15). Catalysts (10) require manual research and are not awarded automatically.",
+  "research_method": {
+    "candidate_pool": 40,
+    "eligible_count": 39,
+    "enrichment_failed_symbols": [],
+    "maximum_automated_score": 90,
+    "catalyst_points_reserved": 10,
+    "minimum_fundamental_fields": 7,
+    "fundamental_source": "Yahoo Finance data accessed through yfinance; fields may be delayed or unavailable.",
+    "filing_source": "SEC EDGAR company filings, linked by CIK when available."
+  },
+  "top_five": [
+    {
+      "ticker": "APP",
+      "sector": "Communication Services",
+      "industry": "Advertising",
+      "cik": 1751008,
+      "price": 264.28,
+      "drawdown_pct": -64.0,
+      "ma50": 300.99,
+      "average_dollar_volume_20d": 1251193361.34,
+      "price_score": 100.0,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -5.37,
+        "return_20d_pct": -15.42,
+        "versus_ma20_pct": -5.42,
+        "above_20d_low_pct": 0.8,
+        "return_63d_pct": -32.58,
+        "sector_return_63d_pct": -1.11,
+        "sector_relative_63d_pp": -31.46,
+        "sector_sample_size": 22
+      },
+      "research": {
+        "metrics": {
+          "revenue_growth_pct": 52.8,
+          "earnings_growth_pct": 57.0,
+          "profit_margin_pct": 64.58,
+          "return_on_equity_pct": 203.69,
+          "trailing_pe": 20.31,
+          "ev_to_ebitda": 16.64,
+          "fcf_yield_pct": 3.6,
+          "debt_to_equity": 111.13,
+          "current_ratio": 4.3,
+          "free_cash_flow": 3179956224.0,
+          "market_cap": 88441438208.0
+        },
+        "component_scores": {
+          "fundamentals_30": 30,
+          "valuation_25": 14.0,
+          "selloff_20": 20.0,
+          "financial_strength_15": 12.3,
+          "catalysts_10": null
+        },
+        "quant_score_90": 76.3,
+        "data_fields_available": 10,
+        "data_fields_required": 7,
+        "eligible": true,
+        "catalyst_status": "Manual research required; no automated catalyst points awarded.",
+        "company_website": "https://www.applovin.com",
+        "next_earnings_date": "2026-11-04",
+        "quarterly_trends": {
+          "metrics": {
+            "latest_period": "2026-06-30",
+            "year_ago_period": "2025-06-30",
+            "revenue_yoy_pct": 52.82,
+            "operating_margin_pct": 77.68,
+            "operating_margin_change_pp": 1.6,
+            "net_income_latest": 1266538000.0,
+            "net_income_year_ago": 819531000.0,
+            "free_cash_flow_latest": 869040000.0,
+            "free_cash_flow_yoy_pct": 12.54,
+            "debt_yoy_pct": 0.12,
+            "shares_yoy_pct": -1.03
+          },
+          "fields_available": 9,
+          "value_trap_flags": [],
+          "status": "available",
+          "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
+        },
+        "sector_valuation": {
+          "status": "more_expensive",
+          "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
+          "cheapness_percentile": 22.2,
+          "metrics_available": 3,
+          "comparisons": {
+            "trailing_pe": {
+              "value": 20.31,
+              "sector_median": 19.38,
+              "cheapness_percentile": 16.7,
+              "peer_count": 3
+            },
+            "ev_to_ebitda": {
+              "value": 16.64,
+              "sector_median": 12.01,
+              "cheapness_percentile": 37.5,
+              "peer_count": 4
+            },
+            "fcf_yield_pct": {
+              "value": 3.6,
+              "sector_median": 12.18,
+              "cheapness_percentile": 12.5,
+              "peer_count": 4
+            }
+          },
+          "history_status": "unavailable",
+          "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -1.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
+        "sec_xbrl_confirmation": {
+          "status": "unavailable",
+          "reason": "SEC request failed: HTTPError",
+          "metrics": {}
+        }
+      }
+    },
+    {
+      "ticker": "FSLR",
+      "sector": "Information Technology",
+      "industry": "Semiconductors",
+      "cik": 1274494,
+      "price": 171.25,
+      "drawdown_pct": -46.2,
+      "ma50": 194.32,
+      "average_dollar_volume_20d": 368023426.85,
+      "price_score": 81.2,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -4.23,
+        "return_20d_pct": -0.53,
+        "versus_ma20_pct": -3.01,
+        "above_20d_low_pct": 0.0,
+        "return_63d_pct": -15.57,
+        "sector_return_63d_pct": 4.07,
+        "sector_relative_63d_pp": -19.64,
+        "sector_sample_size": 75
+      },
+      "research": {
+        "metrics": {
+          "revenue_growth_pct": -3.7,
+          "earnings_growth_pct": 23.3,
+          "profit_margin_pct": 32.46,
+          "return_on_equity_pct": 18.51,
+          "trailing_pe": 10.56,
+          "ev_to_ebitda": 7.23,
+          "fcf_yield_pct": 8.69,
+          "debt_to_equity": 1.88,
+          "current_ratio": 2.52,
+          "free_cash_flow": 1598684800.0,
+          "market_cap": 18404202496.0
+        },
+        "component_scores": {
+          "fundamentals_30": 18.7,
+          "valuation_25": 25,
+          "selloff_20": 16.2,
+          "financial_strength_15": 15.0,
+          "catalysts_10": null
+        },
+        "quant_score_90": 75.0,
+        "data_fields_available": 10,
+        "data_fields_required": 7,
+        "eligible": true,
+        "catalyst_status": "Manual research required; no automated catalyst points awarded.",
+        "company_website": "https://www.firstsolar.com",
+        "next_earnings_date": "2026-10-29",
+        "quarterly_trends": {
+          "metrics": {
+            "latest_period": "2026-06-30",
+            "year_ago_period": "2025-06-30",
+            "revenue_yoy_pct": -3.73,
+            "operating_margin_pct": 42.64,
+            "operating_margin_change_pp": 9.68,
+            "net_income_latest": 422569000.0,
+            "net_income_year_ago": 341868000.0,
+            "free_cash_flow_latest": -306221000.0,
+            "free_cash_flow_yoy_pct": null,
+            "debt_yoy_pct": -81.82,
+            "shares_yoy_pct": 0.21
+          },
+          "fields_available": 8,
+          "value_trap_flags": [
+            "Latest quarter reported negative free cash flow"
+          ],
+          "status": "available",
+          "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
+        },
+        "sector_valuation": {
+          "status": "cheaper",
+          "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
+          "cheapness_percentile": 96.6,
+          "metrics_available": 3,
+          "comparisons": {
+            "trailing_pe": {
+              "value": 10.56,
+              "sector_median": 32.72,
+              "cheapness_percentile": 96.4,
+              "peer_count": 14
+            },
+            "ev_to_ebitda": {
+              "value": 7.23,
+              "sector_median": 30.01,
+              "cheapness_percentile": 96.7,
+              "peer_count": 15
+            },
+            "fcf_yield_pct": {
+              "value": 8.69,
+              "sector_median": 1.36,
+              "cheapness_percentile": 96.7,
+              "peer_count": 15
+            }
+          },
+          "history_status": "unavailable",
+          "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
+        "sec_xbrl_confirmation": {
+          "status": "unavailable",
+          "reason": "SEC request failed: HTTPError",
+          "metrics": {}
+        }
+      }
+    },
+    {
+      "ticker": "WDC",
+      "sector": "Information Technology",
+      "industry": "Technology Hardware, Storage & Peripherals",
+      "cik": 106040,
+      "price": 354.19,
+      "drawdown_pct": -52.5,
+      "ma50": 435.82,
+      "average_dollar_volume_20d": 3740401589.53,
+      "price_score": 97.5,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "mixed",
+        "return_5d_pct": -0.63,
+        "return_20d_pct": -21.35,
+        "versus_ma20_pct": -11.61,
+        "above_20d_low_pct": 6.68,
+        "return_63d_pct": -31.84,
+        "sector_return_63d_pct": 4.07,
+        "sector_relative_63d_pp": -35.91,
+        "sector_sample_size": 75
+      },
+      "research": {
+        "metrics": {
+          "revenue_growth_pct": 43.8,
+          "earnings_growth_pct": 984.1,
+          "profit_margin_pct": 72.95,
+          "return_on_equity_pct": 130.85,
+          "trailing_pe": 13.16,
+          "ev_to_ebitda": 27.2,
+          "fcf_yield_pct": 1.71,
+          "debt_to_equity": 13.44,
+          "current_ratio": 1.33,
+          "free_cash_flow": 2268750080.0,
+          "market_cap": 132581556224.0
+        },
+        "component_scores": {
+          "fundamentals_30": 30,
+          "valuation_25": 11.7,
+          "selloff_20": 19.5,
+          "financial_strength_15": 12.9,
+          "catalysts_10": null
+        },
+        "quant_score_90": 74.2,
+        "data_fields_available": 10,
+        "data_fields_required": 7,
+        "eligible": true,
+        "catalyst_status": "Manual research required; no automated catalyst points awarded.",
+        "company_website": "https://www.westerndigital.com",
+        "next_earnings_date": "2026-10-22",
+        "quarterly_trends": {
+          "metrics": {
+            "latest_period": "2026-06-30",
+            "year_ago_period": "2025-06-30",
+            "revenue_yoy_pct": 43.84,
+            "operating_margin_pct": 42.86,
+            "operating_margin_change_pp": 16.72,
+            "net_income_latest": 3069000000.0,
+            "net_income_year_ago": 257000000.0,
+            "free_cash_flow_latest": 1281000000.0,
+            "free_cash_flow_yoy_pct": 89.78,
+            "debt_yoy_pct": -77.67,
+            "shares_yoy_pct": 4.03
+          },
+          "fields_available": 9,
+          "value_trap_flags": [],
+          "status": "available",
+          "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
+        },
+        "sector_valuation": {
+          "status": "cheaper",
+          "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
+          "cheapness_percentile": 69.8,
+          "metrics_available": 3,
+          "comparisons": {
+            "trailing_pe": {
+              "value": 13.16,
+              "sector_median": 32.72,
+              "cheapness_percentile": 89.3,
+              "peer_count": 14
+            },
+            "ev_to_ebitda": {
+              "value": 27.2,
+              "sector_median": 30.01,
+              "cheapness_percentile": 56.7,
+              "peer_count": 15
+            },
+            "fcf_yield_pct": {
+              "value": 1.71,
+              "sector_median": 1.36,
+              "cheapness_percentile": 63.3,
+              "peer_count": 15
+            }
+          },
+          "history_status": "unavailable",
+          "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 4.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
+        "sec_xbrl_confirmation": {
+          "status": "unavailable",
+          "reason": "SEC request failed: HTTPError",
+          "metrics": {}
+        }
+      }
+    },
+    {
+      "ticker": "NFLX",
+      "sector": "Communication Services",
+      "industry": "Movies & Entertainment",
+      "cik": 1065280,
+      "price": 67.05,
+      "drawdown_pct": -42.1,
+      "ma50": 74.52,
+      "average_dollar_volume_20d": 2870664903.44,
+      "price_score": 73.1,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -7.66,
+        "return_20d_pct": -6.51,
+        "versus_ma20_pct": -3.41,
+        "above_20d_low_pct": 3.09,
+        "return_63d_pct": -4.34,
+        "sector_return_63d_pct": -1.11,
+        "sector_relative_63d_pp": -3.22,
+        "sector_sample_size": 22
+      },
+      "research": {
+        "metrics": {
+          "revenue_growth_pct": 11.8,
+          "earnings_growth_pct": 48.2,
+          "profit_margin_pct": 29.69,
+          "return_on_equity_pct": 53.46,
+          "trailing_pe": 19.38,
+          "ev_to_ebitda": 17.29,
+          "fcf_yield_pct": 9.22,
+          "debt_to_equity": 51.67,
+          "current_ratio": 1.07,
+          "free_cash_flow": 25739923456.0,
+          "market_cap": 279192174592.0
+        },
+        "component_scores": {
+          "fundamentals_30": 26.7,
+          "valuation_25": 19.6,
+          "selloff_20": 14.6,
+          "financial_strength_15": 11.7,
+          "catalysts_10": null
+        },
+        "quant_score_90": 72.7,
+        "data_fields_available": 10,
+        "data_fields_required": 7,
+        "eligible": true,
+        "catalyst_status": "Manual research required; no automated catalyst points awarded.",
+        "company_website": "https://www.netflix.com",
+        "next_earnings_date": "2027-01-19",
+        "quarterly_trends": {
+          "metrics": {
+            "latest_period": "2026-06-30",
+            "year_ago_period": "2025-06-30",
+            "revenue_yoy_pct": 13.37,
+            "operating_margin_pct": 33.38,
+            "operating_margin_change_pp": -0.69,
+            "net_income_latest": 3401414000.0,
+            "net_income_year_ago": 3125413000.0,
+            "free_cash_flow_latest": 1525168000.0,
+            "free_cash_flow_yoy_pct": -32.73,
+            "debt_yoy_pct": -1.0,
+            "shares_yoy_pct": -2.01
+          },
+          "fields_available": 9,
+          "value_trap_flags": [],
+          "status": "available",
+          "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
+        },
+        "sector_valuation": {
+          "status": "near_median",
+          "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
+          "cheapness_percentile": 33.3,
+          "metrics_available": 3,
+          "comparisons": {
+            "trailing_pe": {
+              "value": 19.38,
+              "sector_median": 19.38,
+              "cheapness_percentile": 50.0,
+              "peer_count": 3
+            },
+            "ev_to_ebitda": {
+              "value": 17.29,
+              "sector_median": 12.01,
+              "cheapness_percentile": 12.5,
+              "peer_count": 4
+            },
+            "fcf_yield_pct": {
+              "value": 9.22,
+              "sector_median": 12.18,
+              "cheapness_percentile": 37.5,
+              "peer_count": 4
+            }
+          },
+          "history_status": "unavailable",
+          "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -2.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
+        "sec_xbrl_confirmation": {
+          "status": "unavailable",
+          "reason": "SEC request failed: HTTPError",
+          "metrics": {}
+        }
+      }
+    },
+    {
+      "ticker": "SNDK",
+      "sector": "Information Technology",
+      "industry": "Technology Hardware, Storage & Peripherals",
+      "cik": 2023554,
+      "price": 1260.93,
+      "drawdown_pct": -46.0,
+      "ma50": 1599.25,
+      "average_dollar_volume_20d": 12322756442.28,
+      "price_score": 90.2,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -9.6,
+        "return_20d_pct": -28.1,
+        "versus_ma20_pct": -19.07,
+        "above_20d_low_pct": 0.0,
+        "return_63d_pct": -12.23,
+        "sector_return_63d_pct": 4.07,
+        "sector_relative_63d_pp": -16.3,
+        "sector_sample_size": 75
+      },
+      "research": {
+        "metrics": {
+          "revenue_growth_pct": 371.6,
+          "earnings_growth_pct": null,
+          "profit_margin_pct": 56.46,
+          "return_on_equity_pct": 91.64,
+          "trailing_pe": 17.1,
+          "ev_to_ebitda": 15.63,
+          "fcf_yield_pct": 4.24,
+          "debt_to_equity": 1.28,
+          "current_ratio": 2.29,
+          "free_cash_flow": 7720875008.0,
+          "market_cap": 182239150080.0
+        },
+        "component_scores": {
+          "fundamentals_30": 20,
+          "valuation_25": 16.2,
+          "selloff_20": 18.0,
+          "financial_strength_15": 15.0,
+          "catalysts_10": null
+        },
+        "quant_score_90": 69.3,
+        "data_fields_available": 9,
+        "data_fields_required": 7,
+        "eligible": true,
+        "catalyst_status": "Manual research required; no automated catalyst points awarded.",
+        "company_website": "https://www.sandisk.com",
+        "next_earnings_date": "2026-10-29",
+        "quarterly_trends": {
+          "metrics": {
+            "latest_period": "2026-06-30",
+            "year_ago_period": "2025-06-30",
+            "revenue_yoy_pct": 371.59,
+            "operating_margin_pct": 78.49,
+            "operating_margin_change_pp": 75.81,
+            "net_income_latest": 6903000000.0,
+            "net_income_year_ago": -23000000.0,
+            "free_cash_flow_latest": 7083000000.0,
+            "free_cash_flow_yoy_pct": 14355.1,
+            "debt_yoy_pct": -91.33,
+            "shares_yoy_pct": 0.0
+          },
+          "fields_available": 9,
+          "value_trap_flags": [],
+          "status": "available",
+          "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
+        },
+        "sector_valuation": {
+          "status": "cheaper",
+          "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
+          "cheapness_percentile": 80.7,
+          "metrics_available": 3,
+          "comparisons": {
+            "trailing_pe": {
+              "value": 17.1,
+              "sector_median": 32.72,
+              "cheapness_percentile": 82.1,
+              "peer_count": 14
+            },
+            "ev_to_ebitda": {
+              "value": 15.63,
+              "sector_median": 30.01,
+              "cheapness_percentile": 83.3,
+              "peer_count": 15
+            },
+            "fcf_yield_pct": {
+              "value": 4.24,
+              "sector_median": 1.36,
+              "cheapness_percentile": 76.7,
+              "peer_count": 15
+            }
+          },
+          "history_status": "unavailable",
+          "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
+        "sec_xbrl_confirmation": {
+          "status": "unavailable",
+          "reason": "SEC request failed: HTTPError",
+          "metrics": {}
+        }
+      }
+    }
+  ]
+}

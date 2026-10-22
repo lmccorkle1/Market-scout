@@ -51,6 +51,8 @@ Before publishing, `scripts/validate_scan.py` checks:
 - Future-dated prices
 - Missing, stale, or future generation timestamps
 
+The workflow also saves the first verified Top Five for each market date under `data/history/`. Each complete candidate record is preserved with its selection-date price, score inputs, warnings, and `quant-90-v1` score version. Existing dates are never overwritten. `scripts/validate_history.py` verifies the chronological index, snapshot hashes, unique tickers, prices, component totals, and ranking before anything is committed.
+
 If downloading, scanning, or validation fails, the workflow exits with an error and preserves the last verified published scan.
 
 ## Run the scanner manually
@@ -81,8 +83,11 @@ An unavailable symbol can be normal after a ticker change, index addition, delis
 index.html                         Main dashboard
 scanner.html                       Daily scanner interface
 data/scanner.json                  Generated verified results
+data/history/index.json            Chronological immutable snapshot index
+data/history/YYYY-MM-DD.json       First verified Top Five for a market date
 scripts/scan.py                    Market-data scanner
 scripts/validate_scan.py           Pre-publication validation
+scripts/validate_history.py        Snapshot and immutable-hash validation
 .github/workflows/daily-scan.yml   Scheduled automation
 ROADMAP.md                         Planned improvements
 ```
@@ -99,4 +104,4 @@ Then open `http://localhost:8000/scanner.html`.
 
 ## Disclaimer
 
-Market Scout is an educational research tool, not financial advice. Market data can be delayed, incomplete, adjusted, or incorrect. The scanner does not currently evaluate valuation, earnings, revenue, debt, cash flow, company news, portfolio suitability, or risk tolerance. Verify information independently before making any investment decision.
+Market Scout is an educational research tool, not financial advice. Market and fundamental data can be delayed, incomplete, adjusted, or incorrect. Its broad quantitative checks do not establish intrinsic value, verify catalysts, or account for an individual's portfolio, taxes, suitability, or risk tolerance. Verify information independently before making any investment decision.

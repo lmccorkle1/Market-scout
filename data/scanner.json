@@ -1,7 +1,7 @@
 {
   "schema_version": 9,
   "status": "partial",
-  "generated_at": "2026-10-22T20:15:52.325543Z",
+  "generated_at": "2026-10-22T20:25:18.194572Z",
   "universe_source": "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols",
   "universe_count": 515,
   "screened_count": 514,
@@ -51,11 +51,11 @@
           "return_on_equity_pct": 203.69,
           "trailing_pe": 20.31,
           "ev_to_ebitda": 16.64,
-          "fcf_yield_pct": 3.58,
+          "fcf_yield_pct": 3.6,
           "debt_to_equity": 111.13,
           "current_ratio": 4.3,
           "free_cash_flow": 3179956224.0,
-          "market_cap": 88782094336.0
+          "market_cap": 88441438208.0
         },
         "component_scores": {
           "fundamentals_30": 30,
@@ -109,7 +109,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 3.58,
+              "value": 3.6,
               "sector_median": 12.18,
               "cheapness_percentile": 12.5,
               "peer_count": 4
@@ -251,7 +251,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 10.56,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 96.4,
               "peer_count": 14
             },
@@ -402,7 +402,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 13.16,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 89.3,
               "peer_count": 14
             },
@@ -704,7 +704,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 17.1,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 82.1,
               "peer_count": 14
             },
@@ -937,11 +937,11 @@
           "return_on_equity_pct": 203.69,
           "trailing_pe": 20.31,
           "ev_to_ebitda": 16.64,
-          "fcf_yield_pct": 3.58,
+          "fcf_yield_pct": 3.6,
           "debt_to_equity": 111.13,
           "current_ratio": 4.3,
           "free_cash_flow": 3179956224.0,
-          "market_cap": 88782094336.0
+          "market_cap": 88441438208.0
         },
         "component_scores": {
           "fundamentals_30": 30,
@@ -995,7 +995,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 3.58,
+              "value": 3.6,
               "sector_median": 12.18,
               "cheapness_percentile": 12.5,
               "peer_count": 4
@@ -1138,7 +1138,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 50.44,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 17.9,
               "peer_count": 14
             },
@@ -1235,7 +1235,7 @@
           "earnings_growth_pct": 52.0,
           "profit_margin_pct": 3.33,
           "return_on_equity_pct": 18.38,
-          "trailing_pe": 32.77,
+          "trailing_pe": 29.61,
           "ev_to_ebitda": 16.46,
           "fcf_yield_pct": 2.21,
           "debt_to_equity": 107.82,
@@ -1245,12 +1245,12 @@
         },
         "component_scores": {
           "fundamentals_30": 24.5,
-          "valuation_25": 7.8,
+          "valuation_25": 9.0,
           "selloff_20": 20.0,
           "financial_strength_15": 10.6,
           "catalysts_10": null
         },
-        "quant_score_90": 62.9,
+        "quant_score_90": 64.0,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -1268,24 +1268,24 @@
             "net_income_year_ago": 192000000.0,
             "free_cash_flow_latest": 211000000.0,
             "free_cash_flow_yoy_pct": -34.27,
-            "debt_yoy_pct": null,
-            "shares_yoy_pct": -1.81
+            "debt_yoy_pct": 4.05,
+            "shares_yoy_pct": -3.21
           },
-          "fields_available": 4,
+          "fields_available": 5,
           "value_trap_flags": [],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
         "sector_valuation": {
-          "status": "near_median",
+          "status": "cheaper",
           "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
-          "cheapness_percentile": 66.7,
+          "cheapness_percentile": 69.1,
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
-              "value": 32.77,
-              "sector_median": 32.9,
-              "cheapness_percentile": 53.6,
+              "value": 29.61,
+              "sector_median": 32.72,
+              "cheapness_percentile": 60.7,
               "peer_count": 14
             },
             "ev_to_ebitda": {
@@ -1321,7 +1321,7 @@
             {
               "id": "dilution",
               "status": "clear",
-              "reason": "Share-count change was -1.8% year over year"
+              "reason": "Share-count change was -3.2% year over year"
             },
             {
               "id": "leverage",
@@ -1341,7 +1341,7 @@
             {
               "id": "quarterly_coverage",
               "status": "caution",
-              "reason": "Only 4 of 9 quarterly trend fields were available"
+              "reason": "Only 5 of 9 quarterly trend fields were available"
             },
             {
               "id": "sec_verification",
@@ -1361,7 +1361,7 @@
       "price": 7.79,
       "drawdown_pct": -52.6,
       "ma50": 9.8,
-      "average_dollar_volume_20d": 313948389.6,
+      "average_dollar_volume_20d": 314016170.0,
       "price_score": 99.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -1701,7 +1701,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 13.16,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 89.3,
               "peer_count": 14
             },
@@ -1998,7 +1998,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 40.39,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 32.1,
               "peer_count": 14
             },
@@ -2075,7 +2075,7 @@
       "price": 123.99,
       "drawdown_pct": -51.4,
       "ma50": 151.84,
-      "average_dollar_volume_20d": 1150947962.59,
+      "average_dollar_volume_20d": 1150371235.51,
       "price_score": 95.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2101,7 +2101,7 @@
           "debt_to_equity": 71.45,
           "current_ratio": 1.81,
           "free_cash_flow": 734499968.0,
-          "market_cap": 106803535872.0
+          "market_cap": 106586488832.0
         },
         "component_scores": {
           "fundamentals_30": 22.9,
@@ -2129,12 +2129,10 @@
             "free_cash_flow_latest": 1295000000.0,
             "free_cash_flow_yoy_pct": 223.75,
             "debt_yoy_pct": 10.35,
-            "shares_yoy_pct": 5.91
+            "shares_yoy_pct": 0.49
           },
           "fields_available": 9,
-          "value_trap_flags": [
-            "Share count increased more than 5% year over year"
-          ],
+          "value_trap_flags": [],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
@@ -2146,7 +2144,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 56.88,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 10.7,
               "peer_count": 14
             },
@@ -2167,10 +2165,10 @@
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
         "risk_gates": {
-          "status": "caution",
+          "status": "clear",
           "counts": {
-            "clear": 5,
-            "caution": 1,
+            "clear": 6,
+            "caution": 0,
             "high_risk": 0,
             "unavailable": 1
           },
@@ -2182,8 +2180,8 @@
             },
             {
               "id": "dilution",
-              "status": "caution",
-              "reason": "Share count increased 5.9% year over year"
+              "status": "clear",
+              "reason": "Share-count change was 0.5% year over year"
             },
             {
               "id": "leverage",
@@ -2223,7 +2221,7 @@
       "price": 125.54,
       "drawdown_pct": -55.1,
       "ma50": 143.06,
-      "average_dollar_volume_20d": 3984226040.68,
+      "average_dollar_volume_20d": 3978753249.88,
       "price_score": 94.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2296,7 +2294,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 19.68,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 75.0,
               "peer_count": 14
             },
@@ -2393,7 +2391,7 @@
           "earnings_growth_pct": 34.8,
           "profit_margin_pct": 31.27,
           "return_on_equity_pct": 65.07,
-          "trailing_pe": 34.3,
+          "trailing_pe": 39.96,
           "ev_to_ebitda": 37.6,
           "fcf_yield_pct": 1.07,
           "debt_to_equity": 33.05,
@@ -2403,12 +2401,12 @@
         },
         "component_scores": {
           "fundamentals_30": 30,
-          "valuation_25": 3.4,
+          "valuation_25": 1.4,
           "selloff_20": 18.9,
           "financial_strength_15": 15.0,
           "catalysts_10": null
         },
-        "quant_score_90": 67.3,
+        "quant_score_90": 65.3,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -2441,8 +2439,8 @@
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
-              "value": 34.3,
-              "sector_median": 32.9,
+              "value": 39.96,
+              "sector_median": 32.72,
               "cheapness_percentile": 39.3,
               "peer_count": 14
             },
@@ -2541,11 +2539,11 @@
           "return_on_equity_pct": 0.6,
           "trailing_pe": 124.35,
           "ev_to_ebitda": 190.62,
-          "fcf_yield_pct": -22.22,
+          "fcf_yield_pct": -23.79,
           "debt_to_equity": 98.6,
           "current_ratio": 4.03,
           "free_cash_flow": -9614650368.0,
-          "market_cap": 43271196672.0
+          "market_cap": 40412975104.0
         },
         "component_scores": {
           "fundamentals_30": 10.9,
@@ -2651,7 +2649,7 @@
       "price": 195.59,
       "drawdown_pct": -48.0,
       "ma50": 249.53,
-      "average_dollar_volume_20d": 1224870575.27,
+      "average_dollar_volume_20d": 1225793838.29,
       "price_score": 93.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2720,7 +2718,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 44.25,
-              "sector_median": 37.83,
+              "sector_median": 37.87,
               "cheapness_percentile": 37.5,
               "peer_count": 4
             },
@@ -2732,7 +2730,7 @@
             },
             "fcf_yield_pct": {
               "value": 3.58,
-              "sector_median": 3.84,
+              "sector_median": 3.83,
               "cheapness_percentile": 37.5,
               "peer_count": 4
             }
@@ -2797,7 +2795,7 @@
       "price": 823.27,
       "drawdown_pct": -55.4,
       "ma50": 918.14,
-      "average_dollar_volume_20d": 897287875.48,
+      "average_dollar_volume_20d": 897515674.29,
       "price_score": 93.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2868,7 +2866,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 23.84,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 67.9,
               "peer_count": 14
             },
@@ -3139,13 +3137,13 @@
         "sector_valuation": {
           "status": "near_median",
           "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
-          "cheapness_percentile": 40.2,
+          "cheapness_percentile": 37.9,
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
               "value": 32.41,
-              "sector_median": 32.9,
-              "cheapness_percentile": 60.7,
+              "sector_median": 32.72,
+              "cheapness_percentile": 53.6,
               "peer_count": 14
             },
             "ev_to_ebitda": {
@@ -3290,7 +3288,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 17.1,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 82.1,
               "peer_count": 14
             },
@@ -3501,7 +3499,7 @@
       "price": 17.27,
       "drawdown_pct": -43.9,
       "ma50": 22.43,
-      "average_dollar_volume_20d": 195162644.51,
+      "average_dollar_volume_20d": 195286017.08,
       "price_score": 88.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -3705,7 +3703,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 72.18,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 3.6,
               "peer_count": 14
             },
@@ -4062,11 +4060,11 @@
           "return_on_equity_pct": 34.42,
           "trailing_pe": 16.79,
           "ev_to_ebitda": 29.03,
-          "fcf_yield_pct": 4.56,
+          "fcf_yield_pct": 4.54,
           "debt_to_equity": 6.11,
           "current_ratio": 2.72,
           "free_cash_flow": 300198016.0,
-          "market_cap": 6587800576.0
+          "market_cap": 6615110656.0
         },
         "component_scores": {
           "fundamentals_30": 19.3,
@@ -4167,7 +4165,7 @@
       "price": 94.38,
       "drawdown_pct": -48.4,
       "ma50": 107.52,
-      "average_dollar_volume_20d": 319596230.29,
+      "average_dollar_volume_20d": 320261694.22,
       "price_score": 84.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4343,20 +4341,18 @@
           "metrics": {
             "latest_period": "2026-06-30",
             "year_ago_period": "2025-06-30",
-            "revenue_yoy_pct": 7.53,
-            "operating_margin_pct": 22.9,
-            "operating_margin_change_pp": 4.26,
-            "net_income_latest": 907000000.0,
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": null,
+            "operating_margin_change_pp": null,
+            "net_income_latest": null,
             "net_income_year_ago": 797000000.0,
-            "free_cash_flow_latest": -451000000.0,
-            "free_cash_flow_yoy_pct": -143.32,
-            "debt_yoy_pct": 4.96,
-            "shares_yoy_pct": -2.27
+            "free_cash_flow_latest": 171000000.0,
+            "free_cash_flow_yoy_pct": -38.27,
+            "debt_yoy_pct": -5.8,
+            "shares_yoy_pct": 0.48
           },
-          "fields_available": 9,
-          "value_trap_flags": [
-            "Latest quarter reported negative free cash flow"
-          ],
+          "fields_available": 5,
+          "value_trap_flags": [],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
@@ -4370,12 +4366,12 @@
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
         "risk_gates": {
-          "status": "high_risk",
+          "status": "caution",
           "counts": {
-            "clear": 5,
-            "caution": 0,
-            "high_risk": 1,
-            "unavailable": 1
+            "clear": 3,
+            "caution": 1,
+            "high_risk": 0,
+            "unavailable": 3
           },
           "gates": [
             {
@@ -4386,7 +4382,7 @@
             {
               "id": "dilution",
               "status": "clear",
-              "reason": "Share-count change was -2.3% year over year"
+              "reason": "Share-count change was 0.5% year over year"
             },
             {
               "id": "leverage",
@@ -4395,18 +4391,18 @@
             },
             {
               "id": "cash_flow_quality",
-              "status": "high_risk",
-              "reason": "Positive net income was not supported by positive free cash flow"
+              "status": "unavailable",
+              "reason": "Quarterly net income or free cash flow is unavailable"
             },
             {
               "id": "profitability_trend",
-              "status": "clear",
-              "reason": "Available revenue and margin trends remained above warning thresholds"
+              "status": "unavailable",
+              "reason": "Revenue and operating-margin trends are unavailable"
             },
             {
               "id": "quarterly_coverage",
-              "status": "clear",
-              "reason": "9 of 9 quarterly trend fields were available"
+              "status": "caution",
+              "reason": "Only 5 of 9 quarterly trend fields were available"
             },
             {
               "id": "sec_verification",
@@ -4497,7 +4493,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 46.2,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 25.0,
               "peer_count": 14
             },
@@ -4645,7 +4641,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 172.03,
-              "sector_median": 37.83,
+              "sector_median": 37.87,
               "cheapness_percentile": 12.5,
               "peer_count": 4
             },
@@ -4657,7 +4653,7 @@
             },
             "fcf_yield_pct": {
               "value": 0.66,
-              "sector_median": 3.84,
+              "sector_median": 3.83,
               "cheapness_percentile": 12.5,
               "peer_count": 4
             }
@@ -4722,7 +4718,7 @@
       "price": 29.5,
       "drawdown_pct": -41.8,
       "ma50": 36.63,
-      "average_dollar_volume_20d": 161911096.21,
+      "average_dollar_volume_20d": 162174839.48,
       "price_score": 82.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4744,11 +4740,11 @@
           "return_on_equity_pct": 18.92,
           "trailing_pe": 18.21,
           "ev_to_ebitda": 15.88,
-          "fcf_yield_pct": 11.65,
+          "fcf_yield_pct": 11.84,
           "debt_to_equity": 893.31,
           "current_ratio": 1.33,
           "free_cash_flow": 878991104.0,
-          "market_cap": 7547611136.0
+          "market_cap": 7421986304.0
         },
         "component_scores": {
           "fundamentals_30": 16.8,
@@ -4802,7 +4798,7 @@
               "peer_count": 5
             },
             "fcf_yield_pct": {
-              "value": 11.65,
+              "value": 11.84,
               "sector_median": 9.53,
               "cheapness_percentile": 70.0,
               "peer_count": 5
@@ -5066,7 +5062,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 10.56,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 96.4,
               "peer_count": 14
             },
@@ -5148,7 +5144,7 @@
       "price": 36.53,
       "drawdown_pct": -46.5,
       "ma50": 41.08,
-      "average_dollar_volume_20d": 221391382.17,
+      "average_dollar_volume_20d": 221554616.47,
       "price_score": 80.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5368,7 +5364,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 33.02,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 46.4,
               "peer_count": 14
             },
@@ -5467,11 +5463,11 @@
           "return_on_equity_pct": 5.16,
           "trailing_pe": 43.38,
           "ev_to_ebitda": 4.37,
-          "fcf_yield_pct": 17.76,
+          "fcf_yield_pct": 17.43,
           "debt_to_equity": 64.94,
           "current_ratio": 2.02,
           "free_cash_flow": 1615874944.0,
-          "market_cap": 9096416256.0
+          "market_cap": 9271095296.0
         },
         "component_scores": {
           "fundamentals_30": 4.2,
@@ -5525,7 +5521,7 @@
               "peer_count": 5
             },
             "fcf_yield_pct": {
-              "value": 17.76,
+              "value": 17.43,
               "sector_median": 9.53,
               "cheapness_percentile": 90.0,
               "peer_count": 5
@@ -5552,152 +5548,6 @@
               "id": "dilution",
               "status": "clear",
               "reason": "Share-count change was -6.9% year over year"
-            },
-            {
-              "id": "leverage",
-              "status": "clear",
-              "reason": "Available debt measures remained below warning thresholds"
-            },
-            {
-              "id": "cash_flow_quality",
-              "status": "clear",
-              "reason": "Latest-quarter free cash flow was positive"
-            },
-            {
-              "id": "profitability_trend",
-              "status": "clear",
-              "reason": "Available revenue and margin trends remained above warning thresholds"
-            },
-            {
-              "id": "quarterly_coverage",
-              "status": "clear",
-              "reason": "9 of 9 quarterly trend fields were available"
-            },
-            {
-              "id": "sec_verification",
-              "status": "unavailable",
-              "reason": "SEC XBRL verification is unavailable or was not attempted"
-            }
-          ],
-          "affects_ranking": false
-        }
-      }
-    },
-    {
-      "ticker": "FIX",
-      "sector": "Industrials",
-      "industry": "Construction & Engineering",
-      "cik": 1035983,
-      "price": 1276.01,
-      "drawdown_pct": -38.2,
-      "ma50": 1619.44,
-      "average_dollar_volume_20d": 615279145.69,
-      "price_score": 78.5,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "still_falling",
-        "return_5d_pct": -13.86,
-        "return_20d_pct": -22.36,
-        "versus_ma20_pct": -20.27,
-        "above_20d_low_pct": 0.0,
-        "return_63d_pct": -26.36,
-        "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": -22.85,
-        "sector_sample_size": 83
-      },
-      "research": {
-        "metrics": {
-          "revenue_growth_pct": 50.3,
-          "earnings_growth_pct": 91.9,
-          "profit_margin_pct": 12.78,
-          "return_on_equity_pct": 55.29,
-          "trailing_pe": 31.4,
-          "ev_to_ebitda": 23.82,
-          "fcf_yield_pct": 4.1,
-          "debt_to_equity": 11.5,
-          "current_ratio": 1.21,
-          "free_cash_flow": 1841915392.0,
-          "market_cap": 44908314624.0
-        },
-        "component_scores": {
-          "fundamentals_30": 28.2,
-          "valuation_25": 8.5,
-          "selloff_20": 15.7,
-          "financial_strength_15": 12.6,
-          "catalysts_10": null
-        },
-        "quant_score_90": 65.0,
-        "data_fields_available": 10,
-        "data_fields_required": 7,
-        "eligible": true,
-        "catalyst_status": "Manual research required; no automated catalyst points awarded.",
-        "company_website": "https://comfortsystemsusa.com",
-        "next_earnings_date": "2026-10-22",
-        "quarterly_trends": {
-          "metrics": {
-            "latest_period": "2026-06-30",
-            "year_ago_period": "2025-06-30",
-            "revenue_yoy_pct": 50.26,
-            "operating_margin_pct": 17.06,
-            "operating_margin_change_pp": 3.28,
-            "net_income_latest": 441602000.0,
-            "net_income_year_ago": 230848000.0,
-            "free_cash_flow_latest": 998062000.0,
-            "free_cash_flow_yoy_pct": 351.16,
-            "debt_yoy_pct": 15.65,
-            "shares_yoy_pct": -0.23
-          },
-          "fields_available": 9,
-          "value_trap_flags": [],
-          "status": "available",
-          "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
-        },
-        "sector_valuation": {
-          "status": "near_median",
-          "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
-          "cheapness_percentile": 62.5,
-          "metrics_available": 3,
-          "comparisons": {
-            "trailing_pe": {
-              "value": 31.4,
-              "sector_median": 37.83,
-              "cheapness_percentile": 62.5,
-              "peer_count": 4
-            },
-            "ev_to_ebitda": {
-              "value": 23.82,
-              "sector_median": 27.2,
-              "cheapness_percentile": 62.5,
-              "peer_count": 4
-            },
-            "fcf_yield_pct": {
-              "value": 4.1,
-              "sector_median": 3.84,
-              "cheapness_percentile": 62.5,
-              "peer_count": 4
-            }
-          },
-          "history_status": "unavailable",
-          "history_reason": "No trustworthy point-in-time historical valuation source is configured"
-        },
-        "risk_gates": {
-          "status": "clear",
-          "counts": {
-            "clear": 6,
-            "caution": 0,
-            "high_risk": 0,
-            "unavailable": 1
-          },
-          "gates": [
-            {
-              "id": "filing_freshness",
-              "status": "clear",
-              "reason": "Latest quarterly period ended 114 days ago"
-            },
-            {
-              "id": "dilution",
-              "status": "clear",
-              "reason": "Share-count change was -0.2% year over year"
             },
             {
               "id": "leverage",
@@ -5878,6 +5728,152 @@
       }
     },
     {
+      "ticker": "FIX",
+      "sector": "Industrials",
+      "industry": "Construction & Engineering",
+      "cik": 1035983,
+      "price": 1279.37,
+      "drawdown_pct": -38.1,
+      "ma50": 1619.51,
+      "average_dollar_volume_20d": 620265998.78,
+      "price_score": 78.1,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -13.63,
+        "return_20d_pct": -22.15,
+        "versus_ma20_pct": -20.07,
+        "above_20d_low_pct": 0.0,
+        "return_63d_pct": -26.16,
+        "sector_return_63d_pct": -3.51,
+        "sector_relative_63d_pp": -22.65,
+        "sector_sample_size": 83
+      },
+      "research": {
+        "metrics": {
+          "revenue_growth_pct": 50.3,
+          "earnings_growth_pct": 91.9,
+          "profit_margin_pct": 12.78,
+          "return_on_equity_pct": 55.29,
+          "trailing_pe": 31.48,
+          "ev_to_ebitda": 23.82,
+          "fcf_yield_pct": 4.09,
+          "debt_to_equity": 11.5,
+          "current_ratio": 1.21,
+          "free_cash_flow": 1841915392.0,
+          "market_cap": 45026566144.0
+        },
+        "component_scores": {
+          "fundamentals_30": 28.2,
+          "valuation_25": 8.5,
+          "selloff_20": 15.6,
+          "financial_strength_15": 12.6,
+          "catalysts_10": null
+        },
+        "quant_score_90": 64.9,
+        "data_fields_available": 10,
+        "data_fields_required": 7,
+        "eligible": true,
+        "catalyst_status": "Manual research required; no automated catalyst points awarded.",
+        "company_website": "https://comfortsystemsusa.com",
+        "next_earnings_date": "2026-10-22",
+        "quarterly_trends": {
+          "metrics": {
+            "latest_period": "2026-06-30",
+            "year_ago_period": "2025-06-30",
+            "revenue_yoy_pct": 50.26,
+            "operating_margin_pct": 17.06,
+            "operating_margin_change_pp": 3.28,
+            "net_income_latest": 441602000.0,
+            "net_income_year_ago": 230848000.0,
+            "free_cash_flow_latest": 998062000.0,
+            "free_cash_flow_yoy_pct": 351.16,
+            "debt_yoy_pct": 15.65,
+            "shares_yoy_pct": -0.23
+          },
+          "fields_available": 9,
+          "value_trap_flags": [],
+          "status": "available",
+          "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
+        },
+        "sector_valuation": {
+          "status": "near_median",
+          "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
+          "cheapness_percentile": 62.5,
+          "metrics_available": 3,
+          "comparisons": {
+            "trailing_pe": {
+              "value": 31.48,
+              "sector_median": 37.87,
+              "cheapness_percentile": 62.5,
+              "peer_count": 4
+            },
+            "ev_to_ebitda": {
+              "value": 23.82,
+              "sector_median": 27.2,
+              "cheapness_percentile": 62.5,
+              "peer_count": 4
+            },
+            "fcf_yield_pct": {
+              "value": 4.09,
+              "sector_median": 3.83,
+              "cheapness_percentile": 62.5,
+              "peer_count": 4
+            }
+          },
+          "history_status": "unavailable",
+          "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -0.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        }
+      }
+    },
+    {
       "ticker": "WYNN",
       "sector": "Consumer Discretionary",
       "industry": "Casinos & Gaming",
@@ -6031,7 +6027,7 @@
       "price": 55.44,
       "drawdown_pct": -49.3,
       "ma50": 57.15,
-      "average_dollar_volume_20d": 135605140.21,
+      "average_dollar_volume_20d": 135820214.14,
       "price_score": 77.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6053,20 +6049,20 @@
           "return_on_equity_pct": 17.13,
           "trailing_pe": 14.29,
           "ev_to_ebitda": 9.77,
-          "fcf_yield_pct": 6.31,
+          "fcf_yield_pct": 6.23,
           "debt_to_equity": 47.07,
           "current_ratio": 1.45,
           "free_cash_flow": 558312512.0,
-          "market_cap": 8848224256.0
+          "market_cap": 8959411200.0
         },
         "component_scores": {
           "fundamentals_30": 7.5,
-          "valuation_25": 21.6,
+          "valuation_25": 21.4,
           "selloff_20": 15.4,
           "financial_strength_15": 13.0,
           "catalysts_10": null
         },
-        "quant_score_90": 57.5,
+        "quant_score_90": 57.4,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -6102,7 +6098,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 14.29,
-              "sector_median": 37.83,
+              "sector_median": 37.87,
               "cheapness_percentile": 87.5,
               "peer_count": 4
             },
@@ -6113,8 +6109,8 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 6.31,
-              "sector_median": 3.84,
+              "value": 6.23,
+              "sector_median": 3.83,
               "cheapness_percentile": 87.5,
               "peer_count": 4
             }
@@ -6585,21 +6581,21 @@
       "sector": "Industrials",
       "industry": "Aerospace & Defense",
       "cik": 4281,
-      "price": 193.25,
+      "price": 193.29,
       "drawdown_pct": -34.0,
       "ma50": 239.8,
-      "average_dollar_volume_20d": 657713552.41,
-      "price_score": 70.4,
+      "average_dollar_volume_20d": 665119631.85,
+      "price_score": 70.3,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "still_falling",
-        "return_5d_pct": -12.04,
-        "return_20d_pct": -15.75,
-        "versus_ma20_pct": -12.92,
+        "return_5d_pct": -12.02,
+        "return_20d_pct": -15.73,
+        "versus_ma20_pct": -12.9,
         "above_20d_low_pct": 0.0,
-        "return_63d_pct": -33.16,
+        "return_63d_pct": -33.15,
         "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": -29.65,
+        "sector_relative_63d_pp": -29.64,
         "sector_sample_size": 83
       }
     },
@@ -6611,7 +6607,7 @@
       "price": 58.72,
       "drawdown_pct": -38.6,
       "ma50": 66.93,
-      "average_dollar_volume_20d": 513653894.4,
+      "average_dollar_volume_20d": 512354693.82,
       "price_score": 70.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6634,7 +6630,7 @@
       "price": 108.78,
       "drawdown_pct": -38.0,
       "ma50": 124.36,
-      "average_dollar_volume_20d": 182903197.04,
+      "average_dollar_volume_20d": 182960502.34,
       "price_score": 69.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6680,7 +6676,7 @@
       "price": 35.31,
       "drawdown_pct": -45.6,
       "ma50": 33.75,
-      "average_dollar_volume_20d": 264046166.98,
+      "average_dollar_volume_20d": 264879149.34,
       "price_score": 68.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6746,21 +6742,21 @@
       "sector": "Communication Services",
       "industry": "Interactive Media & Services",
       "cik": 1713445,
-      "price": 150.28,
+      "price": 150.26,
       "drawdown_pct": -42.0,
       "ma50": 154.09,
-      "average_dollar_volume_20d": 605775842.93,
+      "average_dollar_volume_20d": 608068531.38,
       "price_score": 65.4,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "still_falling",
-        "return_5d_pct": -5.7,
-        "return_20d_pct": -1.6,
-        "versus_ma20_pct": -1.14,
-        "above_20d_low_pct": 5.5,
-        "return_63d_pct": -10.93,
+        "return_5d_pct": -5.71,
+        "return_20d_pct": -1.61,
+        "versus_ma20_pct": -1.15,
+        "above_20d_low_pct": 5.49,
+        "return_63d_pct": -10.95,
         "sector_return_63d_pct": -1.11,
-        "sector_relative_63d_pp": -9.81,
+        "sector_relative_63d_pp": -9.83,
         "sector_sample_size": 22
       }
     },
@@ -6772,7 +6768,7 @@
       "price": 28.14,
       "drawdown_pct": -32.7,
       "ma50": 33.62,
-      "average_dollar_volume_20d": 694363474.11,
+      "average_dollar_volume_20d": 692995159.6,
       "price_score": 65.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6795,7 +6791,7 @@
       "price": 82.0,
       "drawdown_pct": -43.4,
       "ma50": 74.48,
-      "average_dollar_volume_20d": 309656148.6,
+      "average_dollar_volume_20d": 309193881.8,
       "price_score": 65.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6818,7 +6814,7 @@
       "price": 38.32,
       "drawdown_pct": -43.2,
       "ma50": 37.14,
-      "average_dollar_volume_20d": 1523859125.33,
+      "average_dollar_volume_20d": 1524786848.69,
       "price_score": 64.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6864,7 +6860,7 @@
       "price": 333.67,
       "drawdown_pct": -38.0,
       "ma50": 356.78,
-      "average_dollar_volume_20d": 98179315.48,
+      "average_dollar_volume_20d": 98326380.54,
       "price_score": 63.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6979,7 +6975,7 @@
       "price": 188.02,
       "drawdown_pct": -36.4,
       "ma50": 201.33,
-      "average_dollar_volume_20d": 218195899.98,
+      "average_dollar_volume_20d": 218255991.17,
       "price_score": 61.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7002,7 +6998,7 @@
       "price": 29.13,
       "drawdown_pct": -40.3,
       "ma50": 29.16,
-      "average_dollar_volume_20d": 287208296.23,
+      "average_dollar_volume_20d": 287533941.94,
       "price_score": 60.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7045,21 +7041,21 @@
       "sector": "Information Technology",
       "industry": "Electronic Manufacturing Services",
       "cik": 898293,
-      "price": 267.31,
-      "drawdown_pct": -30.7,
+      "price": 267.41,
+      "drawdown_pct": -30.6,
       "ma50": 307.49,
-      "average_dollar_volume_20d": 462264567.44,
-      "price_score": 59.1,
+      "average_dollar_volume_20d": 465501750.93,
+      "price_score": 59.0,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "still_falling",
-        "return_5d_pct": -6.91,
-        "return_20d_pct": -13.96,
-        "versus_ma20_pct": -10.26,
+        "return_5d_pct": -6.87,
+        "return_20d_pct": -13.93,
+        "versus_ma20_pct": -10.23,
         "above_20d_low_pct": 0.0,
-        "return_63d_pct": -14.47,
+        "return_63d_pct": -14.43,
         "sector_return_63d_pct": 4.07,
-        "sector_relative_63d_pp": -18.54,
+        "sector_relative_63d_pp": -18.5,
         "sector_sample_size": 75
       }
     },
@@ -7094,7 +7090,7 @@
       "price": 552.44,
       "drawdown_pct": -29.6,
       "ma50": 644.07,
-      "average_dollar_volume_20d": 679227088.95,
+      "average_dollar_volume_20d": 680513611.22,
       "price_score": 58.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7140,7 +7136,7 @@
       "price": 278.86,
       "drawdown_pct": -38.0,
       "ma50": 280.79,
-      "average_dollar_volume_20d": 144465994.67,
+      "average_dollar_volume_20d": 144662005.35,
       "price_score": 57.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7163,7 +7159,7 @@
       "price": 93.09,
       "drawdown_pct": -34.4,
       "ma50": 99.14,
-      "average_dollar_volume_20d": 533902417.42,
+      "average_dollar_volume_20d": 534241572.21,
       "price_score": 57.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7209,7 +7205,7 @@
       "price": 15.54,
       "drawdown_pct": -37.9,
       "ma50": 15.6,
-      "average_dollar_volume_20d": 307952418.58,
+      "average_dollar_volume_20d": 308632995.99,
       "price_score": 57.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7278,7 +7274,7 @@
       "price": 11.94,
       "drawdown_pct": -30.8,
       "ma50": 13.16,
-      "average_dollar_volume_20d": 474668450.49,
+      "average_dollar_volume_20d": 480937433.84,
       "price_score": 55.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7301,7 +7297,7 @@
       "price": 12.98,
       "drawdown_pct": -31.4,
       "ma50": 14.18,
-      "average_dollar_volume_20d": 445213681.65,
+      "average_dollar_volume_20d": 445691743.47,
       "price_score": 55.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7393,7 +7389,7 @@
       "price": 84.45,
       "drawdown_pct": -35.1,
       "ma50": 80.86,
-      "average_dollar_volume_20d": 443183321.63,
+      "average_dollar_volume_20d": 443400189.23,
       "price_score": 52.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7439,7 +7435,7 @@
       "price": 86.43,
       "drawdown_pct": -33.5,
       "ma50": 88.13,
-      "average_dollar_volume_20d": 471098822.45,
+      "average_dollar_volume_20d": 470594438.58,
       "price_score": 52.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7478,29 +7474,6 @@
       }
     },
     {
-      "ticker": "TPR",
-      "sector": "Consumer Discretionary",
-      "industry": "Apparel, Accessories & Luxury Goods",
-      "cik": 1116132,
-      "price": 113.83,
-      "drawdown_pct": -30.7,
-      "ma50": 119.6,
-      "average_dollar_volume_20d": 285293234.19,
-      "price_score": 50.8,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "still_falling",
-        "return_5d_pct": -4.94,
-        "return_20d_pct": 1.53,
-        "versus_ma20_pct": -2.07,
-        "above_20d_low_pct": 0.36,
-        "return_63d_pct": -19.87,
-        "sector_return_63d_pct": -0.73,
-        "sector_relative_63d_pp": -19.14,
-        "sector_sample_size": 47
-      }
-    },
-    {
       "ticker": "UBER",
       "sector": "Industrials",
       "industry": "Passenger Ground Transportation",
@@ -7508,7 +7481,7 @@
       "price": 69.07,
       "drawdown_pct": -30.7,
       "ma50": 72.48,
-      "average_dollar_volume_20d": 1045215371.51,
+      "average_dollar_volume_20d": 1047360820.39,
       "price_score": 50.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7521,6 +7494,29 @@
         "sector_return_63d_pct": -3.51,
         "sector_relative_63d_pp": 8.26,
         "sector_sample_size": 83
+      }
+    },
+    {
+      "ticker": "TPR",
+      "sector": "Consumer Discretionary",
+      "industry": "Apparel, Accessories & Luxury Goods",
+      "cik": 1116132,
+      "price": 113.92,
+      "drawdown_pct": -30.6,
+      "ma50": 119.6,
+      "average_dollar_volume_20d": 288083006.33,
+      "price_score": 50.7,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -4.87,
+        "return_20d_pct": 1.61,
+        "versus_ma20_pct": -2.0,
+        "above_20d_low_pct": 0.44,
+        "return_63d_pct": -19.81,
+        "sector_return_63d_pct": -0.73,
+        "sector_relative_63d_pp": -19.08,
+        "sector_sample_size": 47
       }
     },
     {
@@ -7554,7 +7550,7 @@
       "price": 378.72,
       "drawdown_pct": -33.6,
       "ma50": 374.42,
-      "average_dollar_volume_20d": 184928380.26,
+      "average_dollar_volume_20d": 185720226.98,
       "price_score": 50.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7577,7 +7573,7 @@
       "price": 33.68,
       "drawdown_pct": -29.0,
       "ma50": 35.67,
-      "average_dollar_volume_20d": 179138181.3,
+      "average_dollar_volume_20d": 179357286.54,
       "price_score": 49.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7646,7 +7642,7 @@
       "price": 254.23,
       "drawdown_pct": -32.0,
       "ma50": 251.31,
-      "average_dollar_volume_20d": 395228438.72,
+      "average_dollar_volume_20d": 395554094.63,
       "price_score": 48.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7692,7 +7688,7 @@
       "price": 134.73,
       "drawdown_pct": -31.7,
       "ma50": 129.52,
-      "average_dollar_volume_20d": 128268047.3,
+      "average_dollar_volume_20d": 128436971.77,
       "price_score": 47.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7715,7 +7711,7 @@
       "price": 140.83,
       "drawdown_pct": -29.7,
       "ma50": 145.2,
-      "average_dollar_volume_20d": 1175737202.54,
+      "average_dollar_volume_20d": 1176853132.44,
       "price_score": 47.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7761,7 +7757,7 @@
       "price": 48.71,
       "drawdown_pct": -30.1,
       "ma50": 49.56,
-      "average_dollar_volume_20d": 205257570.09,
+      "average_dollar_volume_20d": 206062561.27,
       "price_score": 46.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7784,7 +7780,7 @@
       "price": 452.95,
       "drawdown_pct": -22.9,
       "ma50": 512.96,
-      "average_dollar_volume_20d": 3527022555.53,
+      "average_dollar_volume_20d": 3525788629.11,
       "price_score": 46.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7876,7 +7872,7 @@
       "price": 123.7,
       "drawdown_pct": -27.7,
       "ma50": 127.53,
-      "average_dollar_volume_20d": 261452993.91,
+      "average_dollar_volume_20d": 261205798.02,
       "price_score": 44.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7922,7 +7918,7 @@
       "price": 19.82,
       "drawdown_pct": -24.9,
       "ma50": 21.37,
-      "average_dollar_volume_20d": 173189795.02,
+      "average_dollar_volume_20d": 174107507.58,
       "price_score": 44.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8030,29 +8026,6 @@
       }
     },
     {
-      "ticker": "HPE",
-      "sector": "Information Technology",
-      "industry": "Technology Hardware, Storage & Peripherals",
-      "cik": 1645590,
-      "price": 55.46,
-      "drawdown_pct": -24.5,
-      "ma50": 59.39,
-      "average_dollar_volume_20d": 1290710695.83,
-      "price_score": 43.4,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "still_falling",
-        "return_5d_pct": -5.41,
-        "return_20d_pct": -12.69,
-        "versus_ma20_pct": -13.47,
-        "above_20d_low_pct": 0.6,
-        "return_63d_pct": 16.59,
-        "sector_return_63d_pct": 4.07,
-        "sector_relative_63d_pp": 12.52,
-        "sector_sample_size": 75
-      }
-    },
-    {
       "ticker": "CMCSA",
       "sector": "Communication Services",
       "industry": "Cable & Satellite",
@@ -8073,6 +8046,29 @@
         "sector_return_63d_pct": -1.11,
         "sector_relative_63d_pp": 5.12,
         "sector_sample_size": 22
+      }
+    },
+    {
+      "ticker": "HPE",
+      "sector": "Information Technology",
+      "industry": "Technology Hardware, Storage & Peripherals",
+      "cik": 1645590,
+      "price": 55.47,
+      "drawdown_pct": -24.5,
+      "ma50": 59.39,
+      "average_dollar_volume_20d": 1295391290.1,
+      "price_score": 43.3,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -5.39,
+        "return_20d_pct": -12.67,
+        "versus_ma20_pct": -13.45,
+        "above_20d_low_pct": 0.62,
+        "return_63d_pct": 16.61,
+        "sector_return_63d_pct": 4.07,
+        "sector_relative_63d_pp": 12.54,
+        "sector_sample_size": 75
       }
     },
     {
@@ -8191,29 +8187,6 @@
       }
     },
     {
-      "ticker": "ETN",
-      "sector": "Industrials",
-      "industry": "Electrical Components & Equipment",
-      "cik": 1551182,
-      "price": 368.69,
-      "drawdown_pct": -19.8,
-      "ma50": 418.18,
-      "average_dollar_volume_20d": 950140167.02,
-      "price_score": 41.6,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "still_falling",
-        "return_5d_pct": -8.4,
-        "return_20d_pct": -16.21,
-        "versus_ma20_pct": -11.85,
-        "above_20d_low_pct": 0.0,
-        "return_63d_pct": -8.53,
-        "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": -5.02,
-        "sector_sample_size": 83
-      }
-    },
-    {
       "ticker": "LOW",
       "sector": "Consumer Discretionary",
       "industry": "Home Improvement Retail",
@@ -8221,7 +8194,7 @@
       "price": 204.37,
       "drawdown_pct": -27.6,
       "ma50": 196.9,
-      "average_dollar_volume_20d": 619081173.28,
+      "average_dollar_volume_20d": 622900684.99,
       "price_score": 41.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8260,6 +8233,29 @@
       }
     },
     {
+      "ticker": "ETN",
+      "sector": "Industrials",
+      "industry": "Electrical Components & Equipment",
+      "cik": 1551182,
+      "price": 368.99,
+      "drawdown_pct": -19.8,
+      "ma50": 418.19,
+      "average_dollar_volume_20d": 956511629.4,
+      "price_score": 41.4,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "still_falling",
+        "return_5d_pct": -8.32,
+        "return_20d_pct": -16.14,
+        "versus_ma20_pct": -11.78,
+        "above_20d_low_pct": 0.0,
+        "return_63d_pct": -8.46,
+        "sector_return_63d_pct": -3.51,
+        "sector_relative_63d_pp": -4.95,
+        "sector_sample_size": 83
+      }
+    },
+    {
       "ticker": "MCHP",
       "sector": "Information Technology",
       "industry": "Semiconductors",
@@ -8290,7 +8286,7 @@
       "price": 131.24,
       "drawdown_pct": -23.5,
       "ma50": 139.57,
-      "average_dollar_volume_20d": 317500479.25,
+      "average_dollar_volume_20d": 307923088.93,
       "price_score": 41.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8336,7 +8332,7 @@
       "price": 109.26,
       "drawdown_pct": -27.6,
       "ma50": 107.34,
-      "average_dollar_volume_20d": 225168377.97,
+      "average_dollar_volume_20d": 225421145.52,
       "price_score": 41.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8359,7 +8355,7 @@
       "price": 552.35,
       "drawdown_pct": -27.4,
       "ma50": 522.24,
-      "average_dollar_volume_20d": 555142869.64,
+      "average_dollar_volume_20d": 555500930.51,
       "price_score": 41.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8382,7 +8378,7 @@
       "price": 74.11,
       "drawdown_pct": -24.9,
       "ma50": 76.93,
-      "average_dollar_volume_20d": 348314250.31,
+      "average_dollar_volume_20d": 347942125.47,
       "price_score": 41.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8451,7 +8447,7 @@
       "price": 91.44,
       "drawdown_pct": -19.5,
       "ma50": 103.05,
-      "average_dollar_volume_20d": 828564623.62,
+      "average_dollar_volume_20d": 829162467.5,
       "price_score": 40.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8474,7 +8470,7 @@
       "price": 517.67,
       "drawdown_pct": -26.6,
       "ma50": 504.08,
-      "average_dollar_volume_20d": 375173901.55,
+      "average_dollar_volume_20d": 375541550.77,
       "price_score": 39.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8609,21 +8605,21 @@
       "sector": "Information Technology",
       "industry": "Electronic Equipment & Instruments",
       "cik": 1601046,
-      "price": 311.51,
+      "price": 311.52,
       "drawdown_pct": -19.7,
       "ma50": 342.83,
-      "average_dollar_volume_20d": 430966168.33,
+      "average_dollar_volume_20d": 434610535.7,
       "price_score": 38.7,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "still_falling",
-        "return_5d_pct": -8.94,
+        "return_5d_pct": -8.93,
         "return_20d_pct": -12.87,
         "versus_ma20_pct": -13.68,
         "above_20d_low_pct": 0.0,
-        "return_63d_pct": -2.25,
+        "return_63d_pct": -2.24,
         "sector_return_63d_pct": 4.07,
-        "sector_relative_63d_pp": -6.32,
+        "sector_relative_63d_pp": -6.31,
         "sector_sample_size": 75
       }
     },
@@ -8635,7 +8631,7 @@
       "price": 64.59,
       "drawdown_pct": -19.0,
       "ma50": 71.78,
-      "average_dollar_volume_20d": 779207676.76,
+      "average_dollar_volume_20d": 778676155.99,
       "price_score": 38.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8727,7 +8723,7 @@
       "price": 6110.63,
       "drawdown_pct": -24.5,
       "ma50": 6168.73,
-      "average_dollar_volume_20d": 266604936.79,
+      "average_dollar_volume_20d": 266741814.9,
       "price_score": 37.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8750,7 +8746,7 @@
       "price": 183.97,
       "drawdown_pct": -19.1,
       "ma50": 201.64,
-      "average_dollar_volume_20d": 1147196384.4,
+      "average_dollar_volume_20d": 1147922357.62,
       "price_score": 37.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8796,7 +8792,7 @@
       "price": 270.55,
       "drawdown_pct": -24.8,
       "ma50": 255.92,
-      "average_dollar_volume_20d": 1047144966.18,
+      "average_dollar_volume_20d": 1047144979.7,
       "price_score": 37.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8842,7 +8838,7 @@
       "price": 175.64,
       "drawdown_pct": -24.5,
       "ma50": 172.06,
-      "average_dollar_volume_20d": 240423086.91,
+      "average_dollar_volume_20d": 240765409.27,
       "price_score": 36.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8865,7 +8861,7 @@
       "price": 252.63,
       "drawdown_pct": -24.5,
       "ma50": 249.77,
-      "average_dollar_volume_20d": 1386274437.05,
+      "average_dollar_volume_20d": 1387337377.79,
       "price_score": 36.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8888,7 +8884,7 @@
       "price": 22.74,
       "drawdown_pct": -19.1,
       "ma50": 24.6,
-      "average_dollar_volume_20d": 1110169858.81,
+      "average_dollar_volume_20d": 1108702279.49,
       "price_score": 36.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8911,7 +8907,7 @@
       "price": 392.45,
       "drawdown_pct": -24.0,
       "ma50": 346.19,
-      "average_dollar_volume_20d": 215748137.57,
+      "average_dollar_volume_20d": 216099615.8,
       "price_score": 36.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8980,7 +8976,7 @@
       "price": 78.04,
       "drawdown_pct": -22.5,
       "ma50": 79.31,
-      "average_dollar_volume_20d": 130790599.31,
+      "average_dollar_volume_20d": 130900807.4,
       "price_score": 35.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9141,7 +9137,7 @@
       "price": 252.11,
       "drawdown_pct": -22.9,
       "ma50": 232.71,
-      "average_dollar_volume_20d": 1358671588.39,
+      "average_dollar_volume_20d": 1360072399.79,
       "price_score": 34.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9184,21 +9180,21 @@
       "sector": "Information Technology",
       "industry": "Technology Hardware, Storage & Peripherals",
       "cik": 1474432,
-      "price": 121.22,
+      "price": 121.2,
       "drawdown_pct": -22.8,
       "ma50": 117.62,
-      "average_dollar_volume_20d": 588865278.26,
+      "average_dollar_volume_20d": 591573021.87,
       "price_score": 34.2,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "still_falling",
-        "return_5d_pct": -9.13,
-        "return_20d_pct": -0.54,
-        "versus_ma20_pct": -12.04,
+        "return_5d_pct": -9.15,
+        "return_20d_pct": -0.56,
+        "versus_ma20_pct": -12.05,
         "above_20d_low_pct": 0.0,
-        "return_63d_pct": 62.58,
+        "return_63d_pct": 62.55,
         "sector_return_63d_pct": 4.07,
-        "sector_relative_63d_pp": 58.51,
+        "sector_relative_63d_pp": 58.48,
         "sector_sample_size": 75
       }
     },
@@ -9210,7 +9206,7 @@
       "price": 177.72,
       "drawdown_pct": -20.0,
       "ma50": 185.12,
-      "average_dollar_volume_20d": 168276355.09,
+      "average_dollar_volume_20d": 168429140.97,
       "price_score": 34.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9233,7 +9229,7 @@
       "price": 188.13,
       "drawdown_pct": -22.6,
       "ma50": 176.33,
-      "average_dollar_volume_20d": 97911580.08,
+      "average_dollar_volume_20d": 98006388.2,
       "price_score": 33.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9279,7 +9275,7 @@
       "price": 445.8,
       "drawdown_pct": -19.6,
       "ma50": 465.08,
-      "average_dollar_volume_20d": 239542219.58,
+      "average_dollar_volume_20d": 240265463.19,
       "price_score": 33.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9302,7 +9298,7 @@
       "price": 42.03,
       "drawdown_pct": -22.3,
       "ma50": 40.66,
-      "average_dollar_volume_20d": 265253908.44,
+      "average_dollar_volume_20d": 266048775.57,
       "price_score": 33.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9371,7 +9367,7 @@
       "price": 893.21,
       "drawdown_pct": -16.7,
       "ma50": 971.69,
-      "average_dollar_volume_20d": 518379577.17,
+      "average_dollar_volume_20d": 519263765.77,
       "price_score": 33.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9555,7 +9551,7 @@
       "price": 1141.74,
       "drawdown_pct": -21.3,
       "ma50": 1140.34,
-      "average_dollar_volume_20d": 384077924.84,
+      "average_dollar_volume_20d": 384378487.89,
       "price_score": 31.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9578,7 +9574,7 @@
       "price": 102.51,
       "drawdown_pct": -19.6,
       "ma50": 104.75,
-      "average_dollar_volume_20d": 1011217810.0,
+      "average_dollar_volume_20d": 1009661164.87,
       "price_score": 31.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9601,7 +9597,7 @@
       "price": 49.55,
       "drawdown_pct": -17.1,
       "ma50": 52.37,
-      "average_dollar_volume_20d": 608597766.22,
+      "average_dollar_volume_20d": 608929025.31,
       "price_score": 31.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9670,7 +9666,7 @@
       "price": 122.51,
       "drawdown_pct": -15.5,
       "ma50": 131.61,
-      "average_dollar_volume_20d": 1191401059.83,
+      "average_dollar_volume_20d": 1186231462.4,
       "price_score": 30.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9693,7 +9689,7 @@
       "price": 307.08,
       "drawdown_pct": -20.1,
       "ma50": 295.85,
-      "average_dollar_volume_20d": 732307396.93,
+      "average_dollar_volume_20d": 733577234.09,
       "price_score": 30.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9716,7 +9712,7 @@
       "price": 42.43,
       "drawdown_pct": -16.5,
       "ma50": 44.75,
-      "average_dollar_volume_20d": 180161614.3,
+      "average_dollar_volume_20d": 180301663.0,
       "price_score": 29.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9739,7 +9735,7 @@
       "price": 114.11,
       "drawdown_pct": -15.4,
       "ma50": 121.69,
-      "average_dollar_volume_20d": 622794810.82,
+      "average_dollar_volume_20d": 625513681.28,
       "price_score": 29.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9831,7 +9827,7 @@
       "price": 306.8,
       "drawdown_pct": -19.3,
       "ma50": 306.83,
-      "average_dollar_volume_20d": 477380839.28,
+      "average_dollar_volume_20d": 474931240.79,
       "price_score": 29.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9874,21 +9870,21 @@
       "sector": "Unknown",
       "industry": "Unknown",
       "cik": null,
-      "price": 303.65,
+      "price": 303.61,
       "drawdown_pct": -15.9,
       "ma50": 319.34,
-      "average_dollar_volume_20d": 974956273.3,
+      "average_dollar_volume_20d": 978531771.9,
       "price_score": 28.7,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "still_falling",
-        "return_5d_pct": -4.01,
-        "return_20d_pct": -15.38,
-        "versus_ma20_pct": -9.34,
-        "above_20d_low_pct": 4.1,
-        "return_63d_pct": 15.83,
+        "return_5d_pct": -4.02,
+        "return_20d_pct": -15.39,
+        "versus_ma20_pct": -9.35,
+        "above_20d_low_pct": 4.09,
+        "return_63d_pct": 15.82,
         "sector_return_63d_pct": 9.69,
-        "sector_relative_63d_pp": 6.14,
+        "sector_relative_63d_pp": 6.13,
         "sector_sample_size": 12
       }
     },
@@ -9916,25 +9912,48 @@
       }
     },
     {
-      "ticker": "EQT",
-      "sector": "Energy",
-      "industry": "Oil & Gas Exploration & Production",
-      "cik": 33213,
-      "price": 54.65,
-      "drawdown_pct": -19.1,
-      "ma50": 52.98,
-      "average_dollar_volume_20d": 358700271.61,
+      "ticker": "EFX",
+      "sector": "Industrials",
+      "industry": "Research & Consulting Services",
+      "cik": 33185,
+      "price": 187.14,
+      "drawdown_pct": -19.0,
+      "ma50": 166.89,
+      "average_dollar_volume_20d": 345636713.24,
       "price_score": 28.6,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 4.2,
-        "return_20d_pct": 5.37,
-        "versus_ma20_pct": 4.59,
-        "above_20d_low_pct": 12.55,
-        "return_63d_pct": 3.39,
+        "return_5d_pct": 16.05,
+        "return_20d_pct": 25.77,
+        "versus_ma20_pct": 23.21,
+        "above_20d_low_pct": 36.36,
+        "return_63d_pct": 8.78,
+        "sector_return_63d_pct": -3.51,
+        "sector_relative_63d_pp": 12.29,
+        "sector_sample_size": 83
+      }
+    },
+    {
+      "ticker": "EQT",
+      "sector": "Energy",
+      "industry": "Oil & Gas Exploration & Production",
+      "cik": 33213,
+      "price": 54.67,
+      "drawdown_pct": -19.0,
+      "ma50": 52.98,
+      "average_dollar_volume_20d": 362877794.77,
+      "price_score": 28.6,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "stabilizing",
+        "return_5d_pct": 4.23,
+        "return_20d_pct": 5.4,
+        "versus_ma20_pct": 4.61,
+        "above_20d_low_pct": 12.58,
+        "return_63d_pct": 3.42,
         "sector_return_63d_pct": 3.58,
-        "sector_relative_63d_pp": -0.19,
+        "sector_relative_63d_pp": -0.16,
         "sector_sample_size": 21
       }
     },
@@ -9946,7 +9965,7 @@
       "price": 110.66,
       "drawdown_pct": -16.2,
       "ma50": 115.63,
-      "average_dollar_volume_20d": 163639109.14,
+      "average_dollar_volume_20d": 163863771.08,
       "price_score": 28.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9962,29 +9981,6 @@
       }
     },
     {
-      "ticker": "EFX",
-      "sector": "Industrials",
-      "industry": "Research & Consulting Services",
-      "cik": 33185,
-      "price": 187.22,
-      "drawdown_pct": -19.0,
-      "ma50": 166.89,
-      "average_dollar_volume_20d": 341343722.52,
-      "price_score": 28.5,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "stabilizing",
-        "return_5d_pct": 16.1,
-        "return_20d_pct": 25.82,
-        "versus_ma20_pct": 23.26,
-        "above_20d_low_pct": 36.42,
-        "return_63d_pct": 8.82,
-        "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": 12.33,
-        "sector_sample_size": 83
-      }
-    },
-    {
       "ticker": "LYB",
       "sector": "Materials",
       "industry": "Specialty Chemicals",
@@ -9992,7 +9988,7 @@
       "price": 65.37,
       "drawdown_pct": -19.0,
       "ma50": 62.41,
-      "average_dollar_volume_20d": 200473068.38,
+      "average_dollar_volume_20d": 200712172.24,
       "price_score": 28.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10054,6 +10050,29 @@
       }
     },
     {
+      "ticker": "PLD",
+      "sector": "Real Estate",
+      "industry": "Industrial REITs",
+      "cik": 1045609,
+      "price": 126.66,
+      "drawdown_pct": -14.9,
+      "ma50": 134.13,
+      "average_dollar_volume_20d": 556803267.76,
+      "price_score": 28.0,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "mixed",
+        "return_5d_pct": -0.22,
+        "return_20d_pct": -5.35,
+        "versus_ma20_pct": -1.92,
+        "above_20d_low_pct": 2.07,
+        "return_63d_pct": -13.52,
+        "sector_return_63d_pct": -8.35,
+        "sector_relative_63d_pp": -5.17,
+        "sector_sample_size": 30
+      }
+    },
+    {
       "ticker": "VICI",
       "sector": "Real Estate",
       "industry": "Hotel & Resort REITs",
@@ -10061,7 +10080,7 @@
       "price": 24.02,
       "drawdown_pct": -18.2,
       "ma50": 24.19,
-      "average_dollar_volume_20d": 230089489.23,
+      "average_dollar_volume_20d": 230227806.0,
       "price_score": 28.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10077,29 +10096,6 @@
       }
     },
     {
-      "ticker": "PLD",
-      "sector": "Real Estate",
-      "industry": "Industrial REITs",
-      "cik": 1045609,
-      "price": 126.72,
-      "drawdown_pct": -14.9,
-      "ma50": 134.13,
-      "average_dollar_volume_20d": 550452155.59,
-      "price_score": 27.9,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "mixed",
-        "return_5d_pct": -0.17,
-        "return_20d_pct": -5.31,
-        "versus_ma20_pct": -1.88,
-        "above_20d_low_pct": 2.12,
-        "return_63d_pct": -13.48,
-        "sector_return_63d_pct": -8.35,
-        "sector_relative_63d_pp": -5.13,
-        "sector_sample_size": 30
-      }
-    },
-    {
       "ticker": "SNOW",
       "sector": "Unknown",
       "industry": "Unknown",
@@ -10107,7 +10103,7 @@
       "price": 313.96,
       "drawdown_pct": -14.9,
       "ma50": 331.91,
-      "average_dollar_volume_20d": 1511121125.59,
+      "average_dollar_volume_20d": 1512207380.07,
       "price_score": 27.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10130,7 +10126,7 @@
       "price": 412.35,
       "drawdown_pct": -15.1,
       "ma50": 433.84,
-      "average_dollar_volume_20d": 4978555385.84,
+      "average_dollar_volume_20d": 4989343492.87,
       "price_score": 27.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10153,7 +10149,7 @@
       "price": 28.79,
       "drawdown_pct": -13.6,
       "ma50": 30.99,
-      "average_dollar_volume_20d": 137391998.08,
+      "average_dollar_volume_20d": 137641521.02,
       "price_score": 27.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10199,7 +10195,7 @@
       "price": 75.6,
       "drawdown_pct": -18.3,
       "ma50": 69.28,
-      "average_dollar_volume_20d": 321769799.01,
+      "average_dollar_volume_20d": 322014346.11,
       "price_score": 27.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10219,21 +10215,21 @@
       "sector": "Financials",
       "industry": "Asset Management & Custody Banks",
       "cik": 93751,
-      "price": 167.88,
+      "price": 167.84,
       "drawdown_pct": -13.1,
-      "ma50": 181.71,
-      "average_dollar_volume_20d": 395396815.97,
+      "ma50": 181.7,
+      "average_dollar_volume_20d": 398764285.16,
       "price_score": 27.3,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "mixed",
-        "return_5d_pct": 0.17,
-        "return_20d_pct": -6.8,
-        "versus_ma20_pct": -2.81,
-        "above_20d_low_pct": 1.48,
-        "return_63d_pct": -8.97,
+        "return_5d_pct": 0.14,
+        "return_20d_pct": -6.83,
+        "versus_ma20_pct": -2.83,
+        "above_20d_low_pct": 1.46,
+        "return_63d_pct": -8.99,
         "sector_return_63d_pct": -0.34,
-        "sector_relative_63d_pp": -8.63,
+        "sector_relative_63d_pp": -8.65,
         "sector_sample_size": 76
       }
     },
@@ -10245,7 +10241,7 @@
       "price": 268.72,
       "drawdown_pct": -18.2,
       "ma50": 256.6,
-      "average_dollar_volume_20d": 327430952.52,
+      "average_dollar_volume_20d": 327627937.71,
       "price_score": 27.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10314,7 +10310,7 @@
       "price": 356.46,
       "drawdown_pct": -14.5,
       "ma50": 376.39,
-      "average_dollar_volume_20d": 120725346.23,
+      "average_dollar_volume_20d": 120737073.77,
       "price_score": 27.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10452,7 +10448,7 @@
       "price": 21.36,
       "drawdown_pct": -17.2,
       "ma50": 20.94,
-      "average_dollar_volume_20d": 112019115.29,
+      "average_dollar_volume_20d": 112540576.98,
       "price_score": 25.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10475,7 +10471,7 @@
       "price": 157.0,
       "drawdown_pct": -17.0,
       "ma50": 136.85,
-      "average_dollar_volume_20d": 1567038059.06,
+      "average_dollar_volume_20d": 1570993909.56,
       "price_score": 25.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10498,7 +10494,7 @@
       "price": 496.83,
       "drawdown_pct": -12.9,
       "ma50": 527.9,
-      "average_dollar_volume_20d": 266425175.76,
+      "average_dollar_volume_20d": 266160315.69,
       "price_score": 25.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10567,7 +10563,7 @@
       "price": 286.13,
       "drawdown_pct": -16.4,
       "ma50": 271.75,
-      "average_dollar_volume_20d": 647175054.83,
+      "average_dollar_volume_20d": 646903903.73,
       "price_score": 24.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10590,7 +10586,7 @@
       "price": 253.63,
       "drawdown_pct": -15.8,
       "ma50": 254.81,
-      "average_dollar_volume_20d": 1256656905.08,
+      "average_dollar_volume_20d": 1256933729.55,
       "price_score": 24.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10652,6 +10648,29 @@
       }
     },
     {
+      "ticker": "PHM",
+      "sector": "Consumer Discretionary",
+      "industry": "Homebuilding",
+      "cik": 822416,
+      "price": 119.48,
+      "drawdown_pct": -15.6,
+      "ma50": 119.97,
+      "average_dollar_volume_20d": 231680359.46,
+      "price_score": 23.9,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "stabilizing",
+        "return_5d_pct": 5.74,
+        "return_20d_pct": 1.1,
+        "versus_ma20_pct": 4.35,
+        "above_20d_low_pct": 9.26,
+        "return_63d_pct": -7.0,
+        "sector_return_63d_pct": -0.73,
+        "sector_relative_63d_pp": -6.27,
+        "sector_sample_size": 47
+      }
+    },
+    {
       "ticker": "CCI",
       "sector": "Real Estate",
       "industry": "Telecom Tower REITs",
@@ -10675,48 +10694,25 @@
       }
     },
     {
-      "ticker": "PHM",
-      "sector": "Consumer Discretionary",
-      "industry": "Homebuilding",
-      "cik": 822416,
-      "price": 119.54,
-      "drawdown_pct": -15.6,
-      "ma50": 119.97,
-      "average_dollar_volume_20d": 227943303.48,
-      "price_score": 23.8,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "stabilizing",
-        "return_5d_pct": 5.8,
-        "return_20d_pct": 1.15,
-        "versus_ma20_pct": 4.39,
-        "above_20d_low_pct": 9.32,
-        "return_63d_pct": -6.95,
-        "sector_return_63d_pct": -0.73,
-        "sector_relative_63d_pp": -6.22,
-        "sector_sample_size": 47
-      }
-    },
-    {
       "ticker": "TEL",
       "sector": "Information Technology",
       "industry": "Electronic Manufacturing Services",
       "cik": 1385157,
-      "price": 208.46,
+      "price": 208.42,
       "drawdown_pct": -15.4,
       "ma50": 210.01,
-      "average_dollar_volume_20d": 380138870.07,
+      "average_dollar_volume_20d": 385051127.59,
       "price_score": 23.8,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "mixed",
-        "return_5d_pct": -2.13,
-        "return_20d_pct": -2.44,
-        "versus_ma20_pct": -3.03,
+        "return_5d_pct": -2.15,
+        "return_20d_pct": -2.46,
+        "versus_ma20_pct": -3.05,
         "above_20d_low_pct": 0.0,
-        "return_63d_pct": 3.12,
+        "return_63d_pct": 3.1,
         "sector_return_63d_pct": 4.07,
-        "sector_relative_63d_pp": -0.95,
+        "sector_relative_63d_pp": -0.97,
         "sector_sample_size": 75
       }
     },
@@ -10751,7 +10747,7 @@
       "price": 57.07,
       "drawdown_pct": -15.5,
       "ma50": 53.79,
-      "average_dollar_volume_20d": 167188753.03,
+      "average_dollar_volume_20d": 167588240.18,
       "price_score": 23.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10820,7 +10816,7 @@
       "price": 138.98,
       "drawdown_pct": -15.4,
       "ma50": 125.49,
-      "average_dollar_volume_20d": 305414399.93,
+      "average_dollar_volume_20d": 307957900.63,
       "price_score": 23.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10843,7 +10839,7 @@
       "price": 145.32,
       "drawdown_pct": -11.8,
       "ma50": 153.27,
-      "average_dollar_volume_20d": 578989642.23,
+      "average_dollar_volume_20d": 578489298.18,
       "price_score": 23.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10882,29 +10878,6 @@
       }
     },
     {
-      "ticker": "ROK",
-      "sector": "Industrials",
-      "industry": "Electrical Components & Equipment",
-      "cik": 1024478,
-      "price": 423.65,
-      "drawdown_pct": -14.2,
-      "ma50": 431.03,
-      "average_dollar_volume_20d": 354130836.14,
-      "price_score": 23.0,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "mixed",
-        "return_5d_pct": 0.38,
-        "return_20d_pct": -2.14,
-        "versus_ma20_pct": -2.56,
-        "above_20d_low_pct": 0.38,
-        "return_63d_pct": -8.05,
-        "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": -4.54,
-        "sector_sample_size": 83
-      }
-    },
-    {
       "ticker": "BRO",
       "sector": "Financials",
       "industry": "Insurance Brokers",
@@ -10928,6 +10901,29 @@
       }
     },
     {
+      "ticker": "ROK",
+      "sector": "Industrials",
+      "industry": "Electrical Components & Equipment",
+      "cik": 1024478,
+      "price": 423.87,
+      "drawdown_pct": -14.1,
+      "ma50": 431.04,
+      "average_dollar_volume_20d": 357758665.81,
+      "price_score": 22.8,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "mixed",
+        "return_5d_pct": 0.44,
+        "return_20d_pct": -2.09,
+        "versus_ma20_pct": -2.52,
+        "above_20d_low_pct": 0.44,
+        "return_63d_pct": -8.0,
+        "sector_return_63d_pct": -3.51,
+        "sector_relative_63d_pp": -4.49,
+        "sector_sample_size": 83
+      }
+    },
+    {
       "ticker": "GDDY",
       "sector": "Information Technology",
       "industry": "Internet Services & Infrastructure",
@@ -10935,7 +10931,7 @@
       "price": 114.73,
       "drawdown_pct": -15.1,
       "ma50": 99.84,
-      "average_dollar_volume_20d": 169674470.39,
+      "average_dollar_volume_20d": 170084096.66,
       "price_score": 22.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10958,7 +10954,7 @@
       "price": 81.9,
       "drawdown_pct": -15.1,
       "ma50": 80.54,
-      "average_dollar_volume_20d": 1003168508.75,
+      "average_dollar_volume_20d": 1005253862.97,
       "price_score": 22.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11027,7 +11023,7 @@
       "price": 108.88,
       "drawdown_pct": -13.4,
       "ma50": 111.14,
-      "average_dollar_volume_20d": 105258226.47,
+      "average_dollar_volume_20d": 105354612.49,
       "price_score": 22.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11050,7 +11046,7 @@
       "price": 159.19,
       "drawdown_pct": -11.8,
       "ma50": 166.63,
-      "average_dollar_volume_20d": 177607303.29,
+      "average_dollar_volume_20d": 177833671.47,
       "price_score": 22.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11119,7 +11115,7 @@
       "price": 194.71,
       "drawdown_pct": -13.7,
       "ma50": 197.68,
-      "average_dollar_volume_20d": 904564800.08,
+      "average_dollar_volume_20d": 906087695.19,
       "price_score": 22.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11142,7 +11138,7 @@
       "price": 325.17,
       "drawdown_pct": -14.6,
       "ma50": 319.01,
-      "average_dollar_volume_20d": 988454946.3,
+      "average_dollar_volume_20d": 985489070.6,
       "price_score": 21.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11162,18 +11158,18 @@
       "sector": "Industrials",
       "industry": "Trading Companies & Distributors",
       "cik": 2011641,
-      "price": 227.3,
+      "price": 227.31,
       "drawdown_pct": -14.4,
       "ma50": 226.24,
-      "average_dollar_volume_20d": 323218274.24,
+      "average_dollar_volume_20d": 326211182.82,
       "price_score": 21.7,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "improving",
-        "return_5d_pct": -0.64,
+        "return_5d_pct": -0.63,
         "return_20d_pct": 3.24,
         "versus_ma20_pct": 1.59,
-        "above_20d_low_pct": 5.69,
+        "above_20d_low_pct": 5.7,
         "return_63d_pct": -1.09,
         "sector_return_63d_pct": -3.51,
         "sector_relative_63d_pp": 2.42,
@@ -11188,7 +11184,7 @@
       "price": 75.09,
       "drawdown_pct": -14.1,
       "ma50": 75.57,
-      "average_dollar_volume_20d": 235983467.73,
+      "average_dollar_volume_20d": 236378839.09,
       "price_score": 21.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11208,21 +11204,21 @@
       "sector": "Consumer Discretionary",
       "industry": "Home Improvement Retail",
       "cik": 354950,
-      "price": 327.7,
+      "price": 327.73,
       "drawdown_pct": -14.4,
-      "ma50": 309.69,
-      "average_dollar_volume_20d": 1584412653.05,
+      "ma50": 309.7,
+      "average_dollar_volume_20d": 1596635973.12,
       "price_score": 21.6,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 6.31,
-        "return_20d_pct": 12.16,
-        "versus_ma20_pct": 10.61,
-        "above_20d_low_pct": 16.56,
-        "return_63d_pct": -0.86,
+        "return_5d_pct": 6.32,
+        "return_20d_pct": 12.17,
+        "versus_ma20_pct": 10.62,
+        "above_20d_low_pct": 16.57,
+        "return_63d_pct": -0.85,
         "sector_return_63d_pct": -0.73,
-        "sector_relative_63d_pp": -0.13,
+        "sector_relative_63d_pp": -0.12,
         "sector_sample_size": 47
       }
     },
@@ -11257,7 +11253,7 @@
       "price": 72.72,
       "drawdown_pct": -14.2,
       "ma50": 71.29,
-      "average_dollar_volume_20d": 300541457.13,
+      "average_dollar_volume_20d": 300930290.97,
       "price_score": 21.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11303,7 +11299,7 @@
       "price": 57.06,
       "drawdown_pct": -12.9,
       "ma50": 57.94,
-      "average_dollar_volume_20d": 483047691.44,
+      "average_dollar_volume_20d": 483499113.08,
       "price_score": 20.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11326,7 +11322,7 @@
       "price": 83.01,
       "drawdown_pct": -12.5,
       "ma50": 84.76,
-      "average_dollar_volume_20d": 1344954787.18,
+      "average_dollar_volume_20d": 1344010212.22,
       "price_score": 20.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11395,7 +11391,7 @@
       "price": 84.77,
       "drawdown_pct": -13.7,
       "ma50": 82.0,
-      "average_dollar_volume_20d": 266196417.21,
+      "average_dollar_volume_20d": 266575551.02,
       "price_score": 20.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11441,7 +11437,7 @@
       "price": 222.83,
       "drawdown_pct": -11.7,
       "ma50": 229.13,
-      "average_dollar_volume_20d": 226258921.54,
+      "average_dollar_volume_20d": 226398858.78,
       "price_score": 20.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11510,7 +11506,7 @@
       "price": 86.99,
       "drawdown_pct": -12.9,
       "ma50": 87.61,
-      "average_dollar_volume_20d": 299219448.17,
+      "average_dollar_volume_20d": 299056333.22,
       "price_score": 20.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11533,7 +11529,7 @@
       "price": 45.2,
       "drawdown_pct": -10.8,
       "ma50": 47.02,
-      "average_dollar_volume_20d": 1149732639.26,
+      "average_dollar_volume_20d": 1156226588.91,
       "price_score": 20.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11625,7 +11621,7 @@
       "price": 225.53,
       "drawdown_pct": -11.4,
       "ma50": 231.09,
-      "average_dollar_volume_20d": 470374701.1,
+      "average_dollar_volume_20d": 470932854.02,
       "price_score": 19.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11648,7 +11644,7 @@
       "price": 121.17,
       "drawdown_pct": -12.6,
       "ma50": 121.58,
-      "average_dollar_volume_20d": 124698976.19,
+      "average_dollar_volume_20d": 124973050.61,
       "price_score": 19.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11671,7 +11667,7 @@
       "price": 232.22,
       "drawdown_pct": -12.8,
       "ma50": 220.11,
-      "average_dollar_volume_20d": 149328198.57,
+      "average_dollar_volume_20d": 149558235.71,
       "price_score": 19.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11740,7 +11736,7 @@
       "price": 113.09,
       "drawdown_pct": -12.4,
       "ma50": 108.56,
-      "average_dollar_volume_20d": 186831801.8,
+      "average_dollar_volume_20d": 186232277.8,
       "price_score": 18.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11760,21 +11756,21 @@
       "sector": "Industrials",
       "industry": "Air Freight & Logistics",
       "cik": 1090727,
-      "price": 101.51,
+      "price": 101.52,
       "drawdown_pct": -12.4,
       "ma50": 98.95,
-      "average_dollar_volume_20d": 426721264.05,
+      "average_dollar_volume_20d": 430429333.5,
       "price_score": 18.6,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 3.76,
-        "return_20d_pct": 10.28,
-        "versus_ma20_pct": 6.4,
-        "above_20d_low_pct": 9.99,
-        "return_63d_pct": -10.16,
+        "return_5d_pct": 3.77,
+        "return_20d_pct": 10.29,
+        "versus_ma20_pct": 6.41,
+        "above_20d_low_pct": 10.0,
+        "return_63d_pct": -10.15,
         "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": -6.65,
+        "sector_relative_63d_pp": -6.64,
         "sector_sample_size": 83
       }
     },
@@ -11786,7 +11782,7 @@
       "price": 28.4,
       "drawdown_pct": -11.5,
       "ma50": 28.77,
-      "average_dollar_volume_20d": 324390966.53,
+      "average_dollar_volume_20d": 324648432.41,
       "price_score": 18.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11809,7 +11805,7 @@
       "price": 147.38,
       "drawdown_pct": -12.2,
       "ma50": 136.56,
-      "average_dollar_volume_20d": 1019691414.67,
+      "average_dollar_volume_20d": 1020378227.6,
       "price_score": 18.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11855,7 +11851,7 @@
       "price": 276.47,
       "drawdown_pct": -9.5,
       "ma50": 287.56,
-      "average_dollar_volume_20d": 280483055.41,
+      "average_dollar_volume_20d": 280012890.53,
       "price_score": 18.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11901,7 +11897,7 @@
       "price": 589.91,
       "drawdown_pct": -11.7,
       "ma50": 539.09,
-      "average_dollar_volume_20d": 663914558.38,
+      "average_dollar_volume_20d": 666467865.72,
       "price_score": 17.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11924,7 +11920,7 @@
       "price": 453.1,
       "drawdown_pct": -11.7,
       "ma50": 417.4,
-      "average_dollar_volume_20d": 799923623.49,
+      "average_dollar_volume_20d": 804628885.81,
       "price_score": 17.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11947,7 +11943,7 @@
       "price": 102.74,
       "drawdown_pct": -11.7,
       "ma50": 101.28,
-      "average_dollar_volume_20d": 96333733.86,
+      "average_dollar_volume_20d": 97668033.62,
       "price_score": 17.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11970,7 +11966,7 @@
       "price": 143.0,
       "drawdown_pct": -9.9,
       "ma50": 146.88,
-      "average_dollar_volume_20d": 512698835.58,
+      "average_dollar_volume_20d": 513437659.38,
       "price_score": 17.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12013,21 +12009,21 @@
       "sector": "Industrials",
       "industry": "Aerospace & Defense",
       "cik": 40533,
-      "price": 350.81,
+      "price": 350.79,
       "drawdown_pct": -11.0,
       "ma50": 353.87,
-      "average_dollar_volume_20d": 444996490.72,
+      "average_dollar_volume_20d": 451465457.83,
       "price_score": 17.3,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 4.09,
+        "return_5d_pct": 4.08,
         "return_20d_pct": 4.82,
         "versus_ma20_pct": 4.75,
         "above_20d_low_pct": 7.92,
-        "return_63d_pct": -8.85,
+        "return_63d_pct": -8.86,
         "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": -5.34,
+        "sector_relative_63d_pp": -5.35,
         "sector_sample_size": 83
       }
     },
@@ -12108,7 +12104,7 @@
       "price": 448.8,
       "drawdown_pct": -10.6,
       "ma50": 453.22,
-      "average_dollar_volume_20d": 616670243.63,
+      "average_dollar_volume_20d": 617596073.12,
       "price_score": 16.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12177,7 +12173,7 @@
       "price": 48.42,
       "drawdown_pct": -10.6,
       "ma50": 48.77,
-      "average_dollar_volume_20d": 389629365.71,
+      "average_dollar_volume_20d": 389973414.0,
       "price_score": 16.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12200,7 +12196,7 @@
       "price": 70.63,
       "drawdown_pct": -9.7,
       "ma50": 71.99,
-      "average_dollar_volume_20d": 557025529.0,
+      "average_dollar_volume_20d": 557748462.34,
       "price_score": 16.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12223,7 +12219,7 @@
       "price": 36.18,
       "drawdown_pct": -10.9,
       "ma50": 35.1,
-      "average_dollar_volume_20d": 136873035.29,
+      "average_dollar_volume_20d": 137044213.73,
       "price_score": 16.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12269,7 +12265,7 @@
       "price": 21.21,
       "drawdown_pct": -10.7,
       "ma50": 21.06,
-      "average_dollar_volume_20d": 357214558.88,
+      "average_dollar_volume_20d": 357370201.04,
       "price_score": 16.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12292,7 +12288,7 @@
       "price": 70.3,
       "drawdown_pct": -10.7,
       "ma50": 66.94,
-      "average_dollar_volume_20d": 288323610.04,
+      "average_dollar_volume_20d": 287242712.34,
       "price_score": 16.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12338,7 +12334,7 @@
       "price": 43.69,
       "drawdown_pct": -10.4,
       "ma50": 40.99,
-      "average_dollar_volume_20d": 225228699.36,
+      "average_dollar_volume_20d": 224769958.75,
       "price_score": 15.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12361,7 +12357,7 @@
       "price": 620.47,
       "drawdown_pct": -10.2,
       "ma50": 619.22,
-      "average_dollar_volume_20d": 192708909.14,
+      "average_dollar_volume_20d": 193053735.33,
       "price_score": 15.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12384,7 +12380,7 @@
       "price": 327.72,
       "drawdown_pct": -10.2,
       "ma50": 290.0,
-      "average_dollar_volume_20d": 387031938.71,
+      "average_dollar_volume_20d": 387302930.38,
       "price_score": 15.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12430,7 +12426,7 @@
       "price": 168.41,
       "drawdown_pct": -9.3,
       "ma50": 170.34,
-      "average_dollar_volume_20d": 80543774.73,
+      "average_dollar_volume_20d": 84272666.93,
       "price_score": 15.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12499,7 +12495,7 @@
       "price": 35.35,
       "drawdown_pct": -9.7,
       "ma50": 34.03,
-      "average_dollar_volume_20d": 246325856.88,
+      "average_dollar_volume_20d": 246531860.76,
       "price_score": 14.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12522,7 +12518,7 @@
       "price": 139.11,
       "drawdown_pct": -9.6,
       "ma50": 124.97,
-      "average_dollar_volume_20d": 265586069.07,
+      "average_dollar_volume_20d": 265366400.46,
       "price_score": 14.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12545,7 +12541,7 @@
       "price": 53.23,
       "drawdown_pct": -9.6,
       "ma50": 52.81,
-      "average_dollar_volume_20d": 394195788.93,
+      "average_dollar_volume_20d": 394495404.63,
       "price_score": 14.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12568,7 +12564,7 @@
       "price": 23.59,
       "drawdown_pct": -9.5,
       "ma50": 23.02,
-      "average_dollar_volume_20d": 108815554.36,
+      "average_dollar_volume_20d": 108965340.25,
       "price_score": 14.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12683,7 +12679,7 @@
       "price": 212.04,
       "drawdown_pct": -9.5,
       "ma50": 207.3,
-      "average_dollar_volume_20d": 254750607.61,
+      "average_dollar_volume_20d": 255236285.22,
       "price_score": 14.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12729,7 +12725,7 @@
       "price": 27.53,
       "drawdown_pct": -9.0,
       "ma50": 27.64,
-      "average_dollar_volume_20d": 134667582.9,
+      "average_dollar_volume_20d": 134995147.23,
       "price_score": 13.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12821,7 +12817,7 @@
       "price": 67.87,
       "drawdown_pct": -9.1,
       "ma50": 59.47,
-      "average_dollar_volume_20d": 483359549.97,
+      "average_dollar_volume_20d": 484412498.77,
       "price_score": 13.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12867,7 +12863,7 @@
       "price": 107.72,
       "drawdown_pct": -9.0,
       "ma50": 97.95,
-      "average_dollar_volume_20d": 280790523.85,
+      "average_dollar_volume_20d": 280947881.23,
       "price_score": 13.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12890,7 +12886,7 @@
       "price": 336.54,
       "drawdown_pct": -7.4,
       "ma50": 344.75,
-      "average_dollar_volume_20d": 2592597880.83,
+      "average_dollar_volume_20d": 2598016662.95,
       "price_score": 13.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12982,7 +12978,7 @@
       "price": 173.91,
       "drawdown_pct": -8.5,
       "ma50": 163.9,
-      "average_dollar_volume_20d": 171074881.49,
+      "average_dollar_volume_20d": 170750417.59,
       "price_score": 12.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13005,7 +13001,7 @@
       "price": 491.05,
       "drawdown_pct": -8.4,
       "ma50": 477.91,
-      "average_dollar_volume_20d": 442781537.11,
+      "average_dollar_volume_20d": 442184322.11,
       "price_score": 12.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13028,7 +13024,7 @@
       "price": 63.57,
       "drawdown_pct": -8.3,
       "ma50": 62.7,
-      "average_dollar_volume_20d": 283550682.41,
+      "average_dollar_volume_20d": 284710733.19,
       "price_score": 12.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13074,7 +13070,7 @@
       "price": 234.44,
       "drawdown_pct": -8.3,
       "ma50": 191.42,
-      "average_dollar_volume_20d": 179325884.07,
+      "average_dollar_volume_20d": 179421476.98,
       "price_score": 12.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13143,7 +13139,7 @@
       "price": 146.26,
       "drawdown_pct": -8.2,
       "ma50": 143.09,
-      "average_dollar_volume_20d": 125394549.99,
+      "average_dollar_volume_20d": 125523288.04,
       "price_score": 12.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13258,7 +13254,7 @@
       "price": 25.09,
       "drawdown_pct": -7.7,
       "ma50": 24.03,
-      "average_dollar_volume_20d": 324564850.4,
+      "average_dollar_volume_20d": 324781289.29,
       "price_score": 11.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13281,7 +13277,7 @@
       "price": 253.06,
       "drawdown_pct": -7.5,
       "ma50": 228.95,
-      "average_dollar_volume_20d": 250242323.05,
+      "average_dollar_volume_20d": 250404699.0,
       "price_score": 11.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13304,7 +13300,7 @@
       "price": 174.5,
       "drawdown_pct": -7.4,
       "ma50": 174.4,
-      "average_dollar_volume_20d": 303601193.08,
+      "average_dollar_volume_20d": 303934139.08,
       "price_score": 11.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13327,7 +13323,7 @@
       "price": 60.02,
       "drawdown_pct": -7.4,
       "ma50": 60.02,
-      "average_dollar_volume_20d": 479952826.59,
+      "average_dollar_volume_20d": 480298280.7,
       "price_score": 11.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13350,7 +13346,7 @@
       "price": 381.95,
       "drawdown_pct": -7.3,
       "ma50": 359.44,
-      "average_dollar_volume_20d": 186530364.44,
+      "average_dollar_volume_20d": 186652531.16,
       "price_score": 11.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13373,7 +13369,7 @@
       "price": 154.45,
       "drawdown_pct": -7.3,
       "ma50": 145.44,
-      "average_dollar_volume_20d": 327107799.77,
+      "average_dollar_volume_20d": 330332252.36,
       "price_score": 11.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13442,7 +13438,7 @@
       "price": 426.28,
       "drawdown_pct": -7.3,
       "ma50": 390.88,
-      "average_dollar_volume_20d": 1072733224.63,
+      "average_dollar_volume_20d": 1073401333.27,
       "price_score": 10.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13511,7 +13507,7 @@
       "price": 158.11,
       "drawdown_pct": -6.9,
       "ma50": 157.68,
-      "average_dollar_volume_20d": 603022896.31,
+      "average_dollar_volume_20d": 609924034.18,
       "price_score": 10.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13557,7 +13553,7 @@
       "price": 79.02,
       "drawdown_pct": -6.9,
       "ma50": 78.64,
-      "average_dollar_volume_20d": 339923276.48,
+      "average_dollar_volume_20d": 339362661.21,
       "price_score": 10.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13649,7 +13645,7 @@
       "price": 345.63,
       "drawdown_pct": -6.6,
       "ma50": 331.94,
-      "average_dollar_volume_20d": 493626519.88,
+      "average_dollar_volume_20d": 494036765.41,
       "price_score": 9.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13718,7 +13714,7 @@
       "price": 226.88,
       "drawdown_pct": -5.4,
       "ma50": 229.93,
-      "average_dollar_volume_20d": 158901817.61,
+      "average_dollar_volume_20d": 159168004.58,
       "price_score": 9.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13741,7 +13737,7 @@
       "price": 87.45,
       "drawdown_pct": -5.4,
       "ma50": 88.59,
-      "average_dollar_volume_20d": 81491306.19,
+      "average_dollar_volume_20d": 81595677.76,
       "price_score": 9.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13787,7 +13783,7 @@
       "price": 60.05,
       "drawdown_pct": -6.2,
       "ma50": 57.44,
-      "average_dollar_volume_20d": 115533083.26,
+      "average_dollar_volume_20d": 115783323.62,
       "price_score": 9.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13810,7 +13806,7 @@
       "price": 82.56,
       "drawdown_pct": -6.2,
       "ma50": 80.23,
-      "average_dollar_volume_20d": 182044754.21,
+      "average_dollar_volume_20d": 182376901.34,
       "price_score": 9.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13902,7 +13898,7 @@
       "price": 83.97,
       "drawdown_pct": -5.9,
       "ma50": 80.19,
-      "average_dollar_volume_20d": 262961053.19,
+      "average_dollar_volume_20d": 263137734.47,
       "price_score": 8.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13925,7 +13921,7 @@
       "price": 258.06,
       "drawdown_pct": -5.8,
       "ma50": 252.6,
-      "average_dollar_volume_20d": 294174749.93,
+      "average_dollar_volume_20d": 294378397.98,
       "price_score": 8.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13971,7 +13967,7 @@
       "price": 163.84,
       "drawdown_pct": -5.5,
       "ma50": 156.73,
-      "average_dollar_volume_20d": 448856413.03,
+      "average_dollar_volume_20d": 449306932.06,
       "price_score": 8.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13994,7 +13990,7 @@
       "price": 279.24,
       "drawdown_pct": -5.5,
       "ma50": 271.36,
-      "average_dollar_volume_20d": 360040651.27,
+      "average_dollar_volume_20d": 361786752.89,
       "price_score": 8.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14017,7 +14013,7 @@
       "price": 309.13,
       "drawdown_pct": -5.5,
       "ma50": 298.77,
-      "average_dollar_volume_20d": 253440879.1,
+      "average_dollar_volume_20d": 253693484.68,
       "price_score": 8.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14037,21 +14033,21 @@
       "sector": "Real Estate",
       "industry": "Health Care REITs",
       "cik": 766704,
-      "price": 237.43,
+      "price": 237.4,
       "drawdown_pct": -5.5,
       "ma50": 233.73,
-      "average_dollar_volume_20d": 549183578.94,
+      "average_dollar_volume_20d": 559299488.16,
       "price_score": 8.2,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 1.19,
-        "return_20d_pct": 1.64,
-        "versus_ma20_pct": 3.07,
-        "above_20d_low_pct": 7.38,
-        "return_63d_pct": -5.45,
+        "return_5d_pct": 1.18,
+        "return_20d_pct": 1.62,
+        "versus_ma20_pct": 3.06,
+        "above_20d_low_pct": 7.36,
+        "return_63d_pct": -5.46,
         "sector_return_63d_pct": -8.35,
-        "sector_relative_63d_pp": 2.9,
+        "sector_relative_63d_pp": 2.89,
         "sector_sample_size": 30
       }
     },
@@ -14132,7 +14128,7 @@
       "price": 295.4,
       "drawdown_pct": -5.3,
       "ma50": 284.41,
-      "average_dollar_volume_20d": 225116565.88,
+      "average_dollar_volume_20d": 224851104.67,
       "price_score": 8.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14175,21 +14171,21 @@
       "sector": "Health Care",
       "industry": "Pharmaceuticals",
       "cik": 310158,
-      "price": 147.25,
+      "price": 147.24,
       "drawdown_pct": -5.3,
       "ma50": 146.07,
-      "average_dollar_volume_20d": 1390310315.74,
+      "average_dollar_volume_20d": 1400946888.47,
       "price_score": 8.0,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 1.42,
-        "return_20d_pct": -0.49,
+        "return_5d_pct": 1.41,
+        "return_20d_pct": -0.5,
         "versus_ma20_pct": 1.29,
-        "above_20d_low_pct": 5.53,
-        "return_63d_pct": 13.01,
+        "above_20d_low_pct": 5.52,
+        "return_63d_pct": 13.0,
         "sector_return_63d_pct": 12.23,
-        "sector_relative_63d_pp": 0.78,
+        "sector_relative_63d_pp": 0.77,
         "sector_sample_size": 60
       }
     },
@@ -14224,7 +14220,7 @@
       "price": 78.05,
       "drawdown_pct": -5.3,
       "ma50": 70.81,
-      "average_dollar_volume_20d": 141919693.84,
+      "average_dollar_volume_20d": 142715963.87,
       "price_score": 7.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14247,7 +14243,7 @@
       "price": 96.59,
       "drawdown_pct": -5.3,
       "ma50": 90.82,
-      "average_dollar_volume_20d": 3105794015.27,
+      "average_dollar_volume_20d": 3106656998.59,
       "price_score": 7.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14270,7 +14266,7 @@
       "price": 459.28,
       "drawdown_pct": -5.3,
       "ma50": 407.2,
-      "average_dollar_volume_20d": 888895807.19,
+      "average_dollar_volume_20d": 889605279.97,
       "price_score": 7.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14316,7 +14312,7 @@
       "price": 143.19,
       "drawdown_pct": -5.2,
       "ma50": 137.98,
-      "average_dollar_volume_20d": 173806443.82,
+      "average_dollar_volume_20d": 174027529.18,
       "price_score": 7.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14408,7 +14404,7 @@
       "price": 33.76,
       "drawdown_pct": -4.8,
       "ma50": 31.33,
-      "average_dollar_volume_20d": 371222122.29,
+      "average_dollar_volume_20d": 371934127.41,
       "price_score": 7.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14431,7 +14427,7 @@
       "price": 62.5,
       "drawdown_pct": -4.8,
       "ma50": 59.59,
-      "average_dollar_volume_20d": 527681495.88,
+      "average_dollar_volume_20d": 528715286.5,
       "price_score": 7.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14454,7 +14450,7 @@
       "price": 112.15,
       "drawdown_pct": -4.8,
       "ma50": 105.52,
-      "average_dollar_volume_20d": 275412444.26,
+      "average_dollar_volume_20d": 275813122.57,
       "price_score": 7.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14477,7 +14473,7 @@
       "price": 113.68,
       "drawdown_pct": -4.7,
       "ma50": 108.72,
-      "average_dollar_volume_20d": 85613478.02,
+      "average_dollar_volume_20d": 86058950.16,
       "price_score": 7.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14500,7 +14496,7 @@
       "price": 1111.02,
       "drawdown_pct": -4.6,
       "ma50": 1045.87,
-      "average_dollar_volume_20d": 603435580.68,
+      "average_dollar_volume_20d": 604563432.65,
       "price_score": 6.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14546,7 +14542,7 @@
       "price": 229.75,
       "drawdown_pct": -4.5,
       "ma50": 215.35,
-      "average_dollar_volume_20d": 1098681425.42,
+      "average_dollar_volume_20d": 1097519016.78,
       "price_score": 6.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14569,7 +14565,7 @@
       "price": 292.3,
       "drawdown_pct": -4.4,
       "ma50": 279.84,
-      "average_dollar_volume_20d": 390077359.66,
+      "average_dollar_volume_20d": 389782545.89,
       "price_score": 6.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14592,7 +14588,7 @@
       "price": 118.17,
       "drawdown_pct": -4.5,
       "ma50": 117.69,
-      "average_dollar_volume_20d": 184871248.96,
+      "average_dollar_volume_20d": 185291585.55,
       "price_score": 6.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14681,21 +14677,21 @@
       "sector": "Real Estate",
       "industry": "Multi-Family Residential REITs",
       "cik": 920522,
-      "price": 282.61,
+      "price": 282.45,
       "drawdown_pct": -4.4,
       "ma50": 274.6,
-      "average_dollar_volume_20d": 122202191.4,
-      "price_score": 6.5,
+      "average_dollar_volume_20d": 123657088.9,
+      "price_score": 6.6,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 4.8,
-        "return_20d_pct": 5.03,
-        "versus_ma20_pct": 4.34,
-        "above_20d_low_pct": 5.99,
-        "return_63d_pct": -2.78,
+        "return_5d_pct": 4.74,
+        "return_20d_pct": 4.97,
+        "versus_ma20_pct": 4.28,
+        "above_20d_low_pct": 5.93,
+        "return_63d_pct": -2.83,
         "sector_return_63d_pct": -8.35,
-        "sector_relative_63d_pp": 5.57,
+        "sector_relative_63d_pp": 5.52,
         "sector_sample_size": 30
       }
     },
@@ -14730,7 +14726,7 @@
       "price": 284.63,
       "drawdown_pct": -4.3,
       "ma50": 261.41,
-      "average_dollar_volume_20d": 648454300.21,
+      "average_dollar_volume_20d": 648822170.26,
       "price_score": 6.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14753,7 +14749,7 @@
       "price": 338.23,
       "drawdown_pct": -4.2,
       "ma50": 326.72,
-      "average_dollar_volume_20d": 251204286.42,
+      "average_dollar_volume_20d": 251435060.75,
       "price_score": 6.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14776,7 +14772,7 @@
       "price": 289.54,
       "drawdown_pct": -4.2,
       "ma50": 287.82,
-      "average_dollar_volume_20d": 315823108.57,
+      "average_dollar_volume_20d": 316064411.22,
       "price_score": 6.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14819,21 +14815,21 @@
       "sector": "Industrials",
       "industry": "Industrial Conglomerates",
       "cik": 66740,
-      "price": 175.54,
+      "price": 175.56,
       "drawdown_pct": -4.1,
       "ma50": 169.21,
-      "average_dollar_volume_20d": 562546453.94,
+      "average_dollar_volume_20d": 568451420.3,
       "price_score": 6.1,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 6.18,
-        "return_20d_pct": 4.79,
-        "versus_ma20_pct": 6.04,
-        "above_20d_low_pct": 9.74,
-        "return_63d_pct": 2.14,
+        "return_5d_pct": 6.19,
+        "return_20d_pct": 4.8,
+        "versus_ma20_pct": 6.05,
+        "above_20d_low_pct": 9.75,
+        "return_63d_pct": 2.15,
         "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": 5.65,
+        "sector_relative_63d_pp": 5.66,
         "sector_sample_size": 83
       }
     },
@@ -14868,7 +14864,7 @@
       "price": 98.97,
       "drawdown_pct": -4.0,
       "ma50": 93.05,
-      "average_dollar_volume_20d": 135612463.18,
+      "average_dollar_volume_20d": 135753891.31,
       "price_score": 6.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14937,7 +14933,7 @@
       "price": 267.61,
       "drawdown_pct": -3.9,
       "ma50": 264.96,
-      "average_dollar_volume_20d": 1999710354.2,
+      "average_dollar_volume_20d": 2016838222.85,
       "price_score": 5.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15006,7 +15002,7 @@
       "price": 93.9,
       "drawdown_pct": -3.7,
       "ma50": 92.73,
-      "average_dollar_volume_20d": 285033197.02,
+      "average_dollar_volume_20d": 285276520.09,
       "price_score": 5.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15029,7 +15025,7 @@
       "price": 93.82,
       "drawdown_pct": -3.8,
       "ma50": 87.7,
-      "average_dollar_volume_20d": 559320297.03,
+      "average_dollar_volume_20d": 560050066.51,
       "price_score": 5.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15098,7 +15094,7 @@
       "price": 298.09,
       "drawdown_pct": -3.6,
       "ma50": 287.19,
-      "average_dollar_volume_20d": 670693945.41,
+      "average_dollar_volume_20d": 671577141.36,
       "price_score": 5.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15167,7 +15163,7 @@
       "price": 620.24,
       "drawdown_pct": -3.3,
       "ma50": 561.21,
-      "average_dollar_volume_20d": 359285759.41,
+      "average_dollar_volume_20d": 360091544.2,
       "price_score": 5.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15190,7 +15186,7 @@
       "price": 98.81,
       "drawdown_pct": -3.2,
       "ma50": 95.01,
-      "average_dollar_volume_20d": 168303016.33,
+      "average_dollar_volume_20d": 168954179.15,
       "price_score": 4.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15236,7 +15232,7 @@
       "price": 270.98,
       "drawdown_pct": -2.9,
       "ma50": 246.52,
-      "average_dollar_volume_20d": 346329870.73,
+      "average_dollar_volume_20d": 344971732.47,
       "price_score": 4.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15259,7 +15255,7 @@
       "price": 420.97,
       "drawdown_pct": -2.9,
       "ma50": 397.05,
-      "average_dollar_volume_20d": 713661735.12,
+      "average_dollar_volume_20d": 708291020.9,
       "price_score": 4.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15282,7 +15278,7 @@
       "price": 676.54,
       "drawdown_pct": -2.9,
       "ma50": 643.19,
-      "average_dollar_volume_20d": 1643135182.65,
+      "average_dollar_volume_20d": 1648103861.39,
       "price_score": 4.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15344,29 +15340,6 @@
       }
     },
     {
-      "ticker": "PKG",
-      "sector": "Materials",
-      "industry": "Paper & Plastic Packaging Products & Materials",
-      "cik": 75677,
-      "price": 248.86,
-      "drawdown_pct": -2.7,
-      "ma50": 236.76,
-      "average_dollar_volume_20d": 145538071.23,
-      "price_score": 4.1,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "stabilizing",
-        "return_5d_pct": 7.0,
-        "return_20d_pct": 4.51,
-        "versus_ma20_pct": 6.8,
-        "above_20d_low_pct": 9.51,
-        "return_63d_pct": -1.54,
-        "sector_return_63d_pct": 1.68,
-        "sector_relative_63d_pp": -3.21,
-        "sector_sample_size": 24
-      }
-    },
-    {
       "ticker": "CSX",
       "sector": "Industrials",
       "industry": "Rail Transportation",
@@ -15390,6 +15363,29 @@
       }
     },
     {
+      "ticker": "PKG",
+      "sector": "Materials",
+      "industry": "Paper & Plastic Packaging Products & Materials",
+      "cik": 75677,
+      "price": 248.92,
+      "drawdown_pct": -2.7,
+      "ma50": 236.76,
+      "average_dollar_volume_20d": 148201018.04,
+      "price_score": 4.0,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "stabilizing",
+        "return_5d_pct": 7.03,
+        "return_20d_pct": 4.54,
+        "versus_ma20_pct": 6.82,
+        "above_20d_low_pct": 9.54,
+        "return_63d_pct": -1.52,
+        "sector_return_63d_pct": 1.68,
+        "sector_relative_63d_pp": -3.2,
+        "sector_sample_size": 24
+      }
+    },
+    {
       "ticker": "LH",
       "sector": "Health Care",
       "industry": "Health Care Services",
@@ -15397,7 +15393,7 @@
       "price": 329.93,
       "drawdown_pct": -2.6,
       "ma50": 320.46,
-      "average_dollar_volume_20d": 204135315.89,
+      "average_dollar_volume_20d": 204289129.25,
       "price_score": 3.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15417,21 +15413,21 @@
       "sector": "Information Technology",
       "industry": "Communications Equipment",
       "cik": 68505,
-      "price": 477.91,
+      "price": 477.81,
       "drawdown_pct": -2.5,
       "ma50": 463.56,
-      "average_dollar_volume_20d": 354396399.42,
+      "average_dollar_volume_20d": 359376871.68,
       "price_score": 3.7,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 4.72,
-        "return_20d_pct": 5.06,
-        "versus_ma20_pct": 5.24,
-        "above_20d_low_pct": 7.59,
-        "return_63d_pct": 14.67,
+        "return_5d_pct": 4.69,
+        "return_20d_pct": 5.03,
+        "versus_ma20_pct": 5.22,
+        "above_20d_low_pct": 7.57,
+        "return_63d_pct": 14.65,
         "sector_return_63d_pct": 4.07,
-        "sector_relative_63d_pp": 10.6,
+        "sector_relative_63d_pp": 10.58,
         "sector_sample_size": 75
       }
     },
@@ -15489,7 +15485,7 @@
       "price": 173.89,
       "drawdown_pct": -2.2,
       "ma50": 160.76,
-      "average_dollar_volume_20d": 381281221.81,
+      "average_dollar_volume_20d": 380940284.39,
       "price_score": 3.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15512,7 +15508,7 @@
       "price": 160.29,
       "drawdown_pct": -2.2,
       "ma50": 156.38,
-      "average_dollar_volume_20d": 456752873.08,
+      "average_dollar_volume_20d": 456435050.08,
       "price_score": 3.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15558,7 +15554,7 @@
       "price": 229.62,
       "drawdown_pct": -2.0,
       "ma50": 215.56,
-      "average_dollar_volume_20d": 615633924.4,
+      "average_dollar_volume_20d": 616179478.54,
       "price_score": 3.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15581,7 +15577,7 @@
       "price": 424.98,
       "drawdown_pct": -2.0,
       "ma50": 387.17,
-      "average_dollar_volume_20d": 2346329799.68,
+      "average_dollar_volume_20d": 2352114903.83,
       "price_score": 3.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15627,7 +15623,7 @@
       "price": 201.74,
       "drawdown_pct": -1.9,
       "ma50": 191.19,
-      "average_dollar_volume_20d": 893106092.99,
+      "average_dollar_volume_20d": 898396381.68,
       "price_score": 2.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15696,7 +15692,7 @@
       "price": 1012.34,
       "drawdown_pct": -1.7,
       "ma50": 906.96,
-      "average_dollar_volume_20d": 657297926.97,
+      "average_dollar_volume_20d": 659625195.45,
       "price_score": 2.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15719,7 +15715,7 @@
       "price": 239.1,
       "drawdown_pct": -1.8,
       "ma50": 216.26,
-      "average_dollar_volume_20d": 511633561.32,
+      "average_dollar_volume_20d": 511920959.52,
       "price_score": 2.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15765,7 +15761,7 @@
       "price": 106.61,
       "drawdown_pct": -1.6,
       "ma50": 97.62,
-      "average_dollar_volume_20d": 138602839.21,
+      "average_dollar_volume_20d": 139392840.64,
       "price_score": 2.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15788,7 +15784,7 @@
       "price": 113.13,
       "drawdown_pct": -1.6,
       "ma50": 106.74,
-      "average_dollar_volume_20d": 910684775.96,
+      "average_dollar_volume_20d": 908953672.05,
       "price_score": 2.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15857,7 +15853,7 @@
       "price": 33.72,
       "drawdown_pct": -1.4,
       "ma50": 31.86,
-      "average_dollar_volume_20d": 427288759.77,
+      "average_dollar_volume_20d": 428206606.4,
       "price_score": 2.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15880,7 +15876,7 @@
       "price": 285.19,
       "drawdown_pct": -1.3,
       "ma50": 264.02,
-      "average_dollar_volume_20d": 1417584335.16,
+      "average_dollar_volume_20d": 1415941626.48,
       "price_score": 2.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15903,7 +15899,7 @@
       "price": 243.28,
       "drawdown_pct": -1.3,
       "ma50": 236.83,
-      "average_dollar_volume_20d": 253313602.66,
+      "average_dollar_volume_20d": 252895440.84,
       "price_score": 2.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -15946,21 +15942,21 @@
       "sector": "Industrials",
       "industry": "Air Freight & Logistics",
       "cik": 746515,
-      "price": 196.07,
-      "drawdown_pct": -1.3,
+      "price": 196.19,
+      "drawdown_pct": -1.2,
       "ma50": 190.42,
-      "average_dollar_volume_20d": 212321992.64,
+      "average_dollar_volume_20d": 214806518.56,
       "price_score": 1.9,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "improving",
-        "return_5d_pct": -1.29,
-        "return_20d_pct": 6.76,
-        "versus_ma20_pct": 1.58,
-        "above_20d_low_pct": 6.19,
-        "return_63d_pct": 11.85,
+        "return_5d_pct": -1.23,
+        "return_20d_pct": 6.82,
+        "versus_ma20_pct": 1.64,
+        "above_20d_low_pct": 6.26,
+        "return_63d_pct": 11.92,
         "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": 15.36,
+        "sector_relative_63d_pp": 15.43,
         "sector_sample_size": 83
       }
     },
@@ -15972,7 +15968,7 @@
       "price": 358.07,
       "drawdown_pct": -1.2,
       "ma50": 322.13,
-      "average_dollar_volume_20d": 537190804.37,
+      "average_dollar_volume_20d": 544404035.15,
       "price_score": 1.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16110,7 +16106,7 @@
       "price": 75.55,
       "drawdown_pct": -0.7,
       "ma50": 70.06,
-      "average_dollar_volume_20d": 170401118.75,
+      "average_dollar_volume_20d": 170569954.12,
       "price_score": 1.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16153,21 +16149,21 @@
       "sector": "Health Care",
       "industry": "Life Sciences Tools & Services",
       "cik": 1000697,
-      "price": 455.74,
+      "price": 455.59,
       "drawdown_pct": -0.4,
       "ma50": 423.33,
-      "average_dollar_volume_20d": 383354567.26,
+      "average_dollar_volume_20d": 386063628.75,
       "price_score": 0.6,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 2.61,
-        "return_20d_pct": 5.91,
-        "versus_ma20_pct": 4.11,
-        "above_20d_low_pct": 7.18,
-        "return_63d_pct": 21.63,
+        "return_5d_pct": 2.58,
+        "return_20d_pct": 5.88,
+        "versus_ma20_pct": 4.08,
+        "above_20d_low_pct": 7.14,
+        "return_63d_pct": 21.59,
         "sector_return_63d_pct": 12.23,
-        "sector_relative_63d_pp": 9.4,
+        "sector_relative_63d_pp": 9.36,
         "sector_sample_size": 60
       }
     },
@@ -16179,7 +16175,7 @@
       "price": 178.23,
       "drawdown_pct": -0.4,
       "ma50": 165.25,
-      "average_dollar_volume_20d": 1932107686.99,
+      "average_dollar_volume_20d": 1928108900.99,
       "price_score": 0.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16225,7 +16221,7 @@
       "price": 226.68,
       "drawdown_pct": -0.0,
       "ma50": 209.57,
-      "average_dollar_volume_20d": 1573442552.58,
+      "average_dollar_volume_20d": 1569695362.29,
       "price_score": 0.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16432,7 +16428,7 @@
       "price": 546.97,
       "drawdown_pct": 0.0,
       "ma50": 510.11,
-      "average_dollar_volume_20d": 2268318848.13,
+      "average_dollar_volume_20d": 2247953214.38,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16570,7 +16566,7 @@
       "price": 71.24,
       "drawdown_pct": 0.0,
       "ma50": 65.73,
-      "average_dollar_volume_20d": 271063830.55,
+      "average_dollar_volume_20d": 270658881.03,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16616,7 +16612,7 @@
       "price": 116.26,
       "drawdown_pct": 0.0,
       "ma50": 106.82,
-      "average_dollar_volume_20d": 245913681.7,
+      "average_dollar_volume_20d": 246420854.33,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16639,7 +16635,7 @@
       "price": 407.56,
       "drawdown_pct": 0.0,
       "ma50": 374.11,
-      "average_dollar_volume_20d": 126367353.57,
+      "average_dollar_volume_20d": 126510182.97,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16662,7 +16658,7 @@
       "price": 445.28,
       "drawdown_pct": 0.0,
       "ma50": 406.55,
-      "average_dollar_volume_20d": 550278583.06,
+      "average_dollar_volume_20d": 552104654.07,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16728,21 +16724,21 @@
       "sector": "Financials",
       "industry": "Financial Exchanges & Data",
       "cik": 1013237,
-      "price": 335.59,
+      "price": 335.45,
       "drawdown_pct": 0.0,
       "ma50": 288.32,
-      "average_dollar_volume_20d": 214307040.65,
+      "average_dollar_volume_20d": 216247594.76,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 11.19,
-        "return_20d_pct": 23.72,
-        "versus_ma20_pct": 16.67,
-        "above_20d_low_pct": 29.09,
-        "return_63d_pct": 32.43,
+        "return_5d_pct": 11.14,
+        "return_20d_pct": 23.67,
+        "versus_ma20_pct": 16.62,
+        "above_20d_low_pct": 29.03,
+        "return_63d_pct": 32.38,
         "sector_return_63d_pct": -0.34,
-        "sector_relative_63d_pp": 32.77,
+        "sector_relative_63d_pp": 32.72,
         "sector_sample_size": 76
       }
     },
@@ -16777,7 +16773,7 @@
       "price": 93.83,
       "drawdown_pct": 0.0,
       "ma50": 85.48,
-      "average_dollar_volume_20d": 163703290.9,
+      "average_dollar_volume_20d": 163910575.45,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16797,21 +16793,21 @@
       "sector": "Health Care",
       "industry": "Life Sciences Tools & Services",
       "cik": 1478242,
-      "price": 278.28,
+      "price": 278.32,
       "drawdown_pct": 0.0,
       "ma50": 262.47,
-      "average_dollar_volume_20d": 345495578.44,
+      "average_dollar_volume_20d": 348814373.1,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 2.67,
-        "return_20d_pct": 1.19,
-        "versus_ma20_pct": 4.76,
-        "above_20d_low_pct": 7.81,
-        "return_63d_pct": 33.76,
+        "return_5d_pct": 2.69,
+        "return_20d_pct": 1.2,
+        "versus_ma20_pct": 4.78,
+        "above_20d_low_pct": 7.83,
+        "return_63d_pct": 33.78,
         "sector_return_63d_pct": 12.23,
-        "sector_relative_63d_pp": 21.53,
+        "sector_relative_63d_pp": 21.55,
         "sector_sample_size": 60
       }
     },
@@ -16846,7 +16842,7 @@
       "price": 95.34,
       "drawdown_pct": 0.0,
       "ma50": 88.76,
-      "average_dollar_volume_20d": 1444774873.05,
+      "average_dollar_volume_20d": 1447253431.7,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16869,7 +16865,7 @@
       "price": 19.88,
       "drawdown_pct": 0.0,
       "ma50": 18.24,
-      "average_dollar_volume_20d": 364087256.19,
+      "average_dollar_volume_20d": 364374809.45,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16892,7 +16888,7 @@
       "price": 1306.69,
       "drawdown_pct": 0.0,
       "ma50": 1185.28,
-      "average_dollar_volume_20d": 2761447162.98,
+      "average_dollar_volume_20d": 2766868815.55,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16915,7 +16911,7 @@
       "price": 633.21,
       "drawdown_pct": 0.0,
       "ma50": 579.83,
-      "average_dollar_volume_20d": 1796572489.52,
+      "average_dollar_volume_20d": 1806113729.79,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16961,7 +16957,7 @@
       "price": 103.57,
       "drawdown_pct": 0.0,
       "ma50": 97.23,
-      "average_dollar_volume_20d": 302106101.37,
+      "average_dollar_volume_20d": 302678429.19,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -16984,7 +16980,7 @@
       "price": 76.07,
       "drawdown_pct": 0.0,
       "ma50": 68.86,
-      "average_dollar_volume_20d": 532400644.22,
+      "average_dollar_volume_20d": 532806937.89,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17007,7 +17003,7 @@
       "price": 199.27,
       "drawdown_pct": 0.0,
       "ma50": 180.7,
-      "average_dollar_volume_20d": 480867446.69,
+      "average_dollar_volume_20d": 480312858.34,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17030,7 +17026,7 @@
       "price": 1684.64,
       "drawdown_pct": 0.0,
       "ma50": 1461.42,
-      "average_dollar_volume_20d": 309962615.22,
+      "average_dollar_volume_20d": 310226345.62,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17099,7 +17095,7 @@
       "price": 30.42,
       "drawdown_pct": 0.0,
       "ma50": 28.23,
-      "average_dollar_volume_20d": 849769308.37,
+      "average_dollar_volume_20d": 849119334.87,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17122,7 +17118,7 @@
       "price": 165.59,
       "drawdown_pct": 0.0,
       "ma50": 148.03,
-      "average_dollar_volume_20d": 1509229916.66,
+      "average_dollar_volume_20d": 1503886948.44,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17145,7 +17141,7 @@
       "price": 241.9,
       "drawdown_pct": 0.0,
       "ma50": 219.37,
-      "average_dollar_volume_20d": 266286232.01,
+      "average_dollar_volume_20d": 266616594.83,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17168,7 +17164,7 @@
       "price": 157.36,
       "drawdown_pct": 0.0,
       "ma50": 139.26,
-      "average_dollar_volume_20d": 283697218.19,
+      "average_dollar_volume_20d": 283980442.59,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17191,7 +17187,7 @@
       "price": 133.39,
       "drawdown_pct": 0.0,
       "ma50": 123.36,
-      "average_dollar_volume_20d": 134969116.74,
+      "average_dollar_volume_20d": 135184081.4,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17237,7 +17233,7 @@
       "price": 405.44,
       "drawdown_pct": 0.0,
       "ma50": 370.41,
-      "average_dollar_volume_20d": 506875981.27,
+      "average_dollar_volume_20d": 507376192.87,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17260,7 +17256,7 @@
       "price": 414.34,
       "drawdown_pct": 0.0,
       "ma50": 376.22,
-      "average_dollar_volume_20d": 2280794131.98,
+      "average_dollar_volume_20d": 2283594821.75,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17280,21 +17276,21 @@
       "sector": "Health Care",
       "industry": "Health Care Technology",
       "cik": 1393052,
-      "price": 322.65,
+      "price": 322.55,
       "drawdown_pct": 0.0,
       "ma50": 275.52,
-      "average_dollar_volume_20d": 437690979.38,
+      "average_dollar_volume_20d": 440505016.31,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 3.07,
-        "return_20d_pct": 17.4,
-        "versus_ma20_pct": 9.24,
-        "above_20d_low_pct": 18.04,
-        "return_63d_pct": 73.24,
+        "return_5d_pct": 3.04,
+        "return_20d_pct": 17.36,
+        "versus_ma20_pct": 9.21,
+        "above_20d_low_pct": 18.01,
+        "return_63d_pct": 73.19,
         "sector_return_63d_pct": 12.23,
-        "sector_relative_63d_pp": 61.01,
+        "sector_relative_63d_pp": 60.96,
         "sector_sample_size": 60
       }
     },
@@ -17306,7 +17302,7 @@
       "price": 104.9,
       "drawdown_pct": 0.0,
       "ma50": 97.29,
-      "average_dollar_volume_20d": 168062819.43,
+      "average_dollar_volume_20d": 168770443.37,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17329,7 +17325,7 @@
       "price": 260.8,
       "drawdown_pct": 0.0,
       "ma50": 234.38,
-      "average_dollar_volume_20d": 268320398.14,
+      "average_dollar_volume_20d": 268099657.03,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -17352,7 +17348,7 @@
       "price": 394.03,
       "drawdown_pct": 0.0,
       "ma50": 361.15,
-      "average_dollar_volume_20d": 187475421.44,
+      "average_dollar_volume_20d": 187680356.45,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {

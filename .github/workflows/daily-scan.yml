@@ -36,17 +36,19 @@ jobs:
         run: python scripts/scan.py
 
       - name: Validate generated scan
-        run: python scripts/validate_scan.py data/scanner.json
+        run: |
+          python scripts/validate_scan.py data/scanner.json
+          python scripts/validate_history.py data/history
 
       - name: Publish changed scan data
         run: |
-          if [ -z "$(git status --porcelain -- data/scanner.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/scanner.json data/history)" ]; then
             echo "No scan-data change to publish."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/scanner.json
+          git add data/scanner.json data/history
           git commit -m "Update Market Scout daily scan"
           # Preserve any website/documentation commits made while the scan ran.
           git pull --rebase origin main
