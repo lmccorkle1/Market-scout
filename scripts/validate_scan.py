@@ -19,6 +19,19 @@ COMPONENT_LIMITS = {
     "selloff_20": 20,
     "financial_strength_15": 15,
 }
+TREND_NUMERIC_FIELDS = {
+    "revenue_yoy_pct", "operating_margin_pct", "operating_margin_change_pp",
+    "net_income_latest", "net_income_year_ago", "free_cash_flow_latest",
+    "free_cash_flow_yoy_pct", "debt_yoy_pct", "shares_yoy_pct",
+}
+ALLOWED_VALUE_TRAP_FLAGS = {
+    "Revenue declined more than 5% year over year",
+    "Operating margin contracted more than 3 percentage points",
+    "Latest quarter reported a net loss",
+    "Latest quarter reported negative free cash flow",
+    "Total debt increased more than 20% year over year",
+    "Share count increased more than 5% year over year",
+}
 
 
 def fail(message: str) -> None:
@@ -36,7 +49,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 4:
+    if not isinstance(data, dict) or data.get("schema_version") != 5:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -154,6 +167,38 @@ def validate(path: Path) -> dict[str, object]:
                     fail(f"{ticker}.next_earnings_date is invalid")
                 if parsed_earnings < now.date() or parsed_earnings > now.date() + timedelta(days=550):
                     fail(f"{ticker}.next_earnings_date is outside the accepted range")
+            trends = research.get("quarterly_trends")
+            if not isinstance(trends, dict) or trends.get("status") not in {"available", "insufficient_history", "unavailable"}:
+                fail(f"{ticker}.quarterly_trends is missing or invalid")
+            trend_metrics = trends.get("metrics")
+            flags = trends.get("value_trap_flags")
+            fields_available = trends.get("fields_available")
+            if not isinstance(trend_metrics, dict) or not isinstance(flags, list) or not isinstance(fields_available, int):
+                fail(f"{ticker}.quarterly_trends has invalid fields")
+            if not set(flags).issubset(ALLOWED_VALUE_TRAP_FLAGS) or len(flags) != len(set(flags)):
+                fail(f"{ticker}.value_trap_flags contains an invalid or duplicate flag")
+            for field in TREND_NUMERIC_FIELDS:
+                value = trend_metrics.get(field)
+                if value is not None and (
+                    isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value)
+                ):
+                    fail(f"{ticker}.quarterly_trends.{field} must be finite or null")
+            actual_available = sum(trend_metrics.get(field) is not None for field in TREND_NUMERIC_FIELDS)
+            if fields_available != actual_available:
+                fail(f"{ticker}.quarterly_trends fields_available is inconsistent")
+            for field in ("latest_period", "year_ago_period"):
+                value = trend_metrics.get(field)
+                if value is not None:
+                    try:
+                        trend_date = date.fromisoformat(value)
+                    except (TypeError, ValueError):
+                        fail(f"{ticker}.quarterly_trends.{field} is invalid")
+                    if trend_date > now.date():
+                        fail(f"{ticker}.quarterly_trends.{field} is in the future")
+            if trends.get("status") == "available" and (
+                trend_metrics.get("latest_period") is None or trend_metrics.get("year_ago_period") is None
+            ):
+                fail(f"{ticker}.quarterly_trends available status lacks comparison periods")
 
     method = data.get("research_method")
     top_five = data.get("top_five")

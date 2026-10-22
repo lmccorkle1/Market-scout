@@ -58,6 +58,33 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 - [x] Add sortable columns and richer filters without slowing the page.
 - [x] Add a methodology page describing sources, update timing, scoring thresholds, and known limitations.
 
+## Phase 6 — Quality-at-a-discount research system (current focus)
+
+- [x] Add minimum market-cap and dollar-volume investability controls.
+- [x] Add same-quarter year-over-year revenue, operating-margin, free-cash-flow, debt, and share-count trends.
+- [x] Display transparent value-trap warnings without silently changing the ranking.
+- [ ] Confirm quarterly trends against point-in-time SEC XBRL facts.
+- [ ] Add price stabilization and sector-relative-strength signals.
+- [ ] Replace broad valuation thresholds with sector-relative and company-history comparisons.
+- [ ] Add filing freshness, dilution, leverage, and accounting-risk gates.
+- [ ] Add verified catalyst evidence from filings and company disclosures.
+
+## Phase 7 — Measurement and learning
+
+- [ ] Save every daily Top Five snapshot with its inputs and score version.
+- [ ] Measure 1-, 3-, 6-, 12-, and 24-month total returns.
+- [ ] Compare each candidate with SPY, its sector benchmark, and the screened universe.
+- [ ] Report hit rate, excess return, maximum drawdown, and losing outcomes.
+- [ ] Build point-in-time, survivorship-aware walk-forward tests before tuning weights.
+- [ ] Version every scoring-rule change so historical results remain interpretable.
+
+## Phase 8 — Portfolio and risk controls
+
+- [ ] Add sector and position concentration limits.
+- [ ] Add volatility-aware position-sizing guidance for research scenarios.
+- [ ] Track thesis invalidation conditions separately from price movement.
+- [ ] Keep ETFs and long-term allocations separate from individual-company opportunity rankings.
+
 ## Current operating schedule
 
 The workflow is scheduled for **22:15 UTC, Monday through Friday**, after the regular U.S. market close in both daylight and standard time. GitHub Actions schedules can start later than the exact cron time during busy periods.

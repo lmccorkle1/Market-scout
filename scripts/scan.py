@@ -148,6 +148,85 @@ def upcoming_earnings_date(info: dict[str, object]) -> str | None:
     return None
 
 
+def statement_value(frame: pd.DataFrame, row: str, position: int) -> float | None:
+    if row not in frame.index or len(frame.columns) <= position:
+        return None
+    return finite(frame.loc[row].iloc[position])
+
+
+def percent_change(current: float | None, prior: float | None) -> float | None:
+    if current is None or prior is None or prior <= 0:
+        return None
+    return (current / prior - 1) * 100
+
+
+def quarterly_trends(ticker: yf.Ticker) -> dict[str, object]:
+    """Calculate same-quarter year-over-year trends without filling missing facts."""
+    income = ticker.get_income_stmt(freq="quarterly")
+    cash = ticker.get_cash_flow(freq="quarterly")
+    balance = ticker.get_balance_sheet(freq="quarterly")
+    frames = (income, cash, balance)
+    if any(not isinstance(frame, pd.DataFrame) for frame in frames):
+        income = cash = balance = pd.DataFrame()
+        frames = (income, cash, balance)
+    for frame in frames:
+        if not frame.empty:
+            frame.sort_index(axis=1, ascending=False, inplace=True)
+
+    latest_period = None if income.empty else pd.Timestamp(income.columns[0]).date().isoformat()
+    year_ago_period = None if len(income.columns) < 5 else pd.Timestamp(income.columns[4]).date().isoformat()
+    revenue = statement_value(income, "TotalRevenue", 0)
+    revenue_prior = statement_value(income, "TotalRevenue", 4)
+    operating_income = statement_value(income, "OperatingIncome", 0)
+    operating_income_prior = statement_value(income, "OperatingIncome", 4)
+    net_income = statement_value(income, "NetIncome", 0)
+    net_income_prior = statement_value(income, "NetIncome", 4)
+    free_cash_flow = statement_value(cash, "FreeCashFlow", 0)
+    free_cash_flow_prior = statement_value(cash, "FreeCashFlow", 4)
+    total_debt = statement_value(balance, "TotalDebt", 0)
+    total_debt_prior = statement_value(balance, "TotalDebt", 4)
+    shares = statement_value(balance, "OrdinarySharesNumber", 0)
+    shares_prior = statement_value(balance, "OrdinarySharesNumber", 4)
+    margin = None if revenue in (None, 0) or operating_income is None else operating_income / revenue * 100
+    margin_prior = None if revenue_prior in (None, 0) or operating_income_prior is None else operating_income_prior / revenue_prior * 100
+    margin_change = None if margin is None or margin_prior is None else margin - margin_prior
+    metrics = {
+        "latest_period": latest_period,
+        "year_ago_period": year_ago_period,
+        "revenue_yoy_pct": percent_change(revenue, revenue_prior),
+        "operating_margin_pct": margin,
+        "operating_margin_change_pp": margin_change,
+        "net_income_latest": net_income,
+        "net_income_year_ago": net_income_prior,
+        "free_cash_flow_latest": free_cash_flow,
+        "free_cash_flow_yoy_pct": percent_change(free_cash_flow, free_cash_flow_prior),
+        "debt_yoy_pct": percent_change(total_debt, total_debt_prior),
+        "shares_yoy_pct": percent_change(shares, shares_prior),
+    }
+    metrics = {key: (None if value is None else round(value, 2)) if not isinstance(value, str) else value for key, value in metrics.items()}
+    flags: list[str] = []
+    if metrics["revenue_yoy_pct"] is not None and metrics["revenue_yoy_pct"] < -5:
+        flags.append("Revenue declined more than 5% year over year")
+    if metrics["operating_margin_change_pp"] is not None and metrics["operating_margin_change_pp"] < -3:
+        flags.append("Operating margin contracted more than 3 percentage points")
+    if metrics["net_income_latest"] is not None and metrics["net_income_latest"] < 0:
+        flags.append("Latest quarter reported a net loss")
+    if metrics["free_cash_flow_latest"] is not None and metrics["free_cash_flow_latest"] < 0:
+        flags.append("Latest quarter reported negative free cash flow")
+    if metrics["debt_yoy_pct"] is not None and metrics["debt_yoy_pct"] > 20:
+        flags.append("Total debt increased more than 20% year over year")
+    if metrics["shares_yoy_pct"] is not None and metrics["shares_yoy_pct"] > 5:
+        flags.append("Share count increased more than 5% year over year")
+    numeric_fields = [key for key, value in metrics.items() if key not in ("latest_period", "year_ago_period") and value is not None]
+    return {
+        "metrics": metrics,
+        "fields_available": len(numeric_fields),
+        "value_trap_flags": flags,
+        "status": "available" if latest_period and year_ago_period else "insufficient_history",
+        "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings.",
+    }
+
+
 def score_company(info: dict[str, object], price_score: float) -> dict[str, object]:
     """Return an auditable 90-point score; catalysts deliberately remain manual."""
     market_cap = finite(info.get("marketCap"))
@@ -205,9 +284,21 @@ def enrich_one(row: dict[str, object]) -> tuple[str, dict[str, object] | None, s
     symbol = str(row["ticker"])
     for attempt in range(2):
         try:
-            info = yf.Ticker(symbol).get_info()
+            ticker = yf.Ticker(symbol)
+            info = ticker.get_info()
             if isinstance(info, dict) and info:
-                return symbol, score_company(info, float(row["price_score"])), None
+                result = score_company(info, float(row["price_score"]))
+                try:
+                    result["quarterly_trends"] = quarterly_trends(ticker)
+                except Exception as error:
+                    result["quarterly_trends"] = {
+                        "metrics": {},
+                        "fields_available": 0,
+                        "value_trap_flags": [],
+                        "status": "unavailable",
+                        "source": f"Quarterly statement request failed: {type(error).__name__}",
+                    }
+                return symbol, result, None
         except Exception as error:
             last_error = type(error).__name__
         time.sleep(1 + attempt)
@@ -281,7 +372,7 @@ def scan() -> dict[str, object]:
     ranked.sort(key=lambda row: (-float(row["research"]["quant_score_90"]), str(row["ticker"])))
     top_five = ranked[:5]
     return {
-        "schema_version": 4,
+        "schema_version": 5,
         "status": "ok" if not failures else "partial",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "universe_source": universe_source,
