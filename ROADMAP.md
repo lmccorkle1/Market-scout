@@ -74,6 +74,8 @@ Market Scout is a free stock research dashboard for 3–24 month opportunities i
 ## Phase 7 — Measurement and learning
 
 - [x] Save an immutable daily Top Five snapshot with its inputs, prices, warnings, and score version.
+- [x] Add validated pending/measured/unavailable states for 1-, 3-, 6-, 12-, and 24-month returns.
+- [x] Prepare automated SPY, sector-ETF, and point-in-time screened-universe comparisons.
 - [ ] Measure 1-, 3-, 6-, 12-, and 24-month total returns.
 - [ ] Compare each candidate with SPY, its sector benchmark, and the screened universe.
 - [ ] Report hit rate, excess return, maximum drawdown, and losing outcomes.

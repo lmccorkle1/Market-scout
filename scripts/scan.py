@@ -712,13 +712,14 @@ def save_daily_snapshot(payload: dict[str, object]) -> tuple[Path, bool]:
     if snapshot_path.exists():
         return snapshot_path, False
     snapshot = {
-        "snapshot_schema_version": 1,
+        "snapshot_schema_version": 2,
         "score_version": SCORE_VERSION,
         "selection_date": selection_date,
         "generated_at": payload["generated_at"],
         "score_explanation": payload["score_explanation"],
         "research_method": payload["research_method"],
         "top_five": top_five,
+        "universe_tickers": [row["ticker"] for row in payload.get("stocks", []) if isinstance(row, dict)],
     }
     atomic_json_write(snapshot_path, snapshot)
     digest = hashlib.sha256(snapshot_path.read_bytes()).hexdigest()

@@ -53,6 +53,8 @@ Before publishing, `scripts/validate_scan.py` checks:
 
 The workflow also saves the first verified Top Five for each market date under `data/history/`. Each complete candidate record is preserved with its selection-date price, score inputs, warnings, and `quant-90-v1` score version. Existing dates are never overwritten. `scripts/validate_history.py` verifies the chronological index, snapshot hashes, unique tickers, prices, component totals, and ranking before anything is committed.
 
+`scripts/update_performance.py` publishes forward-return states for 21, 63, 126, 252, and 504 trading sessions. A result stays pending until its session exists, becomes measured only from verified adjusted closes, and becomes unavailable when required price coverage is missing. Measured results include comparisons with SPY, the corresponding sector ETF, and—where snapshot schema 2 preserved membership—an equal-weight point-in-time screened universe with at least 80% price coverage.
+
 If downloading, scanning, or validation fails, the workflow exits with an error and preserves the last verified published scan.
 
 ## Run the scanner manually
@@ -82,12 +84,16 @@ An unavailable symbol can be normal after a ticker change, index addition, delis
 ```text
 index.html                         Main dashboard
 scanner.html                       Daily scanner interface
+performance.html                   Forward-return status and results
 data/scanner.json                  Generated verified results
+data/performance.json              Pending and measured forward returns
 data/history/index.json            Chronological immutable snapshot index
 data/history/YYYY-MM-DD.json       First verified Top Five for a market date
 scripts/scan.py                    Market-data scanner
 scripts/validate_scan.py           Pre-publication validation
 scripts/validate_history.py        Snapshot and immutable-hash validation
+scripts/update_performance.py      Forward-return measurement engine
+scripts/validate_performance.py    Performance-state validation
 .github/workflows/daily-scan.yml   Scheduled automation
 ROADMAP.md                         Planned improvements
 ```

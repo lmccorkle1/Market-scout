@@ -46,7 +46,7 @@ def validate_history(history_dir: Path) -> int:
         if entry.get("sha256") != digest:
             fail(f"history snapshot {selection_date} hash does not match the immutable index")
         snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
-        if not isinstance(snapshot, dict) or snapshot.get("snapshot_schema_version") != 1:
+        if not isinstance(snapshot, dict) or snapshot.get("snapshot_schema_version") not in {1, 2}:
             fail(f"history snapshot {selection_date} has an unsupported schema")
         if snapshot.get("score_version") != "quant-90-v1" or snapshot.get("selection_date") != selection_date:
             fail(f"history snapshot {selection_date} has inconsistent version or date")
@@ -91,6 +91,13 @@ def validate_history(history_dir: Path) -> int:
             tickers.append(ticker)
         if tickers != entry.get("top_tickers") or len(tickers) != len(set(tickers)):
             fail(f"history snapshot {selection_date} ticker index is inconsistent")
+        if snapshot["snapshot_schema_version"] == 2:
+            universe = snapshot.get("universe_tickers")
+            if (
+                not isinstance(universe, list) or len(universe) < 350 or len(universe) != len(set(universe))
+                or any(not isinstance(ticker, str) or not TICKER.fullmatch(ticker) for ticker in universe)
+            ):
+                fail(f"history snapshot {selection_date} has an invalid point-in-time universe")
         dates.append(selection_date)
         indexed_paths.add(expected_path)
     if dates != sorted(dates) or len(dates) != len(set(dates)):
