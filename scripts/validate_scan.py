@@ -32,6 +32,11 @@ ALLOWED_VALUE_TRAP_FLAGS = {
     "Total debt increased more than 20% year over year",
     "Share count increased more than 5% year over year",
 }
+RISK_GATE_IDS = {
+    "filing_freshness", "dilution", "leverage", "cash_flow_quality",
+    "profitability_trend", "quarterly_coverage", "sec_verification",
+}
+RISK_GATE_STATUSES = {"clear", "caution", "high_risk", "unavailable"}
 
 
 def fail(message: str) -> None:
@@ -49,7 +54,7 @@ def parse_utc(value: object) -> datetime:
 
 def validate(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or data.get("schema_version") != 8:
+    if not isinstance(data, dict) or data.get("schema_version") != 9:
         fail("unsupported or missing schema_version")
 
     stocks = data.get("stocks")
@@ -264,6 +269,32 @@ def validate(path: Path) -> dict[str, object]:
                 fail(f"{ticker}.sector_valuation overall percentile is inconsistent")
             if valuation.get("history_status") != "unavailable" or not isinstance(valuation.get("history_reason"), str):
                 fail(f"{ticker}.sector_valuation history status is invalid")
+            risk_gates = research.get("risk_gates")
+            if not isinstance(risk_gates, dict) or risk_gates.get("status") not in RISK_GATE_STATUSES:
+                fail(f"{ticker}.risk_gates is missing or invalid")
+            gates = risk_gates.get("gates")
+            counts = risk_gates.get("counts")
+            if not isinstance(gates, list) or not isinstance(counts, dict) or risk_gates.get("affects_ranking") is not False:
+                fail(f"{ticker}.risk_gates fields are invalid")
+            if len(gates) != len(RISK_GATE_IDS) or {gate.get("id") for gate in gates if isinstance(gate, dict)} != RISK_GATE_IDS:
+                fail(f"{ticker}.risk_gates must contain every gate exactly once")
+            actual_counts = {status: 0 for status in RISK_GATE_STATUSES}
+            for gate in gates:
+                if not isinstance(gate, dict) or gate.get("status") not in RISK_GATE_STATUSES:
+                    fail(f"{ticker}.risk_gates contains an invalid gate")
+                reason = gate.get("reason")
+                if not isinstance(reason, str) or not reason.strip() or len(reason) > 300:
+                    fail(f"{ticker}.risk_gates contains an invalid reason")
+                actual_counts[gate["status"]] += 1
+            if counts != actual_counts:
+                fail(f"{ticker}.risk_gates counts are inconsistent")
+            expected_gate_status = (
+                "high_risk" if actual_counts["high_risk"] else
+                "caution" if actual_counts["caution"] else
+                "clear" if actual_counts["clear"] else "unavailable"
+            )
+            if risk_gates["status"] != expected_gate_status:
+                fail(f"{ticker}.risk_gates overall status is inconsistent")
 
     method = data.get("research_method")
     top_five = data.get("top_five")

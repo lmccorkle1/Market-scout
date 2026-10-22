@@ -1,7 +1,7 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "status": "partial",
-  "generated_at": "2026-10-22T20:05:54.288751Z",
+  "generated_at": "2026-10-22T20:14:12.460024Z",
   "universe_source": "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols",
   "universe_count": 515,
   "screened_count": 514,
@@ -29,7 +29,7 @@
       "price": 264.28,
       "drawdown_pct": -64.0,
       "ma50": 300.99,
-      "average_dollar_volume_20d": 1250275675.47,
+      "average_dollar_volume_20d": 1250332310.67,
       "price_score": 100.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -51,11 +51,11 @@
           "return_on_equity_pct": 203.69,
           "trailing_pe": 20.31,
           "ev_to_ebitda": 16.64,
-          "fcf_yield_pct": 3.58,
+          "fcf_yield_pct": 3.6,
           "debt_to_equity": 111.13,
           "current_ratio": 4.3,
           "free_cash_flow": 3179956224.0,
-          "market_cap": 88782094336.0
+          "market_cap": 88441438208.0
         },
         "component_scores": {
           "fundamentals_30": 30,
@@ -109,7 +109,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 3.58,
+              "value": 3.6,
               "sector_median": 12.18,
               "cheapness_percentile": 12.5,
               "peer_count": 4
@@ -117,6 +117,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -1.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
@@ -204,7 +251,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 10.56,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 96.4,
               "peer_count": 14
             },
@@ -224,6 +271,53 @@
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
           "reason": "SEC request failed: HTTPError",
@@ -239,7 +333,7 @@
       "price": 354.19,
       "drawdown_pct": -52.5,
       "ma50": 435.82,
-      "average_dollar_volume_20d": 3721762659.42,
+      "average_dollar_volume_20d": 3721713072.82,
       "price_score": 97.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -308,7 +402,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 13.16,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 89.3,
               "peer_count": 14
             },
@@ -327,6 +421,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 4.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
@@ -432,6 +573,53 @@
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -2.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
           "reason": "SEC request failed: HTTPError",
@@ -447,7 +635,7 @@
       "price": 1260.93,
       "drawdown_pct": -46.0,
       "ma50": 1599.25,
-      "average_dollar_volume_20d": 12316317755.15,
+      "average_dollar_volume_20d": 12316267507.09,
       "price_score": 90.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -516,7 +704,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 17.1,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 82.1,
               "peer_count": 14
             },
@@ -535,6 +723,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
@@ -622,6 +857,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.3% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -633,7 +915,7 @@
       "price": 264.28,
       "drawdown_pct": -64.0,
       "ma50": 300.99,
-      "average_dollar_volume_20d": 1250275675.47,
+      "average_dollar_volume_20d": 1250332310.67,
       "price_score": 100.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -655,11 +937,11 @@
           "return_on_equity_pct": 203.69,
           "trailing_pe": 20.31,
           "ev_to_ebitda": 16.64,
-          "fcf_yield_pct": 3.58,
+          "fcf_yield_pct": 3.6,
           "debt_to_equity": 111.13,
           "current_ratio": 4.3,
           "free_cash_flow": 3179956224.0,
-          "market_cap": 88782094336.0
+          "market_cap": 88441438208.0
         },
         "component_scores": {
           "fundamentals_30": 30,
@@ -713,7 +995,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 3.58,
+              "value": 3.6,
               "sector_median": 12.18,
               "cheapness_percentile": 12.5,
               "peer_count": 4
@@ -721,6 +1003,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -1.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
@@ -809,7 +1138,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 50.44,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 17.9,
               "peer_count": 14
             },
@@ -828,6 +1157,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 4,
+            "caution": 0,
+            "high_risk": 2,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "high_risk",
+              "reason": "Share count increased 25.8% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -839,7 +1215,7 @@
       "price": 76.69,
       "drawdown_pct": -52.7,
       "ma50": 109.98,
-      "average_dollar_volume_20d": 441494968.63,
+      "average_dollar_volume_20d": 441497775.49,
       "price_score": 100.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -859,7 +1235,7 @@
           "earnings_growth_pct": 52.0,
           "profit_margin_pct": 3.33,
           "return_on_equity_pct": 18.38,
-          "trailing_pe": 32.77,
+          "trailing_pe": 29.61,
           "ev_to_ebitda": 16.46,
           "fcf_yield_pct": 2.21,
           "debt_to_equity": 107.82,
@@ -869,12 +1245,12 @@
         },
         "component_scores": {
           "fundamentals_30": 24.5,
-          "valuation_25": 7.8,
+          "valuation_25": 9.0,
           "selloff_20": 20.0,
           "financial_strength_15": 10.6,
           "catalysts_10": null
         },
-        "quant_score_90": 62.9,
+        "quant_score_90": 64.0,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -892,24 +1268,24 @@
             "net_income_year_ago": 192000000.0,
             "free_cash_flow_latest": 211000000.0,
             "free_cash_flow_yoy_pct": -34.27,
-            "debt_yoy_pct": null,
-            "shares_yoy_pct": -1.81
+            "debt_yoy_pct": 4.05,
+            "shares_yoy_pct": -3.21
           },
-          "fields_available": 4,
+          "fields_available": 5,
           "value_trap_flags": [],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
         "sector_valuation": {
-          "status": "near_median",
+          "status": "cheaper",
           "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
-          "cheapness_percentile": 66.7,
+          "cheapness_percentile": 69.1,
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
-              "value": 32.77,
-              "sector_median": 32.9,
-              "cheapness_percentile": 53.6,
+              "value": 29.61,
+              "sector_median": 32.72,
+              "cheapness_percentile": 60.7,
               "peer_count": 14
             },
             "ev_to_ebitda": {
@@ -927,6 +1303,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "caution",
+          "counts": {
+            "clear": 3,
+            "caution": 1,
+            "high_risk": 0,
+            "unavailable": 3
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -3.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "unavailable",
+              "reason": "Quarterly net income or free cash flow is unavailable"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "unavailable",
+              "reason": "Revenue and operating-margin trends are unavailable"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "caution",
+              "reason": "Only 5 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1022,6 +1445,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "high_risk",
+              "reason": "Share count increased 66.1% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1033,7 +1503,7 @@
       "price": 210.1,
       "drawdown_pct": -52.2,
       "ma50": 263.77,
-      "average_dollar_volume_20d": 1360423851.33,
+      "average_dollar_volume_20d": 1360415352.78,
       "price_score": 98.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -1104,6 +1574,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "caution",
+          "counts": {
+            "clear": 5,
+            "caution": 1,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.8% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "caution",
+              "reason": "Revenue or operating-margin trend crossed a warning threshold"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1115,7 +1632,7 @@
       "price": 354.19,
       "drawdown_pct": -52.5,
       "ma50": 435.82,
-      "average_dollar_volume_20d": 3721762659.42,
+      "average_dollar_volume_20d": 3721713072.82,
       "price_score": 97.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -1184,7 +1701,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 13.16,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 89.3,
               "peer_count": 14
             },
@@ -1204,6 +1721,53 @@
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 4.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
           "reason": "SEC request failed: HTTPError",
@@ -1219,7 +1783,7 @@
       "price": 111.77,
       "drawdown_pct": -55.1,
       "ma50": 129.46,
-      "average_dollar_volume_20d": 324008343.95,
+      "average_dollar_volume_20d": 324146564.31,
       "price_score": 96.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -1307,6 +1871,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -12.7% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 0.44%; debt/equity 441.58"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1387,7 +1998,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 40.39,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 32.1,
               "peer_count": 14
             },
@@ -1406,6 +2017,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -1.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1443,7 +2101,7 @@
           "debt_to_equity": 71.45,
           "current_ratio": 1.81,
           "free_cash_flow": 734499968.0,
-          "market_cap": 106786316288.0
+          "market_cap": 106569302016.0
         },
         "component_scores": {
           "fundamentals_30": 22.9,
@@ -1471,12 +2129,10 @@
             "free_cash_flow_latest": 1295000000.0,
             "free_cash_flow_yoy_pct": 223.75,
             "debt_yoy_pct": 10.35,
-            "shares_yoy_pct": 5.91
+            "shares_yoy_pct": 0.49
           },
           "fields_available": 9,
-          "value_trap_flags": [
-            "Share count increased more than 5% year over year"
-          ],
+          "value_trap_flags": [],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
@@ -1488,7 +2144,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 56.87,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 10.7,
               "peer_count": 14
             },
@@ -1507,6 +2163,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.5% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1591,7 +2294,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 19.67,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 75.0,
               "peer_count": 14
             },
@@ -1610,6 +2313,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 3,
+            "caution": 1,
+            "high_risk": 2,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 52 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "caution",
+              "reason": "Share count increased 6.4% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 47.93%; debt/equity 251.72"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1621,7 +2371,7 @@
       "price": 230.15,
       "drawdown_pct": -46.8,
       "ma50": 304.35,
-      "average_dollar_volume_20d": 2783533144.07,
+      "average_dollar_volume_20d": 2783589001.48,
       "price_score": 94.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -1641,7 +2391,7 @@
           "earnings_growth_pct": 34.8,
           "profit_margin_pct": 31.27,
           "return_on_equity_pct": 65.07,
-          "trailing_pe": 34.3,
+          "trailing_pe": 39.96,
           "ev_to_ebitda": 37.6,
           "fcf_yield_pct": 1.07,
           "debt_to_equity": 33.05,
@@ -1651,12 +2401,12 @@
         },
         "component_scores": {
           "fundamentals_30": 30,
-          "valuation_25": 3.4,
+          "valuation_25": 1.4,
           "selloff_20": 18.9,
           "financial_strength_15": 15.0,
           "catalysts_10": null
         },
-        "quant_score_90": 67.3,
+        "quant_score_90": 65.3,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -1689,8 +2439,8 @@
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
-              "value": 34.3,
-              "sector_median": 32.9,
+              "value": 39.96,
+              "sector_median": 32.72,
               "cheapness_percentile": 39.3,
               "peer_count": 14
             },
@@ -1709,6 +2459,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -1.4% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1720,7 +2517,7 @@
       "price": 159.17,
       "drawdown_pct": -44.5,
       "ma50": 219.76,
-      "average_dollar_volume_20d": 4085729679.54,
+      "average_dollar_volume_20d": 4085731406.54,
       "price_score": 94.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -1742,11 +2539,11 @@
           "return_on_equity_pct": 0.6,
           "trailing_pe": 124.35,
           "ev_to_ebitda": 190.62,
-          "fcf_yield_pct": -22.22,
+          "fcf_yield_pct": -23.79,
           "debt_to_equity": 98.6,
           "current_ratio": 4.03,
           "free_cash_flow": -9614650368.0,
-          "market_cap": 43271196672.0
+          "market_cap": 40412975104.0
         },
         "component_scores": {
           "fundamentals_30": 10.9,
@@ -1794,6 +2591,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 3,
+            "caution": 1,
+            "high_risk": 2,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "high_risk",
+              "reason": "Share count increased 13.4% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 730.76%; debt/equity 98.6"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "caution",
+              "reason": "Latest-quarter free cash flow was negative"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1893,6 +2737,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.8% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -1975,7 +2866,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 23.83,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 67.9,
               "peer_count": 14
             },
@@ -1994,6 +2885,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -3.8% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 99.88%; debt/equity unavailable"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2077,6 +3015,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 3,
+            "caution": 1,
+            "high_risk": 2,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "high_risk",
+              "reason": "Share count increased 15.9% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "caution",
+              "reason": "Only 6 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2152,13 +3137,13 @@
         "sector_valuation": {
           "status": "near_median",
           "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
-          "cheapness_percentile": 40.2,
+          "cheapness_percentile": 37.9,
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
               "value": 32.41,
-              "sector_median": 32.9,
-              "cheapness_percentile": 60.7,
+              "sector_median": 32.72,
+              "cheapness_percentile": 53.6,
               "peer_count": 14
             },
             "ev_to_ebitda": {
@@ -2176,6 +3161,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 83 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -0.4% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2187,7 +3219,7 @@
       "price": 1260.93,
       "drawdown_pct": -46.0,
       "ma50": 1599.25,
-      "average_dollar_volume_20d": 12316317755.15,
+      "average_dollar_volume_20d": 12316267507.09,
       "price_score": 90.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2256,7 +3288,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 17.1,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 82.1,
               "peer_count": 14
             },
@@ -2276,6 +3308,53 @@
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
           "reason": "SEC request failed: HTTPError",
@@ -2291,7 +3370,7 @@
       "price": 50.82,
       "drawdown_pct": -59.8,
       "ma50": 49.15,
-      "average_dollar_volume_20d": 268164685.78,
+      "average_dollar_volume_20d": 268177550.86,
       "price_score": 89.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2362,6 +3441,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "caution",
+          "counts": {
+            "clear": 5,
+            "caution": 1,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -2.4% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "caution",
+              "reason": "Revenue or operating-margin trend crossed a warning threshold"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2448,6 +3574,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 3,
+            "caution": 2,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "caution",
+              "reason": "Debt growth 31.4%; debt/equity 52.25"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "caution",
+              "reason": "Latest-quarter free cash flow was negative"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "high_risk",
+              "reason": "Revenue declined while operating margin contracted more than 5 points"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2530,7 +3703,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 72.17,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 3.6,
               "peer_count": 14
             },
@@ -2549,6 +3722,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 83 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.4% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 107.02%; debt/equity 107.5"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2629,6 +3849,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -1.5% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2640,7 +3907,7 @@
       "price": 169.09,
       "drawdown_pct": -53.2,
       "ma50": 179.34,
-      "average_dollar_volume_20d": 1409915247.14,
+      "average_dollar_volume_20d": 1409792690.71,
       "price_score": 85.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2713,6 +3980,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 4,
+            "caution": 1,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 2.9% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 51.23%; debt/equity 50.98"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "caution",
+              "reason": "Revenue or operating-margin trend crossed a warning threshold"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2724,7 +4038,7 @@
       "price": 141.39,
       "drawdown_pct": -54.9,
       "ma50": 145.52,
-      "average_dollar_volume_20d": 125346246.09,
+      "average_dollar_volume_20d": 125348769.9,
       "price_score": 85.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2746,11 +4060,11 @@
           "return_on_equity_pct": 34.42,
           "trailing_pe": 16.79,
           "ev_to_ebitda": 29.03,
-          "fcf_yield_pct": 4.56,
+          "fcf_yield_pct": 4.54,
           "debt_to_equity": 6.11,
           "current_ratio": 2.72,
           "free_cash_flow": 300198016.0,
-          "market_cap": 6587800576.0
+          "market_cap": 6615110656.0
         },
         "component_scores": {
           "fundamentals_30": 19.3,
@@ -2793,6 +4107,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 2.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2876,6 +4237,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 4,
+            "caution": 1,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "caution",
+              "reason": "Share count increased 8.1% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 111.11%; debt/equity 483.36"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -2887,7 +4295,7 @@
       "price": 642.14,
       "drawdown_pct": -41.2,
       "ma50": 828.5,
-      "average_dollar_volume_20d": 3869899802.59,
+      "average_dollar_volume_20d": 3869737726.45,
       "price_score": 84.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -2958,7 +4366,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 46.2,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 25.0,
               "peer_count": 14
             },
@@ -2977,6 +4385,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "caution",
+          "counts": {
+            "clear": 4,
+            "caution": 2,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "caution",
+              "reason": "Share count increased 6.6% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "caution",
+              "reason": "Debt growth -27.37%; debt/equity 179.88"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3034,20 +4489,18 @@
           "metrics": {
             "latest_period": "2026-06-30",
             "year_ago_period": "2025-06-30",
-            "revenue_yoy_pct": 7.53,
-            "operating_margin_pct": 22.9,
-            "operating_margin_change_pp": 4.26,
-            "net_income_latest": 907000000.0,
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": null,
+            "operating_margin_change_pp": null,
+            "net_income_latest": null,
             "net_income_year_ago": 797000000.0,
-            "free_cash_flow_latest": -451000000.0,
-            "free_cash_flow_yoy_pct": -143.32,
-            "debt_yoy_pct": 4.96,
-            "shares_yoy_pct": -2.27
+            "free_cash_flow_latest": 171000000.0,
+            "free_cash_flow_yoy_pct": -38.27,
+            "debt_yoy_pct": -5.8,
+            "shares_yoy_pct": 0.48
           },
-          "fields_available": 9,
-          "value_trap_flags": [
-            "Latest quarter reported negative free cash flow"
-          ],
+          "fields_available": 5,
+          "value_trap_flags": [],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
@@ -3059,6 +4512,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "caution",
+          "counts": {
+            "clear": 3,
+            "caution": 1,
+            "high_risk": 0,
+            "unavailable": 3
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.5% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "unavailable",
+              "reason": "Quarterly net income or free cash flow is unavailable"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "unavailable",
+              "reason": "Revenue and operating-margin trends are unavailable"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "caution",
+              "reason": "Only 5 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3160,6 +4660,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 3.5% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3193,11 +4740,11 @@
           "return_on_equity_pct": 18.92,
           "trailing_pe": 18.21,
           "ev_to_ebitda": 15.88,
-          "fcf_yield_pct": 11.65,
+          "fcf_yield_pct": 11.84,
           "debt_to_equity": 893.31,
           "current_ratio": 1.33,
           "free_cash_flow": 878991104.0,
-          "market_cap": 7547611136.0
+          "market_cap": 7421986304.0
         },
         "component_scores": {
           "fundamentals_30": 16.8,
@@ -3251,7 +4798,7 @@
               "peer_count": 5
             },
             "fcf_yield_pct": {
-              "value": 11.65,
+              "value": 11.84,
               "sector_median": 9.53,
               "cheapness_percentile": 70.0,
               "peer_count": 5
@@ -3259,6 +4806,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -7.6% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth -4.39%; debt/equity 893.31"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3339,6 +4933,53 @@
           "comparisons": {},
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -4.5% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3421,7 +5062,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 10.56,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 96.4,
               "peer_count": 14
             },
@@ -3440,6 +5081,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
@@ -3546,6 +5234,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 4,
+            "caution": 1,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -3.5% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth -3.53%; debt/equity 1703.9"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "caution",
+              "reason": "Revenue or operating-margin trend crossed a warning threshold"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3557,7 +5292,7 @@
       "price": 91.13,
       "drawdown_pct": -43.4,
       "ma50": 106.56,
-      "average_dollar_volume_20d": 691996310.67,
+      "average_dollar_volume_20d": 692024688.56,
       "price_score": 79.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -3629,7 +5364,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 33.02,
-              "sector_median": 32.9,
+              "sector_median": 32.72,
               "cheapness_percentile": 46.4,
               "peer_count": 14
             },
@@ -3648,6 +5383,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 4,
+            "caution": 1,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was 0.3% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "high_risk",
+              "reason": "Debt growth 77.17%; debt/equity 196.67"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "caution",
+              "reason": "Revenue or operating-margin trend crossed a warning threshold"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3681,11 +5463,11 @@
           "return_on_equity_pct": 5.16,
           "trailing_pe": 43.4,
           "ev_to_ebitda": 4.37,
-          "fcf_yield_pct": 17.76,
+          "fcf_yield_pct": 17.42,
           "debt_to_equity": 64.94,
           "current_ratio": 2.02,
           "free_cash_flow": 1615874944.0,
-          "market_cap": 9100569600.0
+          "market_cap": 9275328512.0
         },
         "component_scores": {
           "fundamentals_30": 4.2,
@@ -3739,7 +5521,7 @@
               "peer_count": 5
             },
             "fcf_yield_pct": {
-              "value": 17.76,
+              "value": 17.42,
               "sector_median": 9.53,
               "cheapness_percentile": 90.0,
               "peer_count": 5
@@ -3747,6 +5529,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -6.9% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3846,6 +5675,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -0.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3857,7 +5733,7 @@
       "price": 104.06,
       "drawdown_pct": -51.8,
       "ma50": 104.65,
-      "average_dollar_volume_20d": 416388576.48,
+      "average_dollar_volume_20d": 416409513.35,
       "price_score": 78.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -3947,6 +5823,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "caution",
+          "counts": {
+            "clear": 5,
+            "caution": 1,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 83 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -6.1% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "caution",
+              "reason": "Debt growth 21.47%; debt/equity 44.69"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -3958,7 +5881,7 @@
       "price": 75.13,
       "drawdown_pct": -43.1,
       "ma50": 85.83,
-      "average_dollar_volume_20d": 172179297.7,
+      "average_dollar_volume_20d": 172181976.09,
       "price_score": 77.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4046,6 +5969,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -0.6% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -4079,20 +6049,20 @@
           "return_on_equity_pct": 17.13,
           "trailing_pe": 14.29,
           "ev_to_ebitda": 9.77,
-          "fcf_yield_pct": 6.31,
+          "fcf_yield_pct": 6.23,
           "debt_to_equity": 47.07,
           "current_ratio": 1.45,
           "free_cash_flow": 558312512.0,
-          "market_cap": 8846627840.0
+          "market_cap": 8957795328.0
         },
         "component_scores": {
           "fundamentals_30": 7.5,
-          "valuation_25": 21.6,
+          "valuation_25": 21.4,
           "selloff_20": 15.4,
           "financial_strength_15": 13.0,
           "catalysts_10": null
         },
-        "quant_score_90": 57.5,
+        "quant_score_90": 57.4,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -4139,7 +6109,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 6.31,
+              "value": 6.23,
               "sector_median": 3.84,
               "cheapness_percentile": 87.5,
               "peer_count": 4
@@ -4147,6 +6117,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "caution",
+          "counts": {
+            "clear": 5,
+            "caution": 1,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -2.6% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "caution",
+              "reason": "Revenue or operating-margin trend crossed a warning threshold"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -4243,6 +6260,53 @@
           },
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
+        },
+        "risk_gates": {
+          "status": "high_risk",
+          "counts": {
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "high_risk",
+              "reason": "Share count increased 15.2% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "8 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
         }
       }
     },
@@ -4343,6 +6407,53 @@
           "history_status": "unavailable",
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
+        "risk_gates": {
+          "status": "clear",
+          "counts": {
+            "clear": 6,
+            "caution": 0,
+            "high_risk": 0,
+            "unavailable": 1
+          },
+          "gates": [
+            {
+              "id": "filing_freshness",
+              "status": "clear",
+              "reason": "Latest quarterly period ended 114 days ago"
+            },
+            {
+              "id": "dilution",
+              "status": "clear",
+              "reason": "Share-count change was -2.0% year over year"
+            },
+            {
+              "id": "leverage",
+              "status": "clear",
+              "reason": "Available debt measures remained below warning thresholds"
+            },
+            {
+              "id": "cash_flow_quality",
+              "status": "clear",
+              "reason": "Latest-quarter free cash flow was positive"
+            },
+            {
+              "id": "profitability_trend",
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
+            },
+            {
+              "id": "quarterly_coverage",
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
+            },
+            {
+              "id": "sec_verification",
+              "status": "unavailable",
+              "reason": "SEC XBRL verification is unavailable or was not attempted"
+            }
+          ],
+          "affects_ranking": false
+        },
         "sec_xbrl_confirmation": {
           "status": "unavailable",
           "reason": "SEC request failed: HTTPError",
@@ -4381,7 +6492,7 @@
       "price": 308.75,
       "drawdown_pct": -36.2,
       "ma50": 376.44,
-      "average_dollar_volume_20d": 1025704346.17,
+      "average_dollar_volume_20d": 1025710891.67,
       "price_score": 72.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4401,21 +6512,21 @@
       "sector": "Industrials",
       "industry": "Cargo Ground Transportation",
       "cik": 2082247,
-      "price": 111.01,
+      "price": 110.96,
       "drawdown_pct": -41.1,
-      "ma50": 122.59,
-      "average_dollar_volume_20d": 160720014.01,
-      "price_score": 71.1,
+      "ma50": 122.58,
+      "average_dollar_volume_20d": 160719034.41,
+      "price_score": 71.2,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "mixed",
-        "return_5d_pct": 0.46,
-        "return_20d_pct": -2.46,
-        "versus_ma20_pct": -0.58,
-        "above_20d_low_pct": 2.83,
-        "return_63d_pct": -29.74,
+        "return_5d_pct": 0.42,
+        "return_20d_pct": -2.5,
+        "versus_ma20_pct": -0.62,
+        "above_20d_low_pct": 2.79,
+        "return_63d_pct": -29.77,
         "sector_return_63d_pct": -3.51,
-        "sector_relative_63d_pp": -26.23,
+        "sector_relative_63d_pp": -26.26,
         "sector_sample_size": 83
       }
     },
@@ -4427,7 +6538,7 @@
       "price": 354.9,
       "drawdown_pct": -47.3,
       "ma50": 320.26,
-      "average_dollar_volume_20d": 1053664022.62,
+      "average_dollar_volume_20d": 1053687304.06,
       "price_score": 71.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4450,7 +6561,7 @@
       "price": 73.23,
       "drawdown_pct": -45.3,
       "ma50": 75.37,
-      "average_dollar_volume_20d": 825445525.32,
+      "average_dollar_volume_20d": 825456213.24,
       "price_score": 70.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4657,7 +6768,7 @@
       "price": 150.3,
       "drawdown_pct": -42.0,
       "ma50": 154.09,
-      "average_dollar_volume_20d": 605738982.16,
+      "average_dollar_volume_20d": 605739733.66,
       "price_score": 65.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4864,7 +6975,7 @@
       "price": 255.21,
       "drawdown_pct": -36.1,
       "ma50": 274.68,
-      "average_dollar_volume_20d": 1163668503.5,
+      "average_dollar_volume_20d": 1163695657.85,
       "price_score": 61.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4910,7 +7021,7 @@
       "price": 163.02,
       "drawdown_pct": -39.6,
       "ma50": 160.07,
-      "average_dollar_volume_20d": 399795622.8,
+      "average_dollar_volume_20d": 399802322.93,
       "price_score": 59.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -4956,7 +7067,7 @@
       "price": 323.24,
       "drawdown_pct": -32.6,
       "ma50": 358.33,
-      "average_dollar_volume_20d": 7566775782.49,
+      "average_dollar_volume_20d": 7566771919.77,
       "price_score": 58.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5117,7 +7228,7 @@
       "price": 856.49,
       "drawdown_pct": -29.4,
       "ma50": 984.04,
-      "average_dollar_volume_20d": 26674038703.79,
+      "average_dollar_volume_20d": 26674102640.77,
       "price_score": 57.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5140,7 +7251,7 @@
       "price": 1167.93,
       "drawdown_pct": -30.7,
       "ma50": 1293.12,
-      "average_dollar_volume_20d": 926269509.66,
+      "average_dollar_volume_20d": 926264253.98,
       "price_score": 55.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5232,7 +7343,7 @@
       "price": 29.09,
       "drawdown_pct": -34.9,
       "ma50": 29.9,
-      "average_dollar_volume_20d": 310629231.06,
+      "average_dollar_volume_20d": 310628956.16,
       "price_score": 55.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5347,7 +7458,7 @@
       "price": 223.47,
       "drawdown_pct": -29.3,
       "ma50": 242.78,
-      "average_dollar_volume_20d": 5305795596.78,
+      "average_dollar_volume_20d": 5305813776.07,
       "price_score": 52.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5416,7 +7527,7 @@
       "price": 142.31,
       "drawdown_pct": -31.8,
       "ma50": 146.5,
-      "average_dollar_volume_20d": 297299175.27,
+      "average_dollar_volume_20d": 297307116.17,
       "price_score": 50.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5462,18 +7573,18 @@
       "price": 33.67,
       "drawdown_pct": -29.0,
       "ma50": 35.67,
-      "average_dollar_volume_20d": 177648170.41,
+      "average_dollar_volume_20d": 177649852.81,
       "price_score": 49.2,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "improving",
-        "return_5d_pct": -1.28,
-        "return_20d_pct": -3.48,
-        "versus_ma20_pct": 2.27,
-        "above_20d_low_pct": 6.06,
-        "return_63d_pct": -19.24,
+        "return_5d_pct": -1.26,
+        "return_20d_pct": -3.47,
+        "versus_ma20_pct": 2.29,
+        "above_20d_low_pct": 6.08,
+        "return_63d_pct": -19.23,
         "sector_return_63d_pct": 1.65,
-        "sector_relative_63d_pp": -20.89,
+        "sector_relative_63d_pp": -20.88,
         "sector_sample_size": 24
       }
     },
@@ -5485,7 +7596,7 @@
       "price": 161.1,
       "drawdown_pct": -26.1,
       "ma50": 178.18,
-      "average_dollar_volume_20d": 1120000302.02,
+      "average_dollar_volume_20d": 1120048704.51,
       "price_score": 48.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5508,7 +7619,7 @@
       "price": 158.79,
       "drawdown_pct": -27.5,
       "ma50": 170.9,
-      "average_dollar_volume_20d": 919926570.03,
+      "average_dollar_volume_20d": 919875677.83,
       "price_score": 48.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5577,7 +7688,7 @@
       "price": 140.79,
       "drawdown_pct": -29.7,
       "ma50": 145.2,
-      "average_dollar_volume_20d": 1169124940.45,
+      "average_dollar_volume_20d": 1169145277.81,
       "price_score": 47.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5586,9 +7697,9 @@
         "return_20d_pct": 2.07,
         "versus_ma20_pct": -6.16,
         "above_20d_low_pct": 2.01,
-        "return_63d_pct": -13.68,
+        "return_63d_pct": -13.69,
         "sector_return_63d_pct": -5.48,
-        "sector_relative_63d_pp": -8.2,
+        "sector_relative_63d_pp": -8.21,
         "sector_sample_size": 31
       }
     },
@@ -5623,7 +7734,7 @@
       "price": 172.83,
       "drawdown_pct": -30.5,
       "ma50": 175.62,
-      "average_dollar_volume_20d": 1917084440.34,
+      "average_dollar_volume_20d": 1917160286.79,
       "price_score": 47.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5738,7 +7849,7 @@
       "price": 171.02,
       "drawdown_pct": -21.1,
       "ma50": 197.04,
-      "average_dollar_volume_20d": 1093088734.38,
+      "average_dollar_volume_20d": 1093101698.08,
       "price_score": 44.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5807,7 +7918,7 @@
       "price": 102.0,
       "drawdown_pct": -25.1,
       "ma50": 109.73,
-      "average_dollar_volume_20d": 528935726.77,
+      "average_dollar_volume_20d": 528847415.17,
       "price_score": 44.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -5991,7 +8102,7 @@
       "price": 53.62,
       "drawdown_pct": -22.5,
       "ma50": 59.12,
-      "average_dollar_volume_20d": 329634847.4,
+      "average_dollar_volume_20d": 329217321.87,
       "price_score": 43.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6037,7 +8148,7 @@
       "price": 237.79,
       "drawdown_pct": -28.0,
       "ma50": 229.81,
-      "average_dollar_volume_20d": 768668405.24,
+      "average_dollar_volume_20d": 768577284.11,
       "price_score": 41.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6129,7 +8240,7 @@
       "price": 309.65,
       "drawdown_pct": -25.6,
       "ma50": 318.98,
-      "average_dollar_volume_20d": 737290618.37,
+      "average_dollar_volume_20d": 737297105.54,
       "price_score": 41.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6152,7 +8263,7 @@
       "price": 74.52,
       "drawdown_pct": -27.0,
       "ma50": 75.2,
-      "average_dollar_volume_20d": 736715845.41,
+      "average_dollar_volume_20d": 736738328.09,
       "price_score": 41.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6175,7 +8286,7 @@
       "price": 131.24,
       "drawdown_pct": -23.5,
       "ma50": 139.57,
-      "average_dollar_volume_20d": 302505809.92,
+      "average_dollar_volume_20d": 302489785.51,
       "price_score": 41.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6198,7 +8309,7 @@
       "price": 61.65,
       "drawdown_pct": -26.9,
       "ma50": 62.23,
-      "average_dollar_volume_20d": 213210300.46,
+      "average_dollar_volume_20d": 213211619.77,
       "price_score": 41.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6290,7 +8401,7 @@
       "price": 230.59,
       "drawdown_pct": -22.6,
       "ma50": 248.26,
-      "average_dollar_volume_20d": 220056300.03,
+      "average_dollar_volume_20d": 220014782.3,
       "price_score": 41.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6405,7 +8516,7 @@
       "price": 317.7,
       "drawdown_pct": -26.3,
       "ma50": 316.79,
-      "average_dollar_volume_20d": 268630844.8,
+      "average_dollar_volume_20d": 268686013.41,
       "price_score": 39.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6428,7 +8539,7 @@
       "price": 56.47,
       "drawdown_pct": -25.4,
       "ma50": 57.1,
-      "average_dollar_volume_20d": 289384832.34,
+      "average_dollar_volume_20d": 289384219.64,
       "price_score": 39.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6474,7 +8585,7 @@
       "price": 507.93,
       "drawdown_pct": -21.8,
       "ma50": 541.6,
-      "average_dollar_volume_20d": 11536894491.08,
+      "average_dollar_volume_20d": 11536999200.85,
       "price_score": 38.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6520,7 +8631,7 @@
       "price": 64.56,
       "drawdown_pct": -19.0,
       "ma50": 71.78,
-      "average_dollar_volume_20d": 773317169.26,
+      "average_dollar_volume_20d": 773315636.08,
       "price_score": 38.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6543,7 +8654,7 @@
       "price": 24.89,
       "drawdown_pct": -20.8,
       "ma50": 26.77,
-      "average_dollar_volume_20d": 254872017.22,
+      "average_dollar_volume_20d": 254823140.73,
       "price_score": 38.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6589,7 +8700,7 @@
       "price": 109.59,
       "drawdown_pct": -20.5,
       "ma50": 117.92,
-      "average_dollar_volume_20d": 345243311.69,
+      "average_dollar_volume_20d": 345235410.25,
       "price_score": 37.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6612,7 +8723,7 @@
       "price": 443.85,
       "drawdown_pct": -25.1,
       "ma50": 395.04,
-      "average_dollar_volume_20d": 940303677.68,
+      "average_dollar_volume_20d": 940296442.93,
       "price_score": 37.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6681,7 +8792,7 @@
       "price": 270.55,
       "drawdown_pct": -24.8,
       "ma50": 255.92,
-      "average_dollar_volume_20d": 1045597636.69,
+      "average_dollar_volume_20d": 1045639653.1,
       "price_score": 37.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6704,7 +8815,7 @@
       "price": 73.07,
       "drawdown_pct": -17.5,
       "ma50": 81.67,
-      "average_dollar_volume_20d": 927219663.94,
+      "average_dollar_volume_20d": 927215992.17,
       "price_score": 36.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6796,7 +8907,7 @@
       "price": 392.51,
       "drawdown_pct": -24.0,
       "ma50": 346.19,
-      "average_dollar_volume_20d": 213886103.9,
+      "average_dollar_volume_20d": 213892953.2,
       "price_score": 36.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6888,7 +8999,7 @@
       "price": 189.89,
       "drawdown_pct": -23.5,
       "ma50": 187.18,
-      "average_dollar_volume_20d": 311597464.43,
+      "average_dollar_volume_20d": 311547732.24,
       "price_score": 35.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6934,7 +9045,7 @@
       "price": 64.01,
       "drawdown_pct": -23.4,
       "ma50": 59.07,
-      "average_dollar_volume_20d": 118862934.68,
+      "average_dollar_volume_20d": 118886483.95,
       "price_score": 35.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6957,7 +9068,7 @@
       "price": 320.76,
       "drawdown_pct": -19.5,
       "ma50": 340.05,
-      "average_dollar_volume_20d": 5316980777.54,
+      "average_dollar_volume_20d": 5316996222.14,
       "price_score": 34.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -6980,7 +9091,7 @@
       "price": 324.22,
       "drawdown_pct": -19.4,
       "ma50": 343.4,
-      "average_dollar_volume_20d": 8195626093.7,
+      "average_dollar_volume_20d": 8195333371.67,
       "price_score": 34.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7003,7 +9114,7 @@
       "price": 92.96,
       "drawdown_pct": -23.0,
       "ma50": 92.28,
-      "average_dollar_volume_20d": 293984001.57,
+      "average_dollar_volume_20d": 294011145.89,
       "price_score": 34.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7210,7 +9321,7 @@
       "price": 422.48,
       "drawdown_pct": -21.0,
       "ma50": 430.51,
-      "average_dollar_volume_20d": 1252967244.29,
+      "average_dollar_volume_20d": 1252971300.1,
       "price_score": 33.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7256,7 +9367,7 @@
       "price": 713.65,
       "drawdown_pct": -22.1,
       "ma50": 691.87,
-      "average_dollar_volume_20d": 330658590.3,
+      "average_dollar_volume_20d": 330803211.47,
       "price_score": 33.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7279,7 +9390,7 @@
       "price": 207.81,
       "drawdown_pct": -19.6,
       "ma50": 215.75,
-      "average_dollar_volume_20d": 479862496.83,
+      "average_dollar_volume_20d": 479833621.63,
       "price_score": 33.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7302,7 +9413,7 @@
       "price": 78.32,
       "drawdown_pct": -15.2,
       "ma50": 87.1,
-      "average_dollar_volume_20d": 317515489.41,
+      "average_dollar_volume_20d": 317492447.66,
       "price_score": 32.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7532,7 +9643,7 @@
       "price": 57.53,
       "drawdown_pct": -20.3,
       "ma50": 55.88,
-      "average_dollar_volume_20d": 611081262.01,
+      "average_dollar_volume_20d": 611070298.71,
       "price_score": 30.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7670,7 +9781,7 @@
       "price": 178.39,
       "drawdown_pct": -19.2,
       "ma50": 179.01,
-      "average_dollar_volume_20d": 178577479.25,
+      "average_dollar_volume_20d": 178576480.26,
       "price_score": 29.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7716,7 +9827,7 @@
       "price": 952.62,
       "drawdown_pct": -14.2,
       "ma50": 1032.62,
-      "average_dollar_volume_20d": 512786316.73,
+      "average_dollar_volume_20d": 512769788.78,
       "price_score": 29.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7851,21 +9962,21 @@
       "sector": "Materials",
       "industry": "Specialty Chemicals",
       "cik": 1489393,
-      "price": 65.37,
+      "price": 65.36,
       "drawdown_pct": -19.0,
       "ma50": 62.41,
-      "average_dollar_volume_20d": 199017670.64,
+      "average_dollar_volume_20d": 199017569.8,
       "price_score": 28.5,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 4.31,
-        "return_20d_pct": 8.62,
-        "versus_ma20_pct": 8.14,
-        "above_20d_low_pct": 13.75,
-        "return_63d_pct": 9.49,
+        "return_5d_pct": 4.29,
+        "return_20d_pct": 8.61,
+        "versus_ma20_pct": 8.12,
+        "above_20d_low_pct": 13.73,
+        "return_63d_pct": 9.47,
         "sector_return_63d_pct": 1.65,
-        "sector_relative_63d_pp": 7.84,
+        "sector_relative_63d_pp": 7.82,
         "sector_sample_size": 24
       }
     },
@@ -7900,7 +10011,7 @@
       "price": 71.42,
       "drawdown_pct": -18.9,
       "ma50": 68.41,
-      "average_dollar_volume_20d": 232941849.04,
+      "average_dollar_volume_20d": 232936985.34,
       "price_score": 28.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -7946,7 +10057,7 @@
       "price": 254.95,
       "drawdown_pct": -18.7,
       "ma50": 232.91,
-      "average_dollar_volume_20d": 429585097.67,
+      "average_dollar_volume_20d": 429579909.44,
       "price_score": 28.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8015,7 +10126,7 @@
       "price": 412.38,
       "drawdown_pct": -15.1,
       "ma50": 433.84,
-      "average_dollar_volume_20d": 4944624311.42,
+      "average_dollar_volume_20d": 4944628435.17,
       "price_score": 27.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8038,7 +10149,7 @@
       "price": 28.78,
       "drawdown_pct": -13.6,
       "ma50": 30.99,
-      "average_dollar_volume_20d": 136032331.47,
+      "average_dollar_volume_20d": 136032101.23,
       "price_score": 27.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8061,7 +10172,7 @@
       "price": 354.92,
       "drawdown_pct": -15.5,
       "ma50": 370.66,
-      "average_dollar_volume_20d": 2004171146.63,
+      "average_dollar_volume_20d": 2004184757.82,
       "price_score": 27.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8130,7 +10241,7 @@
       "price": 15.66,
       "drawdown_pct": -16.3,
       "ma50": 16.1,
-      "average_dollar_volume_20d": 406992801.35,
+      "average_dollar_volume_20d": 406980682.86,
       "price_score": 27.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8222,7 +10333,7 @@
       "price": 648.85,
       "drawdown_pct": -16.6,
       "ma50": 662.61,
-      "average_dollar_volume_20d": 14214986874.83,
+      "average_dollar_volume_20d": 14215037128.26,
       "price_score": 26.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8268,7 +10379,7 @@
       "price": 202.63,
       "drawdown_pct": -17.6,
       "ma50": 168.42,
-      "average_dollar_volume_20d": 4080242866.09,
+      "average_dollar_volume_20d": 4080256492.96,
       "price_score": 26.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8521,7 +10632,7 @@
       "price": 138.83,
       "drawdown_pct": -16.1,
       "ma50": 133.73,
-      "average_dollar_volume_20d": 1304056093.04,
+      "average_dollar_volume_20d": 1303961119.43,
       "price_score": 24.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8636,7 +10747,7 @@
       "price": 79.17,
       "drawdown_pct": -15.5,
       "ma50": 73.8,
-      "average_dollar_volume_20d": 372774334.17,
+      "average_dollar_volume_20d": 372768776.18,
       "price_score": 23.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8644,10 +10755,10 @@
         "return_5d_pct": -1.04,
         "return_20d_pct": 17.06,
         "versus_ma20_pct": 7.21,
-        "above_20d_low_pct": 19.73,
-        "return_63d_pct": 7.23,
+        "above_20d_low_pct": 19.74,
+        "return_63d_pct": 7.24,
         "sector_return_63d_pct": -8.38,
-        "sector_relative_63d_pp": 15.61,
+        "sector_relative_63d_pp": 15.62,
         "sector_sample_size": 30
       }
     },
@@ -8659,7 +10770,7 @@
       "price": 103.45,
       "drawdown_pct": -13.9,
       "ma50": 105.88,
-      "average_dollar_volume_20d": 201411773.89,
+      "average_dollar_volume_20d": 201377231.93,
       "price_score": 23.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8682,7 +10793,7 @@
       "price": 279.5,
       "drawdown_pct": -15.5,
       "ma50": 272.18,
-      "average_dollar_volume_20d": 1693487602.99,
+      "average_dollar_volume_20d": 1693479371.71,
       "price_score": 23.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8702,45 +10813,22 @@
       "sector": "Consumer Staples",
       "industry": "Distillers & Vintners",
       "cik": 16918,
-      "price": 138.96,
+      "price": 138.99,
       "drawdown_pct": -15.4,
       "ma50": 125.49,
-      "average_dollar_volume_20d": 303268163.15,
+      "average_dollar_volume_20d": 303278284.51,
       "price_score": 23.1,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 7.24,
-        "return_20d_pct": 21.67,
-        "versus_ma20_pct": 13.51,
-        "above_20d_low_pct": 23.22,
-        "return_63d_pct": 7.6,
+        "return_5d_pct": 7.26,
+        "return_20d_pct": 21.7,
+        "versus_ma20_pct": 13.53,
+        "above_20d_low_pct": 23.25,
+        "return_63d_pct": 7.63,
         "sector_return_63d_pct": 5.88,
-        "sector_relative_63d_pp": 1.72,
+        "sector_relative_63d_pp": 1.75,
         "sector_sample_size": 33
-      }
-    },
-    {
-      "ticker": "BNY",
-      "sector": "Financials",
-      "industry": "Asset Management & Custody Banks",
-      "cik": 1390777,
-      "price": 145.32,
-      "drawdown_pct": -11.8,
-      "ma50": 153.27,
-      "average_dollar_volume_20d": 572469082.64,
-      "price_score": 23.0,
-      "price_date": "2026-10-22",
-      "price_signals": {
-        "status": "stabilizing",
-        "return_5d_pct": 2.27,
-        "return_20d_pct": -3.24,
-        "versus_ma20_pct": 0.89,
-        "above_20d_low_pct": 5.58,
-        "return_63d_pct": -8.19,
-        "sector_return_63d_pct": -0.36,
-        "sector_relative_63d_pp": -7.83,
-        "sector_sample_size": 76
       }
     },
     {
@@ -8751,7 +10839,7 @@
       "price": 218.31,
       "drawdown_pct": -15.4,
       "ma50": 212.54,
-      "average_dollar_volume_20d": 501356534.21,
+      "average_dollar_volume_20d": 501418294.11,
       "price_score": 23.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8764,6 +10852,29 @@
         "sector_return_63d_pct": -3.51,
         "sector_relative_63d_pp": -6.44,
         "sector_sample_size": 83
+      }
+    },
+    {
+      "ticker": "BNY",
+      "sector": "Financials",
+      "industry": "Asset Management & Custody Banks",
+      "cik": 1390777,
+      "price": 145.33,
+      "drawdown_pct": -11.8,
+      "ma50": 153.27,
+      "average_dollar_volume_20d": 572470791.51,
+      "price_score": 22.9,
+      "price_date": "2026-10-22",
+      "price_signals": {
+        "status": "stabilizing",
+        "return_5d_pct": 2.28,
+        "return_20d_pct": -3.24,
+        "versus_ma20_pct": 0.89,
+        "above_20d_low_pct": 5.59,
+        "return_63d_pct": -8.18,
+        "sector_return_63d_pct": -0.36,
+        "sector_relative_63d_pp": -7.82,
+        "sector_sample_size": 76
       }
     },
     {
@@ -8958,7 +11069,7 @@
       "price": 239.9,
       "drawdown_pct": -14.8,
       "ma50": 237.41,
-      "average_dollar_volume_20d": 220689454.31,
+      "average_dollar_volume_20d": 221836200.27,
       "price_score": 22.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -8981,7 +11092,7 @@
       "price": 237.94,
       "drawdown_pct": -14.7,
       "ma50": 234.16,
-      "average_dollar_volume_20d": 2100602312.36,
+      "average_dollar_volume_20d": 2100581742.45,
       "price_score": 22.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9119,7 +11230,7 @@
       "price": 212.21,
       "drawdown_pct": -11.3,
       "ma50": 222.68,
-      "average_dollar_volume_20d": 23855900619.78,
+      "average_dollar_volume_20d": 23855853519.77,
       "price_score": 21.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9139,21 +11250,21 @@
       "sector": "Utilities",
       "industry": "Electric Utilities",
       "cik": 788784,
-      "price": 72.72,
+      "price": 72.71,
       "drawdown_pct": -14.2,
       "ma50": 71.29,
-      "average_dollar_volume_20d": 298378640.67,
+      "average_dollar_volume_20d": 298376623.92,
       "price_score": 21.3,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
         "return_5d_pct": 3.57,
         "return_20d_pct": 9.25,
-        "versus_ma20_pct": 3.93,
-        "above_20d_low_pct": 8.98,
-        "return_63d_pct": -8.05,
+        "versus_ma20_pct": 3.92,
+        "above_20d_low_pct": 8.97,
+        "return_63d_pct": -8.06,
         "sector_return_63d_pct": -5.48,
-        "sector_relative_63d_pp": -2.57,
+        "sector_relative_63d_pp": -2.58,
         "sector_sample_size": 31
       }
     },
@@ -9234,7 +11345,7 @@
       "price": 83.02,
       "drawdown_pct": -12.5,
       "ma50": 84.76,
-      "average_dollar_volume_20d": 1336382735.99,
+      "average_dollar_volume_20d": 1336383151.09,
       "price_score": 20.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9303,7 +11414,7 @@
       "price": 209.99,
       "drawdown_pct": -13.7,
       "ma50": 193.29,
-      "average_dollar_volume_20d": 405667286.4,
+      "average_dollar_volume_20d": 405711846.28,
       "price_score": 20.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9464,7 +11575,7 @@
       "price": 385.76,
       "drawdown_pct": -13.1,
       "ma50": 383.8,
-      "average_dollar_volume_20d": 1283316322.03,
+      "average_dollar_volume_20d": 1283335532.87,
       "price_score": 19.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9533,7 +11644,7 @@
       "price": 121.16,
       "drawdown_pct": -12.6,
       "ma50": 121.58,
-      "average_dollar_volume_20d": 123712176.06,
+      "average_dollar_volume_20d": 123711570.26,
       "price_score": 19.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9556,7 +11667,7 @@
       "price": 232.18,
       "drawdown_pct": -12.8,
       "ma50": 220.11,
-      "average_dollar_volume_20d": 146659543.35,
+      "average_dollar_volume_20d": 146661400.79,
       "price_score": 19.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9579,7 +11690,7 @@
       "price": 203.33,
       "drawdown_pct": -12.6,
       "ma50": 180.14,
-      "average_dollar_volume_20d": 212997331.41,
+      "average_dollar_volume_20d": 213008321.39,
       "price_score": 18.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9602,7 +11713,7 @@
       "price": 116.93,
       "drawdown_pct": -10.0,
       "ma50": 121.36,
-      "average_dollar_volume_20d": 199964942.49,
+      "average_dollar_volume_20d": 199957909.15,
       "price_score": 18.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9717,7 +11828,7 @@
       "price": 257.75,
       "drawdown_pct": -12.1,
       "ma50": 248.4,
-      "average_dollar_volume_20d": 781463407.4,
+      "average_dollar_volume_20d": 781471629.63,
       "price_score": 18.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9763,7 +11874,7 @@
       "price": 298.49,
       "drawdown_pct": -11.9,
       "ma50": 291.2,
-      "average_dollar_volume_20d": 455720643.28,
+      "average_dollar_volume_20d": 455504282.81,
       "price_score": 17.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -9993,7 +12104,7 @@
       "price": 172.98,
       "drawdown_pct": -11.2,
       "ma50": 170.25,
-      "average_dollar_volume_20d": 630082066.95,
+      "average_dollar_volume_20d": 630116334.29,
       "price_score": 16.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10085,7 +12196,7 @@
       "price": 70.64,
       "drawdown_pct": -9.7,
       "ma50": 71.99,
-      "average_dollar_volume_20d": 553185251.37,
+      "average_dollar_volume_20d": 553185731.69,
       "price_score": 16.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10108,7 +12219,7 @@
       "price": 36.17,
       "drawdown_pct": -10.9,
       "ma50": 35.1,
-      "average_dollar_volume_20d": 135566172.48,
+      "average_dollar_volume_20d": 135567981.23,
       "price_score": 16.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10243,10 +12354,10 @@
       "sector": "Information Technology",
       "industry": "Electronic Equipment & Instruments",
       "cik": 1094285,
-      "price": 620.15,
+      "price": 620.16,
       "drawdown_pct": -10.3,
       "ma50": 619.21,
-      "average_dollar_volume_20d": 190552935.76,
+      "average_dollar_volume_20d": 190554567.46,
       "price_score": 15.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10269,7 +12380,7 @@
       "price": 635.01,
       "drawdown_pct": -10.2,
       "ma50": 550.74,
-      "average_dollar_volume_20d": 246355828.79,
+      "average_dollar_volume_20d": 246371513.54,
       "price_score": 15.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10361,7 +12472,7 @@
       "price": 82.39,
       "drawdown_pct": -9.9,
       "ma50": 78.36,
-      "average_dollar_volume_20d": 577463944.58,
+      "average_dollar_volume_20d": 577452463.53,
       "price_score": 14.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10476,7 +12587,7 @@
       "price": 92.0,
       "drawdown_pct": -9.5,
       "ma50": 87.35,
-      "average_dollar_volume_20d": 429603841.24,
+      "average_dollar_volume_20d": 429600938.64,
       "price_score": 14.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10499,7 +12610,7 @@
       "price": 121.12,
       "drawdown_pct": -9.5,
       "ma50": 109.31,
-      "average_dollar_volume_20d": 2359247388.31,
+      "average_dollar_volume_20d": 2359254915.92,
       "price_score": 14.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10545,7 +12656,7 @@
       "price": 68.27,
       "drawdown_pct": -9.5,
       "ma50": 65.42,
-      "average_dollar_volume_20d": 270337298.5,
+      "average_dollar_volume_20d": 270361035.97,
       "price_score": 14.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10591,7 +12702,7 @@
       "price": 60.82,
       "drawdown_pct": -9.3,
       "ma50": 58.42,
-      "average_dollar_volume_20d": 47845144.47,
+      "average_dollar_volume_20d": 47864251.08,
       "price_score": 14.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10729,7 +12840,7 @@
       "price": 74.38,
       "drawdown_pct": -9.1,
       "ma50": 73.7,
-      "average_dollar_volume_20d": 89916283.3,
+      "average_dollar_volume_20d": 89926882.45,
       "price_score": 13.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10959,7 +13070,7 @@
       "price": 110.11,
       "drawdown_pct": -7.1,
       "ma50": 112.09,
-      "average_dollar_volume_20d": 129532420.8,
+      "average_dollar_volume_20d": 129508108.51,
       "price_score": 12.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -10982,7 +13093,7 @@
       "price": 436.23,
       "drawdown_pct": -8.2,
       "ma50": 386.2,
-      "average_dollar_volume_20d": 292124533.74,
+      "average_dollar_volume_20d": 292178539.01,
       "price_score": 12.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11212,7 +13323,7 @@
       "price": 60.01,
       "drawdown_pct": -7.4,
       "ma50": 60.02,
-      "average_dollar_volume_20d": 476768955.68,
+      "average_dollar_volume_20d": 476772028.19,
       "price_score": 11.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11350,7 +13461,7 @@
       "price": 131.04,
       "drawdown_pct": -7.2,
       "ma50": 122.04,
-      "average_dollar_volume_20d": 230489057.09,
+      "average_dollar_volume_20d": 230496952.25,
       "price_score": 10.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11373,7 +13484,7 @@
       "price": 236.67,
       "drawdown_pct": -7.1,
       "ma50": 231.89,
-      "average_dollar_volume_20d": 460074447.61,
+      "average_dollar_volume_20d": 460076968.15,
       "price_score": 10.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11419,7 +13530,7 @@
       "price": 197.14,
       "drawdown_pct": -6.8,
       "ma50": 197.29,
-      "average_dollar_volume_20d": 411644598.2,
+      "average_dollar_volume_20d": 411874640.86,
       "price_score": 10.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11488,7 +13599,7 @@
       "price": 118.81,
       "drawdown_pct": -6.7,
       "ma50": 113.98,
-      "average_dollar_volume_20d": 318895046.12,
+      "average_dollar_volume_20d": 318940550.35,
       "price_score": 10.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11511,7 +13622,7 @@
       "price": 178.28,
       "drawdown_pct": -6.6,
       "ma50": 167.74,
-      "average_dollar_volume_20d": 96170032.34,
+      "average_dollar_volume_20d": 96255303.66,
       "price_score": 9.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11580,7 +13691,7 @@
       "price": 510.36,
       "drawdown_pct": -6.3,
       "ma50": 479.56,
-      "average_dollar_volume_20d": 997891942.67,
+      "average_dollar_volume_20d": 997936828.83,
       "price_score": 9.5,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11626,7 +13737,7 @@
       "price": 450.08,
       "drawdown_pct": -6.2,
       "ma50": 427.13,
-      "average_dollar_volume_20d": 239005660.56,
+      "average_dollar_volume_20d": 238941321.62,
       "price_score": 9.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11695,7 +13806,7 @@
       "price": 86.0,
       "drawdown_pct": -5.3,
       "ma50": 87.05,
-      "average_dollar_volume_20d": 107016074.73,
+      "average_dollar_volume_20d": 107013954.83,
       "price_score": 9.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11764,7 +13875,7 @@
       "price": 101.91,
       "drawdown_pct": -6.1,
       "ma50": 99.65,
-      "average_dollar_volume_20d": 897419879.57,
+      "average_dollar_volume_20d": 897417943.28,
       "price_score": 9.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -11833,7 +13944,7 @@
       "price": 168.81,
       "drawdown_pct": -5.8,
       "ma50": 150.91,
-      "average_dollar_volume_20d": 1354541512.29,
+      "average_dollar_volume_20d": 1354594543.95,
       "price_score": 8.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12017,7 +14128,7 @@
       "price": 47.3,
       "drawdown_pct": -5.3,
       "ma50": 44.84,
-      "average_dollar_volume_20d": 418234051.3,
+      "average_dollar_volume_20d": 418274476.25,
       "price_score": 8.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12178,7 +14289,7 @@
       "price": 194.0,
       "drawdown_pct": -5.3,
       "ma50": 157.61,
-      "average_dollar_volume_20d": 832327785.66,
+      "average_dollar_volume_20d": 834078325.26,
       "price_score": 7.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12684,7 +14795,7 @@
       "price": 521.08,
       "drawdown_pct": -4.1,
       "ma50": 507.78,
-      "average_dollar_volume_20d": 11223631221.37,
+      "average_dollar_volume_20d": 11223764122.83,
       "price_score": 6.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12776,7 +14887,7 @@
       "price": 288.9,
       "drawdown_pct": -3.9,
       "ma50": 277.67,
-      "average_dollar_volume_20d": 90416790.35,
+      "average_dollar_volume_20d": 90413901.35,
       "price_score": 5.9,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12845,7 +14956,7 @@
       "price": 819.09,
       "drawdown_pct": -3.9,
       "ma50": 791.33,
-      "average_dollar_volume_20d": 539018499.14,
+      "average_dollar_volume_20d": 539054006.7,
       "price_score": 5.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -12960,7 +15071,7 @@
       "price": 33.95,
       "drawdown_pct": -3.6,
       "ma50": 33.06,
-      "average_dollar_volume_20d": 27575984.32,
+      "average_dollar_volume_20d": 27573315.85,
       "price_score": 5.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13006,7 +15117,7 @@
       "price": 102.69,
       "drawdown_pct": -3.6,
       "ma50": 97.42,
-      "average_dollar_volume_20d": 271308941.43,
+      "average_dollar_volume_20d": 271227338.82,
       "price_score": 5.3,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13190,7 +15301,7 @@
       "price": 84.95,
       "drawdown_pct": -2.8,
       "ma50": 81.07,
-      "average_dollar_volume_20d": 175540571.81,
+      "average_dollar_volume_20d": 175534994.84,
       "price_score": 4.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13259,7 +15370,7 @@
       "price": 51.67,
       "drawdown_pct": -2.7,
       "ma50": 48.67,
-      "average_dollar_volume_20d": 484667894.71,
+      "average_dollar_volume_20d": 484676373.76,
       "price_score": 4.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13420,7 +15531,7 @@
       "price": 112.32,
       "drawdown_pct": -2.2,
       "ma50": 102.4,
-      "average_dollar_volume_20d": 459404203.84,
+      "average_dollar_volume_20d": 459400856.85,
       "price_score": 3.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13535,7 +15646,7 @@
       "price": 396.8,
       "drawdown_pct": -1.8,
       "ma50": 355.54,
-      "average_dollar_volume_20d": 511510960.61,
+      "average_dollar_volume_20d": 511539669.09,
       "price_score": 2.7,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13581,7 +15692,7 @@
       "price": 24.87,
       "drawdown_pct": -1.7,
       "ma50": 22.55,
-      "average_dollar_volume_20d": 192519033.25,
+      "average_dollar_volume_20d": 192511977.63,
       "price_score": 2.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13627,7 +15738,7 @@
       "price": 384.16,
       "drawdown_pct": -1.7,
       "ma50": 366.19,
-      "average_dollar_volume_20d": 172550948.05,
+      "average_dollar_volume_20d": 172582910.16,
       "price_score": 2.6,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13719,7 +15830,7 @@
       "price": 304.59,
       "drawdown_pct": -1.5,
       "ma50": 292.66,
-      "average_dollar_volume_20d": 273043286.61,
+      "average_dollar_volume_20d": 273776769.78,
       "price_score": 2.2,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13765,7 +15876,7 @@
       "price": 33.71,
       "drawdown_pct": -1.4,
       "ma50": 31.86,
-      "average_dollar_volume_20d": 422978422.68,
+      "average_dollar_volume_20d": 422977761.96,
       "price_score": 2.1,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13834,7 +15945,7 @@
       "price": 196.22,
       "drawdown_pct": -1.2,
       "ma50": 190.42,
-      "average_dollar_volume_20d": 212284500.19,
+      "average_dollar_volume_20d": 212283519.09,
       "price_score": 1.8,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13880,7 +15991,7 @@
       "price": 49.44,
       "drawdown_pct": -0.9,
       "ma50": 44.4,
-      "average_dollar_volume_20d": 239567418.93,
+      "average_dollar_volume_20d": 239500477.17,
       "price_score": 1.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -13903,7 +16014,7 @@
       "price": 18.48,
       "drawdown_pct": -1.0,
       "ma50": 17.14,
-      "average_dollar_volume_20d": 171167047.66,
+      "average_dollar_volume_20d": 171167561.41,
       "price_score": 1.4,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14038,18 +16149,18 @@
       "sector": "Energy",
       "industry": "Integrated Oil & Gas",
       "cik": 2115436,
-      "price": 178.19,
+      "price": 178.2,
       "drawdown_pct": -0.4,
       "ma50": 165.25,
-      "average_dollar_volume_20d": 1902291410.76,
+      "average_dollar_volume_20d": 1902308940.82,
       "price_score": 0.7,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 2.01,
-        "return_20d_pct": 9.9,
-        "versus_ma20_pct": 4.99,
-        "above_20d_low_pct": 10.96,
+        "return_5d_pct": 2.02,
+        "return_20d_pct": 9.91,
+        "versus_ma20_pct": 5.0,
+        "above_20d_low_pct": 10.97,
         "return_63d_pct": 14.28,
         "sector_return_63d_pct": 3.55,
         "sector_relative_63d_pp": 10.73,
@@ -14179,7 +16290,7 @@
       "price": 447.28,
       "drawdown_pct": 0.0,
       "ma50": 416.53,
-      "average_dollar_volume_20d": 1157283132.85,
+      "average_dollar_volume_20d": 1157323589.33,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14294,7 +16405,7 @@
       "price": 253.84,
       "drawdown_pct": 0.0,
       "ma50": 222.58,
-      "average_dollar_volume_20d": 299243093.09,
+      "average_dollar_volume_20d": 299210093.89,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14363,7 +16474,7 @@
       "price": 164.62,
       "drawdown_pct": 0.0,
       "ma50": 144.0,
-      "average_dollar_volume_20d": 211737494.01,
+      "average_dollar_volume_20d": 211771175.26,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14432,7 +16543,7 @@
       "price": 97.4,
       "drawdown_pct": -0.0,
       "ma50": 88.83,
-      "average_dollar_volume_20d": 411730335.39,
+      "average_dollar_volume_20d": 411736257.31,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14478,7 +16589,7 @@
       "price": 224.04,
       "drawdown_pct": 0.0,
       "ma50": 202.22,
-      "average_dollar_volume_20d": 357923669.22,
+      "average_dollar_volume_20d": 357943586.37,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14616,7 +16727,7 @@
       "price": 335.45,
       "drawdown_pct": 0.0,
       "ma50": 288.32,
-      "average_dollar_volume_20d": 214241352.1,
+      "average_dollar_volume_20d": 214243197.07,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14823,7 +16934,7 @@
       "price": 65.19,
       "drawdown_pct": 0.0,
       "ma50": 61.47,
-      "average_dollar_volume_20d": 462945945.64,
+      "average_dollar_volume_20d": 462949051.94,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
@@ -14912,21 +17023,21 @@
       "sector": "Health Care",
       "industry": "Life Sciences Tools & Services",
       "cik": 1037646,
-      "price": 1685.52,
+      "price": 1685.85,
       "drawdown_pct": 0.0,
-      "ma50": 1461.43,
-      "average_dollar_volume_20d": 307541558.79,
+      "ma50": 1461.44,
+      "average_dollar_volume_20d": 307546471.83,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {
         "status": "stabilizing",
-        "return_5d_pct": 2.84,
-        "return_20d_pct": 10.95,
-        "versus_ma20_pct": 7.31,
-        "above_20d_low_pct": 13.8,
-        "return_63d_pct": 27.0,
+        "return_5d_pct": 2.86,
+        "return_20d_pct": 10.97,
+        "versus_ma20_pct": 7.33,
+        "above_20d_low_pct": 13.82,
+        "return_63d_pct": 27.03,
         "sector_return_63d_pct": 12.23,
-        "sector_relative_63d_pp": 14.77,
+        "sector_relative_63d_pp": 14.8,
         "sector_sample_size": 60
       }
     },
@@ -14984,7 +17095,7 @@
       "price": 30.41,
       "drawdown_pct": 0.0,
       "ma50": 28.23,
-      "average_dollar_volume_20d": 842776564.73,
+      "average_dollar_volume_20d": 842776260.63,
       "price_score": 0.0,
       "price_date": "2026-10-22",
       "price_signals": {

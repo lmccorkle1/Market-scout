@@ -343,6 +343,96 @@ def sec_confirmation(row: dict[str, object]) -> dict[str, object]:
     }
 
 
+def build_risk_gates(row: dict[str, object]) -> dict[str, object]:
+    """Create explicit research warnings without changing the ranking."""
+    research = row.get("research", {})
+    trends = research.get("quarterly_trends", {})
+    quarterly = trends.get("metrics", {})
+    metrics = research.get("metrics", {})
+    gates: list[dict[str, str]] = []
+
+    latest_period = quarterly.get("latest_period")
+    try:
+        age_days = (datetime.now(timezone.utc).date() - datetime.fromisoformat(latest_period).date()).days
+    except (TypeError, ValueError):
+        age_days = None
+    if age_days is None:
+        gates.append({"id": "filing_freshness", "status": "unavailable", "reason": "Latest quarterly period is unavailable"})
+    elif age_days > 210:
+        gates.append({"id": "filing_freshness", "status": "high_risk", "reason": f"Latest quarterly period ended {age_days} days ago"})
+    elif age_days > 150:
+        gates.append({"id": "filing_freshness", "status": "caution", "reason": f"Latest quarterly period ended {age_days} days ago"})
+    else:
+        gates.append({"id": "filing_freshness", "status": "clear", "reason": f"Latest quarterly period ended {age_days} days ago"})
+
+    shares = finite(quarterly.get("shares_yoy_pct"))
+    if shares is None:
+        gates.append({"id": "dilution", "status": "unavailable", "reason": "Year-over-year share-count change is unavailable"})
+    elif shares > 10:
+        gates.append({"id": "dilution", "status": "high_risk", "reason": f"Share count increased {shares:.1f}% year over year"})
+    elif shares > 5:
+        gates.append({"id": "dilution", "status": "caution", "reason": f"Share count increased {shares:.1f}% year over year"})
+    else:
+        gates.append({"id": "dilution", "status": "clear", "reason": f"Share-count change was {shares:.1f}% year over year"})
+
+    debt_growth = finite(quarterly.get("debt_yoy_pct"))
+    debt_to_equity = finite(metrics.get("debt_to_equity"))
+    if debt_growth is None and debt_to_equity is None:
+        gates.append({"id": "leverage", "status": "unavailable", "reason": "Debt growth and debt/equity are unavailable"})
+    elif (debt_growth is not None and debt_growth > 40) or (debt_to_equity is not None and debt_to_equity > 250):
+        gates.append({"id": "leverage", "status": "high_risk", "reason": f"Debt growth {debt_growth if debt_growth is not None else 'unavailable'}%; debt/equity {debt_to_equity if debt_to_equity is not None else 'unavailable'}"})
+    elif (debt_growth is not None and debt_growth > 20) or (debt_to_equity is not None and debt_to_equity > 150):
+        gates.append({"id": "leverage", "status": "caution", "reason": f"Debt growth {debt_growth if debt_growth is not None else 'unavailable'}%; debt/equity {debt_to_equity if debt_to_equity is not None else 'unavailable'}"})
+    else:
+        gates.append({"id": "leverage", "status": "clear", "reason": "Available debt measures remained below warning thresholds"})
+
+    net_income = finite(quarterly.get("net_income_latest"))
+    free_cash_flow = finite(quarterly.get("free_cash_flow_latest"))
+    if net_income is None or free_cash_flow is None:
+        gates.append({"id": "cash_flow_quality", "status": "unavailable", "reason": "Quarterly net income or free cash flow is unavailable"})
+    elif net_income > 0 and free_cash_flow < 0:
+        gates.append({"id": "cash_flow_quality", "status": "high_risk", "reason": "Positive net income was not supported by positive free cash flow"})
+    elif free_cash_flow < 0:
+        gates.append({"id": "cash_flow_quality", "status": "caution", "reason": "Latest-quarter free cash flow was negative"})
+    else:
+        gates.append({"id": "cash_flow_quality", "status": "clear", "reason": "Latest-quarter free cash flow was positive"})
+
+    revenue_growth = finite(quarterly.get("revenue_yoy_pct"))
+    margin_change = finite(quarterly.get("operating_margin_change_pp"))
+    if revenue_growth is None and margin_change is None:
+        gates.append({"id": "profitability_trend", "status": "unavailable", "reason": "Revenue and operating-margin trends are unavailable"})
+    elif margin_change is not None and margin_change < -5 and revenue_growth is not None and revenue_growth < -5:
+        gates.append({"id": "profitability_trend", "status": "high_risk", "reason": "Revenue declined while operating margin contracted more than 5 points"})
+    elif (margin_change is not None and margin_change < -3) or (revenue_growth is not None and revenue_growth < -5):
+        gates.append({"id": "profitability_trend", "status": "caution", "reason": "Revenue or operating-margin trend crossed a warning threshold"})
+    else:
+        gates.append({"id": "profitability_trend", "status": "clear", "reason": "Available revenue and margin trends remained above warning thresholds"})
+
+    fields_available = trends.get("fields_available")
+    if not isinstance(fields_available, int):
+        gates.append({"id": "quarterly_coverage", "status": "unavailable", "reason": "Quarterly field coverage is unavailable"})
+    elif fields_available < 4:
+        gates.append({"id": "quarterly_coverage", "status": "high_risk", "reason": f"Only {fields_available} of 9 quarterly trend fields were available"})
+    elif fields_available < 7:
+        gates.append({"id": "quarterly_coverage", "status": "caution", "reason": f"Only {fields_available} of 9 quarterly trend fields were available"})
+    else:
+        gates.append({"id": "quarterly_coverage", "status": "clear", "reason": f"{fields_available} of 9 quarterly trend fields were available"})
+
+    sec_status = research.get("sec_xbrl_confirmation", {}).get("status")
+    if sec_status == "mismatch":
+        gates.append({"id": "sec_verification", "status": "high_risk", "reason": "SEC XBRL comparison reported a mismatch"})
+    elif sec_status == "confirmed":
+        gates.append({"id": "sec_verification", "status": "clear", "reason": "Both available SEC XBRL comparisons matched"})
+    elif sec_status == "partial":
+        gates.append({"id": "sec_verification", "status": "caution", "reason": "Only one SEC XBRL comparison was available and matched"})
+    else:
+        gates.append({"id": "sec_verification", "status": "unavailable", "reason": "SEC XBRL verification is unavailable or was not attempted"})
+
+    counts = {status: sum(gate["status"] == status for gate in gates) for status in ("clear", "caution", "high_risk", "unavailable")}
+    status = "high_risk" if counts["high_risk"] else "caution" if counts["caution"] else "clear" if counts["clear"] else "unavailable"
+    return {"status": status, "counts": counts, "gates": gates, "affects_ranking": False}
+
+
 def score_company(info: dict[str, object], price_score: float) -> dict[str, object]:
     """Return an auditable 90-point score; catalysts deliberately remain manual."""
     market_cap = finite(info.get("marketCap"))
@@ -560,15 +650,19 @@ def scan() -> dict[str, object]:
                 by_symbol[symbol]["research"] = result
 
     add_sector_valuation_context(candidates)
+    for row in candidates:
+        if row.get("research"):
+            row["research"]["risk_gates"] = build_risk_gates(row)
 
     ranked = [row for row in candidates if row.get("research", {}).get("eligible")]
     ranked.sort(key=lambda row: (-float(row["research"]["quant_score_90"]), str(row["ticker"])))
     top_five = ranked[:5]
     for row in top_five:
         row["research"]["sec_xbrl_confirmation"] = sec_confirmation(row)
+        row["research"]["risk_gates"] = build_risk_gates(row)
         time.sleep(0.15)
     return {
-        "schema_version": 8,
+        "schema_version": 9,
         "status": "ok" if not failures else "partial",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "universe_source": universe_source,
