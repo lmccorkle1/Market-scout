@@ -1,6 +1,6 @@
 # Market Scout Roadmap
 
-Market Scout is a free, price-based stock research dashboard. This roadmap records what is working, what comes next, and the safeguards that should remain in place as the project grows.
+Market Scout is a free stock research dashboard for 3–24 month opportunities in fundamentally strong companies experiencing potential temporary selloffs. This roadmap records what is working, what comes next, and the safeguards that should remain in place as the project grows.
 
 ## Guiding principles
 
@@ -21,37 +21,39 @@ Market Scout is a free, price-based stock research dashboard. This roadmap recor
 - [x] Allow manual runs through GitHub Actions.
 - [x] Prevent failed or undersized downloads from replacing the last verified scan.
 
-## Phase 2 — Reliability and clarity (next)
+## Phase 2 — Reliability and clarity (substantially complete)
 
-- [ ] Add an obvious stale-data warning when the latest successful scan is older than expected.
-- [ ] Show partial-scan status and unavailable symbols on the scanner page.
-- [ ] Add automated checks for the JSON schema, duplicate tickers, invalid numbers, and future-dated prices.
-- [ ] Add a short README with setup, maintenance, and troubleshooting instructions.
+- [x] Add an obvious stale-data warning when the latest successful scan is older than expected.
+- [x] Show partial-scan status and unavailable symbols on the scanner page.
+- [x] Add automated checks for the JSON schema, duplicate tickers, invalid numbers, and future-dated prices.
+- [x] Add a short README with setup, maintenance, and troubleshooting instructions.
 - [ ] Update GitHub Actions dependencies when deprecation warnings appear.
 - [ ] Add a visible link to the latest workflow run for troubleshooting.
 
 ## Phase 3 — Better research context
 
-- [ ] Add valuation and quality fields from a reliable, clearly attributed data source.
-- [ ] Add revenue growth, earnings growth, debt, free cash flow, and profitability checks.
-- [ ] Add sector and industry filters.
+- [x] Add valuation and quality fields from a clearly attributed free data source.
+- [x] Add revenue growth, earnings growth, debt, free cash flow, and profitability checks.
+- [x] Add sector and industry filters.
 - [ ] Add liquidity and minimum-market-cap filters.
-- [ ] Separate price opportunity, business quality, and valuation into distinct scores.
-- [ ] Explain every score component and its limitations.
+- [x] Separate price opportunity, business quality, valuation, and financial strength into distinct scores.
+- [x] Explain every score component and its limitations.
+- [x] Rank five research candidates only when enough verified fields are available.
+- [x] Reserve catalyst scoring for manual research rather than fabricating conclusions.
 
 ## Phase 4 — Personal workflow
 
-- [ ] Add a browser-saved watchlist without requiring an account.
-- [ ] Add notes and a research checklist for each watched ticker.
+- [x] Add a browser-saved watchlist without requiring an account.
+- [x] Add notes and a research checklist for each watched ticker.
 - [ ] Add configurable screen thresholds.
 - [ ] Add CSV export for the current filtered results.
 - [ ] Consider optional alerts only after data reliability is well tested.
 
 ## Phase 5 — User experience
 
-- [ ] Improve mobile layout and accessibility.
-- [ ] Add loading, empty, stale, partial, and error states with clear language.
-- [ ] Add sortable columns and richer filters without slowing the page.
+- [x] Improve the scanner's responsive mobile layout.
+- [x] Add loading, empty, stale, partial, and error states with clear language.
+- [x] Add sortable columns and richer filters without slowing the page.
 - [ ] Add a methodology page describing sources, update timing, and known limitations.
 
 ## Current operating schedule
