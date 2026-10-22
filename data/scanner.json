@@ -1,7 +1,7 @@
 {
   "schema_version": 9,
   "status": "partial",
-  "generated_at": "2026-10-22T20:25:18.194572Z",
+  "generated_at": "2026-10-22T20:27:01.733127Z",
   "universe_source": "Wikipedia S&P 500 list + disclosed selected growth/ETF symbols",
   "universe_count": 515,
   "screened_count": 514,
@@ -51,11 +51,11 @@
           "return_on_equity_pct": 203.69,
           "trailing_pe": 20.31,
           "ev_to_ebitda": 16.64,
-          "fcf_yield_pct": 3.6,
+          "fcf_yield_pct": 3.58,
           "debt_to_equity": 111.13,
           "current_ratio": 4.3,
           "free_cash_flow": 3179956224.0,
-          "market_cap": 88441438208.0
+          "market_cap": 88782094336.0
         },
         "component_scores": {
           "fundamentals_30": 30,
@@ -109,7 +109,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 3.6,
+              "value": 3.58,
               "sector_median": 12.18,
               "cheapness_percentile": 12.5,
               "peer_count": 4
@@ -251,7 +251,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 10.56,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 96.4,
               "peer_count": 14
             },
@@ -402,7 +402,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 13.16,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 89.3,
               "peer_count": 14
             },
@@ -704,7 +704,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 17.1,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 82.1,
               "peer_count": 14
             },
@@ -937,11 +937,11 @@
           "return_on_equity_pct": 203.69,
           "trailing_pe": 20.31,
           "ev_to_ebitda": 16.64,
-          "fcf_yield_pct": 3.6,
+          "fcf_yield_pct": 3.58,
           "debt_to_equity": 111.13,
           "current_ratio": 4.3,
           "free_cash_flow": 3179956224.0,
-          "market_cap": 88441438208.0
+          "market_cap": 88782094336.0
         },
         "component_scores": {
           "fundamentals_30": 30,
@@ -995,7 +995,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 3.6,
+              "value": 3.58,
               "sector_median": 12.18,
               "cheapness_percentile": 12.5,
               "peer_count": 4
@@ -1138,7 +1138,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 50.44,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 17.9,
               "peer_count": 14
             },
@@ -1235,7 +1235,7 @@
           "earnings_growth_pct": 52.0,
           "profit_margin_pct": 3.33,
           "return_on_equity_pct": 18.38,
-          "trailing_pe": 29.61,
+          "trailing_pe": 32.77,
           "ev_to_ebitda": 16.46,
           "fcf_yield_pct": 2.21,
           "debt_to_equity": 107.82,
@@ -1245,12 +1245,12 @@
         },
         "component_scores": {
           "fundamentals_30": 24.5,
-          "valuation_25": 9.0,
+          "valuation_25": 7.8,
           "selloff_20": 20.0,
           "financial_strength_15": 10.6,
           "catalysts_10": null
         },
-        "quant_score_90": 64.0,
+        "quant_score_90": 62.9,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -1268,24 +1268,24 @@
             "net_income_year_ago": 192000000.0,
             "free_cash_flow_latest": 211000000.0,
             "free_cash_flow_yoy_pct": -34.27,
-            "debt_yoy_pct": 4.05,
-            "shares_yoy_pct": -3.21
+            "debt_yoy_pct": null,
+            "shares_yoy_pct": -1.81
           },
-          "fields_available": 5,
+          "fields_available": 4,
           "value_trap_flags": [],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
         "sector_valuation": {
-          "status": "cheaper",
+          "status": "near_median",
           "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
-          "cheapness_percentile": 69.1,
+          "cheapness_percentile": 66.7,
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
-              "value": 29.61,
-              "sector_median": 32.72,
-              "cheapness_percentile": 60.7,
+              "value": 32.77,
+              "sector_median": 32.9,
+              "cheapness_percentile": 53.6,
               "peer_count": 14
             },
             "ev_to_ebitda": {
@@ -1321,7 +1321,7 @@
             {
               "id": "dilution",
               "status": "clear",
-              "reason": "Share-count change was -3.2% year over year"
+              "reason": "Share-count change was -1.8% year over year"
             },
             {
               "id": "leverage",
@@ -1341,7 +1341,7 @@
             {
               "id": "quarterly_coverage",
               "status": "caution",
-              "reason": "Only 5 of 9 quarterly trend fields were available"
+              "reason": "Only 4 of 9 quarterly trend fields were available"
             },
             {
               "id": "sec_verification",
@@ -1701,7 +1701,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 13.16,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 89.3,
               "peer_count": 14
             },
@@ -1998,7 +1998,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 40.39,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 32.1,
               "peer_count": 14
             },
@@ -2101,7 +2101,7 @@
           "debt_to_equity": 71.45,
           "current_ratio": 1.81,
           "free_cash_flow": 734499968.0,
-          "market_cap": 106586488832.0
+          "market_cap": 106803535872.0
         },
         "component_scores": {
           "fundamentals_30": 22.9,
@@ -2129,10 +2129,12 @@
             "free_cash_flow_latest": 1295000000.0,
             "free_cash_flow_yoy_pct": 223.75,
             "debt_yoy_pct": 10.35,
-            "shares_yoy_pct": 0.49
+            "shares_yoy_pct": 5.91
           },
           "fields_available": 9,
-          "value_trap_flags": [],
+          "value_trap_flags": [
+            "Share count increased more than 5% year over year"
+          ],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
@@ -2144,7 +2146,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 56.88,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 10.7,
               "peer_count": 14
             },
@@ -2165,10 +2167,10 @@
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
         "risk_gates": {
-          "status": "clear",
+          "status": "caution",
           "counts": {
-            "clear": 6,
-            "caution": 0,
+            "clear": 5,
+            "caution": 1,
             "high_risk": 0,
             "unavailable": 1
           },
@@ -2180,8 +2182,8 @@
             },
             {
               "id": "dilution",
-              "status": "clear",
-              "reason": "Share-count change was 0.5% year over year"
+              "status": "caution",
+              "reason": "Share count increased 5.9% year over year"
             },
             {
               "id": "leverage",
@@ -2294,7 +2296,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 19.68,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 75.0,
               "peer_count": 14
             },
@@ -2391,7 +2393,7 @@
           "earnings_growth_pct": 34.8,
           "profit_margin_pct": 31.27,
           "return_on_equity_pct": 65.07,
-          "trailing_pe": 39.96,
+          "trailing_pe": 34.3,
           "ev_to_ebitda": 37.6,
           "fcf_yield_pct": 1.07,
           "debt_to_equity": 33.05,
@@ -2401,12 +2403,12 @@
         },
         "component_scores": {
           "fundamentals_30": 30,
-          "valuation_25": 1.4,
+          "valuation_25": 3.4,
           "selloff_20": 18.9,
           "financial_strength_15": 15.0,
           "catalysts_10": null
         },
-        "quant_score_90": 65.3,
+        "quant_score_90": 67.3,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -2439,8 +2441,8 @@
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
-              "value": 39.96,
-              "sector_median": 32.72,
+              "value": 34.3,
+              "sector_median": 32.9,
               "cheapness_percentile": 39.3,
               "peer_count": 14
             },
@@ -2539,11 +2541,11 @@
           "return_on_equity_pct": 0.6,
           "trailing_pe": 124.35,
           "ev_to_ebitda": 190.62,
-          "fcf_yield_pct": -23.79,
+          "fcf_yield_pct": -22.22,
           "debt_to_equity": 98.6,
           "current_ratio": 4.03,
           "free_cash_flow": -9614650368.0,
-          "market_cap": 40412975104.0
+          "market_cap": 43271196672.0
         },
         "component_scores": {
           "fundamentals_30": 10.9,
@@ -2866,7 +2868,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 23.84,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 67.9,
               "peer_count": 14
             },
@@ -3137,13 +3139,13 @@
         "sector_valuation": {
           "status": "near_median",
           "reason": "Current valuation compared with the enriched selloff candidates in the same sector",
-          "cheapness_percentile": 37.9,
+          "cheapness_percentile": 40.2,
           "metrics_available": 3,
           "comparisons": {
             "trailing_pe": {
               "value": 32.41,
-              "sector_median": 32.72,
-              "cheapness_percentile": 53.6,
+              "sector_median": 32.9,
+              "cheapness_percentile": 60.7,
               "peer_count": 14
             },
             "ev_to_ebitda": {
@@ -3288,7 +3290,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 17.1,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 82.1,
               "peer_count": 14
             },
@@ -3703,7 +3705,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 72.18,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 3.6,
               "peer_count": 14
             },
@@ -4060,11 +4062,11 @@
           "return_on_equity_pct": 34.42,
           "trailing_pe": 16.79,
           "ev_to_ebitda": 29.03,
-          "fcf_yield_pct": 4.54,
+          "fcf_yield_pct": 4.56,
           "debt_to_equity": 6.11,
           "current_ratio": 2.72,
           "free_cash_flow": 300198016.0,
-          "market_cap": 6615110656.0
+          "market_cap": 6587800576.0
         },
         "component_scores": {
           "fundamentals_30": 19.3,
@@ -4341,18 +4343,20 @@
           "metrics": {
             "latest_period": "2026-06-30",
             "year_ago_period": "2025-06-30",
-            "revenue_yoy_pct": null,
-            "operating_margin_pct": null,
-            "operating_margin_change_pp": null,
-            "net_income_latest": null,
+            "revenue_yoy_pct": 7.53,
+            "operating_margin_pct": 22.9,
+            "operating_margin_change_pp": 4.26,
+            "net_income_latest": 907000000.0,
             "net_income_year_ago": 797000000.0,
-            "free_cash_flow_latest": 171000000.0,
-            "free_cash_flow_yoy_pct": -38.27,
-            "debt_yoy_pct": -5.8,
-            "shares_yoy_pct": 0.48
+            "free_cash_flow_latest": -451000000.0,
+            "free_cash_flow_yoy_pct": -143.32,
+            "debt_yoy_pct": 4.96,
+            "shares_yoy_pct": -2.27
           },
-          "fields_available": 5,
-          "value_trap_flags": [],
+          "fields_available": 9,
+          "value_trap_flags": [
+            "Latest quarter reported negative free cash flow"
+          ],
           "status": "available",
           "source": "Yahoo Finance quarterly statements accessed through yfinance; verify against SEC filings."
         },
@@ -4366,12 +4370,12 @@
           "history_reason": "No trustworthy point-in-time historical valuation source is configured"
         },
         "risk_gates": {
-          "status": "caution",
+          "status": "high_risk",
           "counts": {
-            "clear": 3,
-            "caution": 1,
-            "high_risk": 0,
-            "unavailable": 3
+            "clear": 5,
+            "caution": 0,
+            "high_risk": 1,
+            "unavailable": 1
           },
           "gates": [
             {
@@ -4382,7 +4386,7 @@
             {
               "id": "dilution",
               "status": "clear",
-              "reason": "Share-count change was 0.5% year over year"
+              "reason": "Share-count change was -2.3% year over year"
             },
             {
               "id": "leverage",
@@ -4391,18 +4395,18 @@
             },
             {
               "id": "cash_flow_quality",
-              "status": "unavailable",
-              "reason": "Quarterly net income or free cash flow is unavailable"
+              "status": "high_risk",
+              "reason": "Positive net income was not supported by positive free cash flow"
             },
             {
               "id": "profitability_trend",
-              "status": "unavailable",
-              "reason": "Revenue and operating-margin trends are unavailable"
+              "status": "clear",
+              "reason": "Available revenue and margin trends remained above warning thresholds"
             },
             {
               "id": "quarterly_coverage",
-              "status": "caution",
-              "reason": "Only 5 of 9 quarterly trend fields were available"
+              "status": "clear",
+              "reason": "9 of 9 quarterly trend fields were available"
             },
             {
               "id": "sec_verification",
@@ -4493,7 +4497,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 46.2,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 25.0,
               "peer_count": 14
             },
@@ -4740,11 +4744,11 @@
           "return_on_equity_pct": 18.92,
           "trailing_pe": 18.21,
           "ev_to_ebitda": 15.88,
-          "fcf_yield_pct": 11.84,
+          "fcf_yield_pct": 11.65,
           "debt_to_equity": 893.31,
           "current_ratio": 1.33,
           "free_cash_flow": 878991104.0,
-          "market_cap": 7421986304.0
+          "market_cap": 7547611136.0
         },
         "component_scores": {
           "fundamentals_30": 16.8,
@@ -4798,7 +4802,7 @@
               "peer_count": 5
             },
             "fcf_yield_pct": {
-              "value": 11.84,
+              "value": 11.65,
               "sector_median": 9.53,
               "cheapness_percentile": 70.0,
               "peer_count": 5
@@ -5062,7 +5066,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 10.56,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 96.4,
               "peer_count": 14
             },
@@ -5364,7 +5368,7 @@
           "comparisons": {
             "trailing_pe": {
               "value": 33.02,
-              "sector_median": 32.72,
+              "sector_median": 32.9,
               "cheapness_percentile": 46.4,
               "peer_count": 14
             },
@@ -5463,11 +5467,11 @@
           "return_on_equity_pct": 5.16,
           "trailing_pe": 43.38,
           "ev_to_ebitda": 4.37,
-          "fcf_yield_pct": 17.43,
+          "fcf_yield_pct": 17.76,
           "debt_to_equity": 64.94,
           "current_ratio": 2.02,
           "free_cash_flow": 1615874944.0,
-          "market_cap": 9271095296.0
+          "market_cap": 9096416256.0
         },
         "component_scores": {
           "fundamentals_30": 4.2,
@@ -5521,7 +5525,7 @@
               "peer_count": 5
             },
             "fcf_yield_pct": {
-              "value": 17.43,
+              "value": 17.76,
               "sector_median": 9.53,
               "cheapness_percentile": 90.0,
               "peer_count": 5
@@ -6049,20 +6053,20 @@
           "return_on_equity_pct": 17.13,
           "trailing_pe": 14.29,
           "ev_to_ebitda": 9.77,
-          "fcf_yield_pct": 6.23,
+          "fcf_yield_pct": 6.31,
           "debt_to_equity": 47.07,
           "current_ratio": 1.45,
           "free_cash_flow": 558312512.0,
-          "market_cap": 8959411200.0
+          "market_cap": 8848224256.0
         },
         "component_scores": {
           "fundamentals_30": 7.5,
-          "valuation_25": 21.4,
+          "valuation_25": 21.6,
           "selloff_20": 15.4,
           "financial_strength_15": 13.0,
           "catalysts_10": null
         },
-        "quant_score_90": 57.4,
+        "quant_score_90": 57.5,
         "data_fields_available": 10,
         "data_fields_required": 7,
         "eligible": true,
@@ -6109,7 +6113,7 @@
               "peer_count": 4
             },
             "fcf_yield_pct": {
-              "value": 6.23,
+              "value": 6.31,
               "sector_median": 3.83,
               "cheapness_percentile": 87.5,
               "peer_count": 4
@@ -8792,7 +8796,7 @@
       "price": 270.55,
       "drawdown_pct": -24.8,
       "ma50": 255.92,
-      "average_dollar_volume_20d": 1047144979.7,
+      "average_dollar_volume_20d": 1047144966.18,
       "price_score": 37.2,
       "price_date": "2026-10-22",
       "price_signals": {
