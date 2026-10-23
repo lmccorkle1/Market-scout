@@ -2,6 +2,19 @@
   "history_schema_version": 1,
   "snapshots": [
     {
+      "date": "2026-10-21",
+      "generated_at": "2026-10-23T00:41:47.371544Z",
+      "path": "2026-10-21.json",
+      "sha256": "cfa066a2fe3532e7202234413086657d067b53e17724378c7cf34f5e1baeaf73",
+      "top_tickers": [
+        "APP",
+        "FSLR",
+        "NFLX",
+        "WDC",
+        "PODD"
+      ]
+    },
+    {
       "date": "2026-10-22",
       "generated_at": "2026-10-22T20:25:18.194572Z",
       "path": "2026-10-22.json",
