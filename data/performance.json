@@ -1,6 +1,6 @@
 {
   "performance_schema_version": 1,
-  "generated_at": "2026-10-24T00:44:22.889611Z",
+  "generated_at": "2026-10-27T01:30:35.303048Z",
   "price_source": "Yahoo Finance adjusted daily closes accessed through yfinance",
   "horizons": {
     "1m": 21,
@@ -279,6 +279,153 @@
           "sector": "Information Technology",
           "selection_price": 1260.93,
           "selection_score": 69.3,
+          "horizons": {
+            "1m": {
+              "status": "pending",
+              "trading_sessions_required": 21
+            },
+            "3m": {
+              "status": "pending",
+              "trading_sessions_required": 63
+            },
+            "6m": {
+              "status": "pending",
+              "trading_sessions_required": 126
+            },
+            "12m": {
+              "status": "pending",
+              "trading_sessions_required": 252
+            },
+            "24m": {
+              "status": "pending",
+              "trading_sessions_required": 504
+            }
+          }
+        }
+      ]
+    },
+    {
+      "selection_date": "2026-10-23",
+      "score_version": "quant-90-v1",
+      "snapshot_schema_version": 2,
+      "candidates": [
+        {
+          "ticker": "WDC",
+          "sector": "Information Technology",
+          "selection_price": 343.67,
+          "selection_score": 76.8,
+          "horizons": {
+            "1m": {
+              "status": "pending",
+              "trading_sessions_required": 21
+            },
+            "3m": {
+              "status": "pending",
+              "trading_sessions_required": 63
+            },
+            "6m": {
+              "status": "pending",
+              "trading_sessions_required": 126
+            },
+            "12m": {
+              "status": "pending",
+              "trading_sessions_required": 252
+            },
+            "24m": {
+              "status": "pending",
+              "trading_sessions_required": 504
+            }
+          }
+        },
+        {
+          "ticker": "APP",
+          "sector": "Communication Services",
+          "selection_price": 260.25,
+          "selection_score": 76.6,
+          "horizons": {
+            "1m": {
+              "status": "pending",
+              "trading_sessions_required": 21
+            },
+            "3m": {
+              "status": "pending",
+              "trading_sessions_required": 63
+            },
+            "6m": {
+              "status": "pending",
+              "trading_sessions_required": 126
+            },
+            "12m": {
+              "status": "pending",
+              "trading_sessions_required": 252
+            },
+            "24m": {
+              "status": "pending",
+              "trading_sessions_required": 504
+            }
+          }
+        },
+        {
+          "ticker": "FSLR",
+          "sector": "Information Technology",
+          "selection_price": 171.99,
+          "selection_score": 74.7,
+          "horizons": {
+            "1m": {
+              "status": "pending",
+              "trading_sessions_required": 21
+            },
+            "3m": {
+              "status": "pending",
+              "trading_sessions_required": 63
+            },
+            "6m": {
+              "status": "pending",
+              "trading_sessions_required": 126
+            },
+            "12m": {
+              "status": "pending",
+              "trading_sessions_required": 252
+            },
+            "24m": {
+              "status": "pending",
+              "trading_sessions_required": 504
+            }
+          }
+        },
+        {
+          "ticker": "NFLX",
+          "sector": "Communication Services",
+          "selection_price": 65.85,
+          "selection_score": 73.4,
+          "horizons": {
+            "1m": {
+              "status": "pending",
+              "trading_sessions_required": 21
+            },
+            "3m": {
+              "status": "pending",
+              "trading_sessions_required": 63
+            },
+            "6m": {
+              "status": "pending",
+              "trading_sessions_required": 126
+            },
+            "12m": {
+              "status": "pending",
+              "trading_sessions_required": 252
+            },
+            "24m": {
+              "status": "pending",
+              "trading_sessions_required": 504
+            }
+          }
+        },
+        {
+          "ticker": "FIX",
+          "sector": "Industrials",
+          "selection_price": 1160.86,
+          "selection_score": 72.1,
           "horizons": {
             "1m": {
               "status": "pending",
