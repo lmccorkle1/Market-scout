@@ -52,6 +52,19 @@
         "NFLX",
         "SNDK"
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "generated_at": "2026-10-29T01:49:53.047422Z",
+      "path": "2026-10-28.json",
+      "sha256": "b648b85d41c57a3c56e34f86d9d8772526ae60621a0dde44a750374e05cfbd4d",
+      "top_tickers": [
+        "APP",
+        "NFLX",
+        "FSLR",
+        "WDC",
+        "PODD"
+      ]
     }
   ]
 }
