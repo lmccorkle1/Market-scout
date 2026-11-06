@@ -117,6 +117,19 @@
         "FIX",
         "APP"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "generated_at": "2026-11-06T02:29:22.778034Z",
+      "path": "2026-11-05.json",
+      "sha256": "99c5ed3a7fb60c0e0dbf0be0df17b0aea7e978e4f4cb8faf7160088137629ed1",
+      "top_tickers": [
+        "SNDK",
+        "MU",
+        "FIS",
+        "RDDT",
+        "WDC"
+      ]
     }
   ]
 }
