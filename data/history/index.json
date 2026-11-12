@@ -143,6 +143,19 @@
         "RDDT",
         "WDC"
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "generated_at": "2026-11-12T03:01:47.326021Z",
+      "path": "2026-11-11.json",
+      "sha256": "766d5064a4d50370bcfc0b5d52c397afa0b2e0573a258dfa5546c73dc58e3ca7",
+      "top_tickers": [
+        "SNDK",
+        "FIS",
+        "RDDT",
+        "WDC",
+        "FIX"
+      ]
     }
   ]
 }
