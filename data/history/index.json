@@ -156,6 +156,19 @@
         "WDC",
         "FIX"
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "generated_at": "2026-11-13T02:38:55.904832Z",
+      "path": "2026-11-12.json",
+      "sha256": "e947629045c66cfeddc80e33b426fe19e00afa4380da84f7addce370e969e85a",
+      "top_tickers": [
+        "SNDK",
+        "FIS",
+        "RDDT",
+        "WDC",
+        "NFLX"
+      ]
     }
   ]
 }
