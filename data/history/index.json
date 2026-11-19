@@ -195,6 +195,19 @@
         "RDDT",
         "WDC"
       ]
+    },
+    {
+      "date": "2026-11-18",
+      "generated_at": "2026-11-19T03:30:38.082920Z",
+      "path": "2026-11-18.json",
+      "sha256": "f601162094aedfde6166a5be08a7dbf50b9d170a9bf068fa3669041b19acab2c",
+      "top_tickers": [
+        "FIS",
+        "MU",
+        "RDDT",
+        "WDC",
+        "FSLR"
+      ]
     }
   ]
 }
